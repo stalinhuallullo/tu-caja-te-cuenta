@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* ---------------CSS Document--------------- */
+/* importamos las hojas de estilos necesarias */
+/* --estructura de estilos para fabrica 2.0-- */
+/* ----ingenia fyd - fabrica de contenidos--- */
+
+
+/* reseteamos los estilos basicos para construir a partir de ellos */
+@import url(estilos/reset.css);
+
+/* interfaz.css define los estilos de la interfaz, fuentes, imagenes ... */
+@import url(estilos/interfaz.css);
+
+/* contenido.css define los estilos de los elementos estaticos del contenido del curso */
+@import url(estilos/contenido.css);
+
+/* framework css define los estilos de los elementos jQuery */
+@import url(estilos/framework.css);
+
+/* kooltip css define los estilos de los elementos ToolTip */
+@import url(estilos/kooltip.css);
+
+/* kooltip css define los estilos de los elementos Table */
+@import url(estilos/tables.css);
+
+/* Estilos para las paginas de recursos bibliografia, glosario, tips ... */
+@import url(estilos/recursos.css); 
+
+/* Estilos para los diagramas ... */
+@import url(estilos/diagramas.css); 
+
+/* Estilos para bloques de tests ... */
+@import url(estilos/htmltest.css);
+
+/* Estilos para el glosario ... */
+@import url(estilos/glosario.css);
+
+/* Css para iPad, media querys */
+@import url(estilos/ipad.css);
+
+/* Css para iPad, media querys */
+@import url(estilos/bocadillos.css);
+
+
+
+
+
+

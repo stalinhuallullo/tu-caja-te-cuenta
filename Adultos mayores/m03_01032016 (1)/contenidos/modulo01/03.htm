@@ -1,0 +1,87 @@
+﻿
+
+<style type="text/css">
+	.contenedorpopup {}
+	#botoninvisible{
+		background:transparent;
+		position:absolute;
+		border:none;
+		width:45px;
+		height:45px;
+		display:block;
+		display:none;
+		/**/		
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-o-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	
+	#botoninvisible{		
+		left:697px;
+		top:360px;
+	}
+	.noordenada li { font-size: 140% !important; }
+
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="38">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a03_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+		<div class="escena" numero='1' imagen='' audio='Presentadoraud302' habla="narrador" bocadillo="" flecha="rt" bleft="350" btop="135" bwidth="410" oculta="" muestra="">
+        	<span>Empecemos conociendo qué es la compensación por tiempo de servicios y quiénes la perciben.</span>
+        </div>
+
+        <div class="escena" numero='2' imagen='a03_02.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>        
+        <div class="escena" numero='3' imagen='a03_03.jpg' audio='silencio07s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>        
+        <div class="escena" numero='4' imagen='a03_04.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='5' imagen='a03_05.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='6' imagen='a03_06.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='7' imagen='a03_07.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='8' imagen='a03_08.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='9' imagen='a03_09.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+        <!--<div class="escena" numero='10' imagen='' audio='Presentadoraud303' habla="narrador" bocadillo="" flecha="rt" bleft="365" btop="135" bwidth="410" oculta="" muestra="">
+        	<span>Veamos la conversación del asesor con Miguel y María.</span>
+        </div>-->
+
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="789" ptop="25" alto="433"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en el <strong>enlace</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>
+
+<a id="botoninvisible" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Se encuentran excluidos de este beneficio:</strong></p>
+		<ul class="noordenada">
+        	<li>Trabajadores que perciban el 30% o más del importe de las tarifas que paga el público por los servicios.</li>
+            <li>Trabajadores sujetos a regímenes especiales.</li>
+        </ul>
+	</div>
+</div>

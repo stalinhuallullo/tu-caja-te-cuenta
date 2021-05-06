@@ -1,0 +1,63 @@
+﻿<div id="contenedor_bibliografia">
+
+    <div class="contenedor_bibliografia_contenido">
+	<script type="text/javascript">
+		$.ajax({
+		  type: 'GET',
+		  url: 'contenidos/xml/bibliografia_modulo01.xml',
+		  cache: false,
+		  dataType: ($.browser.msie) ? 'text' : 'xml', // Reconocemos el browser.
+		  success: function(data){
+			var xml;
+			if(typeof data == 'string'){
+			  xml = new
+			  ActiveXObject('Microsoft.XMLDOM');
+			  xml.async = false;
+			  xml.loadXML(data);
+			} else {
+			  xml = data;
+			}
+			
+			$(xml).find('apartado').each(function(){			
+				var titulo = $(this).attr('titulo');
+				$('.contenedor_bibliografia_contenido').append("<h1 class='bibliotitle'>"+titulo+"</h1>");
+				$(this).find('referencia').each(function(){
+					var id = $(this).attr('id');							 	
+					$(this).find('dato').each(function(){												   
+						var img = $(this).attr('imagen');					
+						if (img=="") {img=""} else {img="<IMG src='contenidos/modulo01/media/"+img+"'>"};
+						var titulo = $(this).attr('titulo');
+						var enlace = $(this).attr('enlace');
+						var descripcion = $(this).text();					
+						if (enlace!=""){
+							$('.contenedor_bibliografia_contenido').append("<a id='referencia_"+id+"' class='bibliografia_bloque' href='"+enlace+"' target='_blank' title='"+titulo+"'>");
+							$('.contenedor_bibliografia_contenido').append("</a>");
+							$('#referencia_'+id).addClass('enlazado');
+							$('#referencia_'+id).append(img + "<p><span class='titulo_bibliografia'>"+titulo+"</span><span class='descripcion_bibliografia'>"+ descripcion +"</span></p>");
+							}else{
+							$('.contenedor_bibliografia_contenido').append("<div id='referencia_"+id+"' class='bibliografia_bloque' href='"+enlace+"' target='_blank' title='"+titulo+"'>");
+							$('.contenedor_bibliografia_contenido').append("</div>");
+							$('#referencia_'+id).append(img + "<p><span class='titulo_bibliografia'>"+titulo+"</span><span class='descripcion_bibliografia'>"+ descripcion +"</span></p>");
+						}
+						$('#referencia_'+id).append("<div class='clear'></div>")
+					});
+				});
+			});
+		  }
+		});
+	
+	
+		</script> 
+		</div>
+	</div>
+
+
+
+<script>
+$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'>Bibliografia<span class='subtitulo'>Agrupada por unidades didácticas</span></div>")
+</script>
+
+<button class="btn_volver" onclick="volverToContent()">volver al contenido</button>
+
+<br />
+<br />

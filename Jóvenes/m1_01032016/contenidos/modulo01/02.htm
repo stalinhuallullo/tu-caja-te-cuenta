@@ -1,0 +1,371 @@
+﻿<style>
+    .bocadillo{
+        border: none !important;
+        border-radius: inherit !important;
+        box-shadow: none !important;
+        width: inherit !important;
+        top: inherit !important;
+        left: inherit !important;
+    }
+    .escena{
+        padding: 0;
+        margin: 0;
+        border: 7px solid rgba(0,0,0,0.5);
+        position: absolute;
+        opacity: 0.9;
+        z-index: 1;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 3px 0px rgb(50 50 50 / 60%);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.6);
+        box-shadow: 0px 0px 3px 0px rgb(50 50 50 / 60%);
+        width: 39%;
+
+    }
+    .bocadillo.bl:before, .bocadillo.br:before,
+    .bocadillo.bl:after, .bocadillo.br:after{
+        content: inherit;
+    }
+    .escena:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 19px 19px 0;
+        border-color: rgba(0,0,0,0.5) transparent;
+        display: block;
+        width: 0;
+        z-index: 0;
+        top: 100%;
+        left: 4%;
+    }
+    .escena:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 17px 17px 0;
+        border-color: #FFFFFF transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        top: 100%;
+        left: 4.5%;
+    }
+    .escena-1{
+        left: 47%;
+        margin-top: 12% !important;
+    }
+    .escena-2{
+        left: 32%;
+        margin-top: 7% !important;
+    }
+    .escena-3{
+        left: 18%;
+        margin-top: 20% !important;
+    }
+    .escena-4{
+        left: 32%;
+        margin-top: 5% !important;
+    }
+    .escena-5{
+        left: 32%;
+        margin-top: 7% !important;
+    }
+    .escena-6{
+        left: 32%;
+        margin-top: 7% !important;
+    }
+    .escena-7{
+        left: 32%;
+        margin-top: 7% !important;
+    }
+
+    .personaje-1{
+        left: 78% !important;
+        top: 5% !important;
+    }
+    .personaje-1 img{
+        height: 100% !important;
+        width: 82% !important;
+    }
+    .personaje-2{
+        left: 29% !important;
+        top: 25% !important;
+    }
+    .personaje-2 img{
+        height: 100% !important;
+        width: 58%;
+    }
+    .personaje-3{
+        left: 16% !important;
+        top: 47% !important;
+    }
+    .personaje-3 img{
+        height: 100% !important;
+        width: 46%;
+    }
+    .personaje-4{
+        left: 36% !important;
+        top: 45% !important;
+    }
+    .personaje-4 img{
+        height: 100% !important;
+        width: 49%;
+    }
+    .bocadillo.tr:before{
+
+    }
+    /* #2700ff57 !important; */
+    @media (max-width: 1199px) {
+		.personaje-1 img {
+            width: 74% !important;
+        }
+        .personaje-2 {
+            top: 19% !important;
+        }
+        .personaje-2 img {
+            width: 54%;
+        }
+        .personaje-3 {
+            top: 42% !important;
+        }
+        .personaje-3 img {
+            width: 43%;
+        }
+        .personaje-4 {
+            top: 43% !important;
+        }
+        .personaje-4 img {
+            width: 40%;
+        }
+        .escena-1 {
+            margin-top: 8% !important;
+            font-size: 17px ​!important;
+            width: 48%;
+        }
+        .escena-2 {
+            margin-top: 3% !important;
+            font-size: 17px ​!important;
+        }
+        .escena-3 {
+            margin-top: 16% !important;
+            font-size: 17px !important;
+        }
+        .escena-4{
+            margin-top: 1% !important;
+            font-size: 17px !important;
+        }
+        .escena-5{
+            margin-top: 1% !important;
+            font-size: 17px !important;
+        }
+        .escena-6{
+            margin-top: 1% !important;
+            font-size: 17px !important;
+        }
+        .escena-7{
+            margin-top: 1% !important;
+            font-size: 17px !important;
+        }
+	}
+	@media (max-width: 991px) {
+        .personaje-2 {
+            top: 27% !important;
+        }
+        .personaje-2 img {
+            width: 35%;
+        }
+        .personaje-3 {
+            top: 45% !important;
+        }
+        .personaje-3 img {
+            width: 31%;
+        }
+        .personaje-4 {
+            top: 45% !important;
+        }
+        .personaje-4 img {
+            width: 31%;
+        }
+        .escena-1 {
+            margin-top: 5% !important;
+            font-size: 16px !important;
+            width: 50%;
+        }
+        .escena-2 {
+            margin-top: 4% !important;
+            font-size: 17px ​!important;
+        }
+		.escena-3 {
+            margin-top: 12% !important;
+            font-size: 16px !important;
+        }
+        .escena-4{
+            margin-top: 2% !important;
+            font-size: 16px !important;
+            width: 43%;
+        }
+        .escena-5{
+            font-size: 16px !important;
+        }
+        .escena-6{
+            font-size: 16px !important;
+        }
+        .escena-7{
+            font-size: 16px !important;
+        }
+	}
+    @media (max-width: 820px) {
+        .personaje-2 {
+            top: 24% !important;
+        }
+        .personaje-2 img {
+            width: 33%;
+        }
+        .personaje-3 {
+            top: 44% !important;
+        }
+        .personaje-3 img {
+            width: 27%;
+        }
+        .personaje-4 {
+            top: 42% !important;
+        }
+        .personaje-4 img {
+            width: 31%;
+        }
+        .escena-1 {
+            margin-top: 3% !important;
+            font-size: 15px !important;
+        }
+        .escena-4{
+            left: 30%;
+            margin-top: 1% !important;
+            font-size: 16px !important;
+            width: 51%;
+        }
+        .escena-5{
+            font-size: 16px !important;
+            width: 51%;
+        }
+        .escena-6{
+            font-size: 16px !important;
+            width: 51%;
+        }
+        .escena-7{
+            font-size: 16px !important;
+            width: 51%;
+        }
+	}
+	@media (max-width: 767px) {
+        .personaje-1 {
+            top: 9% !important;
+        }
+        .personaje-1 img {
+            width: 70% !important;
+        }
+		.personaje-2 {
+            top: 24% !important;
+        }
+        .personaje-2 img {
+            width: 31%;
+        }
+        .personaje-3 {
+            top: 44% !important;
+        }
+        .personaje-3 img {
+            width: 24%;
+        }
+        .personaje-4 {
+            top: 41% !important;
+        }
+        .personaje-4 img {
+            width: 31%;
+        }
+        .escena-1 {
+            margin-top: 2% !important;
+            font-size: 14px !important;
+            width: 52%;
+        }
+        .escena-2 {
+            margin-top: 3% !important;
+            font-size: 14px ​!important;
+        }
+        .escena-4{
+            font-size: 14px !important;
+            width: 47%;
+        }
+        .escena-5{
+            font-size: 14px !important;
+        }
+        .escena-6{
+            font-size: 14px !important;
+        }
+        .escena-7{
+            font-size: 14px !important;
+        }
+	}
+</style>
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="73">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+        
+
+		<div class="escena escena-0" numero='0' imagen='a02_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra="">
+        </div>
+
+		<div class="escena" numero='1' imagen='' audio='LuisUD101' habla="luis" bocadillo="" flecha="bl" bleft="465" btop="30" bwidth="450" oculta="" muestra="">
+        	<span class="escena escena-1">Hoy he visto publicidad del curso que me interesa sobre reparación de electrodomésticos, ¡Cómo me gustaría poder hacerlo! Siempre arreglo los aparatos de mis vecinos y no se me da mal, pero quiero aprender más para dedicarme a ello en un futuro.</span>
+        </div>        
+		<div class="escena" numero='2' imagen='' audio='CarlosUD101' habla="carlos" bocadillo="" flecha="bl" bleft="310" btop="30" bwidth="230" oculta="" muestra="">
+	        <span class="escena escena-2">¿Y por qué no lo haces?</span>
+        </div>
+		<div class="escena" numero='3' imagen='' audio='LuisUD102' habla="luis" bocadillo="" flecha="bl" bleft="470" btop="130" bwidth="380" oculta="" muestra="">
+        	<span class="escena escena-3">Uf! ¡Cuesta mucho dinero y no tengo tanto!</span>
+        </div>
+		<div class="escena" numero='4' imagen='' audio='CarlosUD103' habla="carlos" bocadillo="" flecha="bl" bleft="310" btop="10" bwidth="370" oculta="" muestra="">
+        	<span class="escena escena-4">Quizá si ahorrarás un poco cada mes, podrías intentar hacerlo si tanto te gusta.</span>
+        </div>
+        <div class="escena" numero='5' imagen='' audio='LuisUD103' habla="luis" bocadillo="" flecha="bl" bleft="470" btop="100" bwidth="290" oculta="" muestra="">
+        	<span class="escena escena-5">¡Es que no sé cómo hago que no consigo ahorrar nada!</span>
+        </div>
+        <div class="escena" numero='6' imagen='' audio='CarlosUD104' habla="carlos" bocadillo="" flecha="bl" bleft="310" btop="10" bwidth="440" oculta="" muestra="">
+        	<span class="escena escena-6">Pues no sé… yo consigo ahorrar separando parte del dinero que recibo y guardándolo muy muy bien.</span>
+        </div>
+        <div class="escena" numero='7' imagen='' audio='CarlosUD105' habla="carlos" bocadillo="" flecha="bl" bleft="310" btop="10" bwidth="310" oculta="" muestra="">
+        	<span class="escena escena-7">Bueno, cambiando de tema... ¿Vas a venir al concierto de mañana?</span>
+        </div>
+        <div class="escena" numero='8' imagen='' audio='LuisUD104' habla="luis" bocadillo="" flecha="bl" bleft="470" btop="120" bwidth="310" oculta="" muestra="">
+        	<span class="escena escena-8">¿Cuál? ¿el de Los Últimos héroes?</span>
+        </div>
+        <!-- <div class="escena" numero='9' imagen='' audio='CarlosUD106' habla="carlos" bocadillo="" flecha="bl" bleft="310" btop="30" bwidth="300" oculta="" muestra="">
+        	<span class="escena escena-9">Sí, ese. Es la próxima semana.</span>
+        </div>
+        <div class="escena" numero='10' imagen='' audio='LuisUD105' habla="luis" bocadillo="" flecha="bl" bleft="470" btop="100" bwidth="460" oculta="" muestra="">
+        	<span class="escena escena-10">No creo, la entrada es cara y casi prefiero ahorrar para tener el CD y escucharlo cuando quiera.</span>
+        </div>
+        <div class="escena" numero='11' imagen='a02_02.jpg' audio='silencio01s' habla="" bocadillo="" flecha="bl" bleft="" btop="" bwidth="" oculta="" muestra="narrador"></div>
+        <div class="escena" numero='12' imagen='' audio='PresentadoraUD101' habla="narrador" bocadillo="" flecha="tr" bleft="420" btop="210" bwidth="440" oculta="" muestra="">
+        	<span class="escena escena-12">Luis tiene un objetivo: conseguir el curso que quiere para poder trabajar de lo que le gusta: reparación de electrodomésticos. También quiere ahorrar para tener un CD de un grupo que le gusta. Pero para poder conseguir nuestras metas, debemos ahorrar, la pregunta es... ¿Cómo hacerlo?</span>
+        </div>
+        <div class="escena" numero='13' imagen='' audio='PresentadoraUD102' habla="narrador" bocadillo="" flecha="tr" bleft="450" btop="210" bwidth="410" oculta="" muestra="">
+        	<span class="escena escena-13">Vamos a conocer las posibilidades, pero antes… conozcamos algo más sobre el ahorro.</span>
+        </div> -->
+
+
+        <div class="personaje personaje-1" nombre="narrador" oculto="si" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="760" ptop="25" alto="440"></div>        
+        <div class="personaje personaje-2" nombre="carlos" oculto="no" imgcalla="carlos-calla.gif" imghabla="carlos-habla.gif" pleft="280" ptop="125" alto="318"></div>
+        <div class="personaje personaje-3" nombre="maria" oculto="no" imgcalla="maria-sentada-calla.gif" imghabla="maria-sentada-habla.gif" pleft="155" ptop="235" alto="232"></div>
+        <div class="personaje personaje-4" nombre="luis" oculto="no" imgcalla="luis-sentado-calla.gif" imghabla="luis-sentado-habla.gif" pleft="345" ptop="220" alto="246"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en el botón <strong>'avanzar'</strong> <span class="bullet bulletavanzar"></span> para continuar.
+	</div>
+</div>

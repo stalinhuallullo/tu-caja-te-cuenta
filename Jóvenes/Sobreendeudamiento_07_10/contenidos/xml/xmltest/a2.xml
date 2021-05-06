@@ -1,0 +1,36 @@
+﻿<cuestionario>
+
+	<!-- ========================================= CONFIGURACION =======================================  -->
+	<configuracion>
+		<aleatorias	num='0' />
+		<intentos	num='3'/>
+	</configuracion>
+
+	<preguntas>
+	<!-- ========================================== PREGUNTA 1 =========================================  -->
+		<pregunta cod='0002'  tipo='test' feedback='Es correcto, es necesario saber bien los intereses y comisiones de un crédito, el plazo para pagarlo y la Tasa de Costo Efectivo Anual.' feedback_negativo='¡Respuesta Incorrecta! Por favor, revisa de nuevo el caso anterior para responder la pregunta correctamente.' >
+			<enunciado>
+				<![CDATA[Antes de tramitar un crédito, ¿cuáles de los siguientes aspectos se deben considerar?]]>
+			</enunciado>
+			<respuestas>
+				<respuesta correcta='Falso' feedback='' >
+					<![CDATA[Que esté "de oferta”.]]>
+				</respuesta>
+				<respuesta correcta='Verdadero' feedback='' >
+					<![CDATA[Los intereses y las comisiones.]]>
+				</respuesta>
+				<respuesta correcta='Verdadero' feedback='' >
+					<![CDATA[Los plazos para los pagos.]]>
+				</respuesta>
+				<respuesta correcta='Falso' feedback='' >
+					<![CDATA[La buena atención del Funcionario de la oficina.]]>
+				</respuesta>
+				<respuesta correcta='Verdadero' feedback='' >
+					<![CDATA[La Tasa de Costo Efectivo Anual que incluye información sobre el monto total y las cuotas a pagar, las garantías y los pagos por seguros.]]>
+				</respuesta>
+			</respuestas>
+		</pregunta>
+	<!-- ===============================================================================================  -->
+	</preguntas>
+
+</cuestionario>

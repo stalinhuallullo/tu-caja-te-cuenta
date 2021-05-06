@@ -1,0 +1,39 @@
+﻿<cuestionario>
+<!-- =========================================== CONFIGURACION =========================================  -->
+<configuracion>
+<aleatorias  num='0' />
+</configuracion>
+
+<preguntas>
+
+<!-- =========================================== PREGUNTA 1 =========================================  -->
+<pregunta cod='0001'  tipo='test' feedback=''  feedback_negativo='' >
+
+	<enunciado>
+		<![CDATA[Tras ver el vídeo, señala qué elementos echas de menos desde el punto de vista de la accesibilidad:]]>
+	</enunciado>
+
+	<respuestas>
+		<respuesta correcta='Falso'  feedback='' >
+			<![CDATA[Al vídeo le falta el audio.]]>
+		</respuesta>
+
+		<respuesta correcta='Verdadero'  feedback='' >
+			<![CDATA[No lleva la locución ni el texto que la debe acompañar (subtítulos).]]>
+		</respuesta>
+
+		<respuesta correcta='Falso'  feedback='' >
+			<![CDATA[No usa un lenguaje igualitario ni tiene una visión en materia de igualdad en las imágenes que se aportan.]]>
+		</respuesta>
+
+		<respuesta correcta='Falso'  feedback='' >
+			<![CDATA[Dispone de todos los elementos básicos desde el punto de vista de la accesibilidad.]]>
+		</respuesta>
+	</respuestas>
+
+</pregunta>
+<!-- ================================================================================================  -->
+
+</preguntas>
+
+</cuestionario>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<unidad  titulo="FEPCMAC | EDUCACIÓN FINANCIERA | UNIDAD 1: SEGMENTO NIÑOS">
+
+	<configuracion>
+		<curso>FEPCMAC | EDUCACIÓN FINANCIERA</curso>
+		<ud>UNIDAD 1: SEGMENTO NIÑOS</ud>
+		<!--<portada activada="no" src="portada"  />-->
+	</configuracion>
+
+	<contenido ruta="contenidos/modulo01">
+		<pagina tipo="pag" titulo="" src="01"/>
+		<pagina tipo="pag" titulo="" src="02"/>
+		<pagina tipo="pag" titulo="" src="03"/>
+		<pagina tipo="pag" titulo="" src="04"/>
+		<pagina tipo="pag" titulo="" src="05"/>
+		<pagina tipo="pag" titulo="" src="06"/>
+		<pagina tipo="pag" titulo="" src="07"/>
+		<pagina tipo="pag" titulo="" src="08"/>
+		<pagina tipo="pag" titulo="" src="09"/>
+		<pagina tipo="pag" titulo="" src="10"/>
+		<pagina tipo="pag" titulo="" src="11"/>
+		<pagina tipo="pag" titulo="" src="final"/>
+	</contenido>
+
+</unidad>

@@ -1,0 +1,264 @@
+﻿<cuestionario>
+<!-- =========================================== CONFIGURACION =========================================  -->
+<configuracion>
+	<aleatorias  num='0' />
+</configuracion>
+
+<preguntas>
+
+<!-- =========================================== PREGUNTA 1 =========================================  -->
+<pregunta cod='0001'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[1. Una de las causas que nos lleva al sobreendeudamiento es:]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[El conocimiento exacto de lo que nos queda cada mes para pagar los créditos.]]>
+	</respuesta>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[La compra de artículos que se ofertan , pero que no necesitamos realmente.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[El pago adelantado de los créditos.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Ninguna de las anteriores.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 2 =========================================  -->
+<pregunta cod='0002'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[2. Las estrategias para evitar el sobreendeudamiento son:]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Separar el dinero destinado a los gastos del resto de dinero.]]>
+	</respuesta>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Elaborar un presupuesto familiar para conocer en qué se gasta el dinero.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Retrasar los pagos de las facturas y créditos.]]>
+	</respuesta>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Abrir una cuenta de ahorros en la Caja Municipal ayuda  a controlar los gastos.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 3 =========================================  -->
+<pregunta cod='0003'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[3. ¿Qué  debemos considerar	al momento de tramitar un crédito?]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Que el producto esté de oferta, aunque no lo necesitemos realmente.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[La buena atención de los asesores de la institución financiera.]]>
+	</respuesta>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[La Tasa de Costo Efectivo Anual.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[La utilidad el producto.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 4 =========================================  -->
+<pregunta cod='0004'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[4. ¿Qué detalles debemos considerar a la hora de seleccionar un crédito?]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Plazos, intereses y comisiones y monto total, incluyendo cuotas y seguros.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Solo las cuotas a pagar.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[La apariencia de las oficinas de las instituciones financieras.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Todas son correctas.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 5 =========================================  -->
+<pregunta cod='0005'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[5. ¿Qué seguridad le brinda una institución financiera regulada por el Estado a nuestros ahorros?]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[En caso de posible fraude, contamos con apoyo oficial que respalda nuestros ahorros.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Las instituciones financieras reguladas y no reguladas tienen el mismo respaldo por parte del Estado.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Ninguna de las anteiores.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 6 =========================================  -->
+<pregunta cod='0006'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[6. En el caso de las entidades financieras no reguladas, pueden existir cobros indebidos, ya que la entidad no está supervisada por el Estado.]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Verdadero.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Falso.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 7 =========================================  -->
+<pregunta cod='0007'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[7. Realizar un presupuesto familiar, considerando las deudas, nos ayuda a proteger las finanzas.]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Verdadero.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Falso.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 8 =========================================  -->
+<pregunta cod='0008'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[8. ¿De qué nos informa la Central de Riesgos?]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[De las instituciones financieras que no están reguladas por el Estado.]]>
+	</respuesta>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[De todos los créditos que hemos adquirido.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[De las instituciones financieras que están reguladas por el Estado.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Ninguna de las anteriores.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 9 =========================================  -->
+<pregunta cod='0009'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[9. Hacer pagos anticipados de tus cuotas es beneficioso, pero ¿sabes qué opciones de pago anticipado de créditos hay? Selecciona la/s opción/opciones que creas correcta/s.]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Reducir el monto de la cuota y mantener el plazo.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Reducir el plazo y la cuota]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Aumentar el plazo y la cuota.]]>
+	</respuesta>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Ninguna de las anteriores.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 10 =========================================  -->
+<pregunta cod='0010'  tipo='test' feedback='¡Bien hecho! Se nota que aprendiste bien el tema.'  feedback_negativo='' >
+
+<enunciado>
+	<![CDATA[10) Al hacer el pago anticipado...]]>
+</enunciado>
+
+<respuestas>
+
+	<respuesta correcta='Falso'  feedback='' >
+		<![CDATA[Se pagan más intereses.]]>
+	</respuesta>
+
+	<respuesta correcta='Verdadero'  feedback='' >
+		<![CDATA[Se pagan menos intereses.]]>
+	</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =================================================================================================  -->
+</preguntas>
+
+</cuestionario>

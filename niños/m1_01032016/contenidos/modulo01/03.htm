@@ -1,0 +1,119 @@
+﻿
+<style type="text/css">
+	.contenedorpopup {}
+	a.bpopupbutton {
+		background:none !important;
+		border:none !important;
+		/**/
+		-webkit-border-radius: 0px !important;
+		-moz-border-radius: 0px !important;
+		-o-border-radius: 0px !important;
+		-ms-border-radius: 0px !important;
+		border-radius: 0px !important;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	a#lk-china, a#lk-grecia, a#lk-turquia, a#lk-egipto { position:absolute; display:block; }
+	a#lk-china span, a#lk-grecia span, a#lk-turquia span, a#lk-egipto span { position:absolute; top:-10000px; display:none; visibility:hidden; width:0px; height:0px; }
+	/**/
+	a#lk-china { top:37%; left:73%; width:110px; height:120px; }
+	a#lk-grecia { top:36%; left:57%; width:80px; height:65px; }
+	a#lk-turquia { top:33%; left:49%; width:60px; height:85px; }
+	a#lk-egipto { top:47%; left:49%; width:135px; height:90px; }
+
+	@media (max-width: 1199px) {
+		a#lk-china { top:27%; left:73%; background: #2700ff57 !important;}
+		a#lk-grecia { top:29%; left:57%; background: #2700ff57 !important;}
+		a#lk-turquia { top:24%; left:49%; background: #2700ff57 !important;}
+		a#lk-egipto { top:38%; left:49%; background: #2700ff57 !important;}
+	}
+	@media (max-width: 991px) {
+		a#lk-china { top:33%; left:71%; width:14%; height:26%;}
+		a#lk-grecia { top:32%; left:56%; width:12%; height:17%;}
+		a#lk-turquia { top:32%; left:44%; width:12%; height:17%;}
+		a#lk-egipto { top:49%; left:48%; width:14%; height:14%;}
+	}
+	@media (max-width: 767px) {
+		a#lk-china { top:23%;}
+		a#lk-grecia { top:23%; width:14%; height:17%;}
+		a#lk-turquia { top:23%; left:42%; width:14%; height:17%;}
+		a#lk-egipto { top:40%; height:17%;}
+	}
+
+	
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="9">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a03_00_sol1.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a03_00_sol2.jpg' audio='p03_01'></div>
+		<div class="escena" numero='2' imagen='a03_00_sol2.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='3' imagen='a03_00.jpg' audio='silencio01s'></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="app fade" style="position:absolute; top:0px; left:0px;right: 0;bottom: 0; width:100%; height:100%;">
+
+  <a id="lk-china" class="bpopupbutton" href="javacript:;" title="China" style="display:none;"><span>China</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>CHINA</strong></p>
+			<img src="contenidos/modulo01/media/a03_02.jpg" alt="China" style="float:left; margin: 0 30px 0 0;" />
+			<p>en <strong>China</strong> hay evidencia del uso de monedas unos 400 años antes de Cristo. Lo que si se sabe  seguro es que fueron los primeros en utilizar el papel moneda (billetes) en el Siglo IX d.C.</p>
+		</div>
+	</div>
+
+  <a id="lk-grecia" class="bpopupbutton" href="javacript:;" title="Grecia" style="display:none;"><span>Grecia</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>GRECIA</strong></p>
+			<img src="contenidos/modulo01/media/a03_03.jpg" alt="Grecia" />
+			<p style="text-align: center !important;">En la <strong>Grecia antigua</strong> las monedas las empezaron a utilizar en el siglo VII a.C.</p>
+		</div>
+	</div>
+
+  <a id="lk-turquia" class="bpopupbutton" href="javacript:;" title="Lidia (actual Turqu&iacute;a)" style="display:none;"><span>Lidia (actual Turqu&iacute;a)</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>TURQU&Iacute;A</strong></p>
+			<img src="contenidos/modulo01/media/a03_04.jpg" alt="Lidia (actual Turqu&iacute;a)" style="float:left; margin: 0 30px 0 0;" />
+			<p>Las primeras monedas se acuñaron en <strong>LIDIA</strong>, <strong>actual Turquía</strong>, en el Siglo VII a.C., y eran de una aleación de oro y plata.</p>
+		</div>
+	</div>
+
+  <a id="lk-egipto" class="bpopupbutton" href="javacript:;" title="Egipto" style="display:none;"><span>Egipto</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>EGIPTO</strong></p>
+			<img src="contenidos/modulo01/media/a03_05.jpg" alt="Egipto" style="float:left; margin: 0 30px 0 0;" />
+			<p>La moneda en el <strong>antiguo Egipto</strong> no apareció hasta el siglo IV aC. Durante los tres milenios anteriores se utilizaba el intercambio de bienes.</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en los <strong>enlaces</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>

@@ -1,0 +1,48 @@
+/*************************
+ * ESTILOS PARA EL iPad
+ *************************/
+ul.recursos li{
+	margin:0;
+}
+/*
+@media only screen and (max-device-width: 1280px){
+	ul.recursos li{
+		margin:8px 0 0 10px;
+	}
+}*/
+audio{
+	bottom: 0px;
+    display: block !important;
+    position: absolute;
+    right: 0px;
+	}
+/* Generales */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	
+	
+}
+
+
+/************
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .navanterior, .navsiguiente{
+		display:none;
+	}
+}
+**************/
+
+/* Landscape */
+@media only screen and (orientation:landscape) and (min-device-width: 768px) and (max-device-width: 1024px) {
+	
+
+}
+
+/* Portrait */
+@media only screen and (orientation:portrait) {
+
+
+}
+
+
+/***************/

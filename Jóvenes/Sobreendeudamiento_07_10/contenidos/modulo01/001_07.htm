@@ -1,0 +1,98 @@
+﻿
+
+<script>
+	$('.navsiguiente').addClass('inactivo');
+</script>
+
+<style type="text/css">
+.box10 {
+	position: absolute;
+	text-align: center;
+}
+.box10 h3 {
+	position: absolute;
+	color: #E20513;
+	font-size: 90px;
+	font-weight: bold;
+}
+.box10 img {
+	margin-bottom:7px;
+}
+.box10 p {
+	font-size: 15px;
+	text-align: center;
+	line-height: 20px;
+}
+</style>
+
+<h2 class="encabezado_titulo" idtextual="m01p0010t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_read.png"/>
+	<h2 class="titulito" idtextual="m01p0010t01">loading text...</h2>
+</div>
+
+<!-- Titular -->
+<h1 seqid="titulito" style="color:#337AB7; position:absolute; width:910px; top:85px; left:30px; text-align:center; font-weight:bold; text-transform:uppercase;" idtextual="m01p0010t02"></h1>
+
+<div seqid="bloque1" class="box10" style="top:130px; left:60px; width:230px;">
+	<h3 style="top:30px; left:-10px;">1</h3>
+	<img src="./contenidos/modulo01/media/p10_img_01.png"/>
+	<p style="width:230px;" idtextual="m01p0010t03">loading text...</p>
+</div>
+
+<div seqid="bloque2" class="box10" style="top:212px; left:350px; width:230px;">
+	<h3 style="top:-90px; left:100px;">2</h3>
+	<img src="./contenidos/modulo01/media/p10_img_02.png"/>
+	<p style="width:230px;" idtextual="m01p0010t04">loading text...</p>
+</div>
+
+<div seqid="bloque3" class="box10" style="top:148px; left:660px; width:250px;">
+	<h3 style="top:20px; left:10px;">3</h3>
+	<img src="./contenidos/modulo01/media/p10_img_03.png"/>
+	<p style="width:250px;" idtextual="m01p0010t05">loading text...</p>
+</div>
+
+<!-- POPUP -->
+<div seqid="recuerdaque" style="position:absolute; top:400px; left:697px;">
+	<a class="bpopupbutton" onclick="activaBotonSiguiente();" style="z-index:1 !important;"><span idtextual="m01p0010t06">loading text...</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow" style="border: 5px solid #E20513;">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p idtextual="m01p0010t06" class="titulo">loading text...</p>
+			<p idtextual="m01p0010t09" style="text-transform:uppercase; font-size:20px; font-weight:bold; color:#cc0000;">loading text...</p>
+			<p idtextual="m01p0010t10" style="margin-bottom:10px;">loading text...</p>
+			<p style="margin-bottom:10px;">
+				<a href="./contenidos/descargas/cronograma_pagos.pdf" target="_blank">
+					<img src="./contenidos/modulo01/media/pdficon2.png" style="width:35px; height:35px; vertical-align:middle; margin-right:5px;"/>
+					<span idtextual="m01p0010t08" style="font-weight:bold; color:#CC0000;">loading text...</span>
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda04" style="bottom:70px; left:290px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="titulito" start="10" action="righttoleft" />
+
+	<div elem="bloque1" start="50" action="bottomtotop" />
+	<div elem="bloque2" start="70" action="bottomtotop" />
+	<div elem="bloque3" start="90" action="bottomtotop" />
+
+	<div elem="recuerdaque" start="110" action="fade" />
+
+	<div elem="help" start="150" action="fade" />
+
+</div>
+
+<script>
+	function activaBotonSiguiente() {
+		$('.navsiguiente').removeClass('inactivo');
+		$('.navsiguiente').addClass('activo');
+	}
+</script>

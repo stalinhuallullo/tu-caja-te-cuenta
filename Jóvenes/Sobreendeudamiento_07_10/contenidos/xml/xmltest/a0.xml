@@ -1,0 +1,138 @@
+﻿<cuestionario>
+<!-- =========================================== CONFIGURACION =========================================  -->
+<configuracion>
+<aleatorias  num='0' />
+</configuracion>
+
+<preguntas>
+
+<!-- =========================================== PREGUNTA 1 =========================================  -->
+<pregunta cod='0001'  tipo='test' feedback=''  feedback_negativo='' >
+
+<enunciado>
+<![CDATA[¿Enunciado pregunta número 1?]]>
+</enunciado>
+
+<respuestas>
+<respuesta correcta='Falso'  feedback='' >
+<![CDATA[Falso.]]>
+</respuesta>
+<respuesta correcta='Verdadero'  feedback='' >
+<![CDATA[Verdadero.]]>
+</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 2 =========================================  -->
+<pregunta cod='0002'  tipo='test' feedback=''  feedback_negativo='' >
+
+<enunciado>
+<![CDATA[¿Enunciado pregunta número 2?]]>
+</enunciado>
+
+<respuestas>
+<respuesta correcta='Falso'  feedback='' >
+<![CDATA[Falso.]]>
+</respuesta>
+<respuesta correcta='Verdadero'  feedback='' >
+<![CDATA[Verdadero.]]>
+</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 3 =========================================  -->
+<pregunta cod='0003'  tipo='test' feedback=''  feedback_negativo='' >
+
+<enunciado>
+<![CDATA[¿Enunciado pregunta número 3?]]>
+</enunciado>
+
+<respuestas>
+<respuesta correcta='Verdadero'  feedback='' >
+<![CDATA[Falso.]]>
+</respuesta>
+<respuesta correcta='Falso'  feedback='' >
+<![CDATA[Verdadero.]]>
+</respuesta>
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 4 =========================================  -->
+<pregunta cod='0004'  tipo='test' feedback=''  feedback_negativo='' >
+
+<enunciado>
+<![CDATA[¿Enunciado pregunta número 4?]]>
+</enunciado>
+
+<respuestas>
+<respuesta correcta='Verdadero'  feedback='' >
+<![CDATA[Verdadero.]]>
+</respuesta>
+
+<respuesta correcta='Falso'  feedback='' >
+<![CDATA[Falso.]]>
+</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 5 =========================================  -->
+<pregunta cod='0005'  tipo='test' feedback=''  feedback_negativo='' >
+
+<enunciado>
+<![CDATA[¿Enunciado pregunta número 5?]]>
+</enunciado>
+
+<respuestas>
+<respuesta correcta='Falso'  feedback='' >
+<![CDATA[Falso.]]>
+</respuesta>
+<respuesta correcta='Verdadero'  feedback='' >
+<![CDATA[Verdadero.]]>
+</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 6 =========================================  -->
+<pregunta cod='0006'  tipo='test' feedback=''  feedback_negativo='' >
+
+<enunciado>
+<![CDATA[¿Enunciado pregunta número 6?]]>
+</enunciado>
+
+<respuestas>
+<respuesta correcta='Verdadero'  feedback='' >
+<![CDATA[Verdadero.]]>
+</respuesta>
+<respuesta correcta='Falso'  feedback='' >
+<![CDATA[Falso.]]>
+</respuesta>
+
+</respuestas>
+
+</pregunta>
+<!-- =========================================== PREGUNTA 7 =========================================  -->
+<pregunta cod='0007'  tipo='test' feedback=''  feedback_negativo='' >
+
+<enunciado>
+<![CDATA[¿Enunciado pregunta número 7?]]>
+</enunciado>
+
+<respuestas>
+<respuesta correcta='Falso'  feedback='' >
+<![CDATA[Falso.]]>
+</respuesta>
+<respuesta correcta='Verdadero'  feedback='' >
+<![CDATA[Verdadero.]]>
+</respuesta>
+
+</respuestas>
+
+</pregunta>
+
+</preguntas>
+
+</cuestionario>

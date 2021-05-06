@@ -1,0 +1,98 @@
+.proyector{
+	background:url('proyector.png') scroll no-repeat 50% 50% transparent;
+	height: 485px;
+    left: -30px;
+    position: absolute;
+    top: -20px;
+    width: 970px;
+    z-index: 1;
+}
+
+.proyector .diapositivas{
+	position:absolute;
+	right:0;
+	width:210px;
+	height:485px;	
+}
+
+.proyector .diapositivas li{	
+	height: 123px;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 125px;
+	cursor:pointer;
+}
+
+.proyector .diapositivas li span{
+	background:url('diapositiva.png') scroll no-repeat 50% 50% transparent;
+	display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.proyector .diapositivas li p {
+	color: #333333;
+    display: inline;
+    font-size: 11px;
+    height: 94%;
+    left: 0;
+    line-height: 12px;
+    padding: 5%;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 90%;
+    z-index: 1;
+}
+
+.proyector .diapositivas li:hover{
+	z-index:99;
+}
+
+
+.diapositivas div {
+	width:115px;
+	height:115px;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+	background-attachment:scroll;
+	background-color:#ffffff;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.proyector .presentaciones{
+	height: 369px;
+    left: 254px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 68px;
+    width: 486px;
+	overflow:hidden;
+	background:url('fondo-proyector.png') scroll repeat 50% 50% transparent;
+}
+
+.proyector .presentaciones > li{
+	margin: 20px;
+    padding: 0;
+}
+
+
+.proyector .presentaciones h3{
+	color:#087021;
+	font-size: 16px;
+    line-height: normal;
+    margin: 0 0 5px;
+    padding: 0;
+    text-transform: uppercase;	
+}

@@ -1,0 +1,166 @@
+﻿
+
+<!-- BLOQUE #1 -->
+<script>
+	OCULTO="none";
+	VISIBLE="block";
+
+	function mostrar1(blo) {
+		document.getElementById(blo).style.display=VISIBLE;
+		document.getElementById('oculto1').style.display=OCULTO;
+		document.getElementById('visible1').style.display=OCULTO;
+	}
+	function ocultar1(blo) {
+		document.getElementById(blo).style.display=OCULTO;
+		document.getElementById('oculto1').style.display=OCULTO;
+		document.getElementById('visible1').style.display=VISIBLE;
+	}
+</script>
+
+<!-- BLOQUE #2 -->
+<script>
+	OCULTO="none";
+	VISIBLE="block";
+
+	function mostrar2(blo) {
+		document.getElementById(blo).style.display=VISIBLE;
+		document.getElementById('oculto2').style.display=OCULTO;
+		document.getElementById('visible2').style.display=OCULTO;
+	}
+	function ocultar2(blo) {
+		document.getElementById(blo).style.display=OCULTO;
+		document.getElementById('oculto2').style.display=OCULTO;
+		document.getElementById('visible2').style.display=VISIBLE;
+	}
+</script>
+
+<!-- BLOQUE #3 -->
+<script>
+	OCULTO="none";
+	VISIBLE="block";
+
+	function mostrar3(blo) {
+		document.getElementById(blo).style.display=VISIBLE;
+		document.getElementById('oculto3').style.display=OCULTO;
+		document.getElementById('visible3').style.display=OCULTO;
+	}
+	function ocultar3(blo) {
+		document.getElementById(blo).style.display=OCULTO;
+		document.getElementById('oculto3').style.display=OCULTO;
+		document.getElementById('visible3').style.display=VISIBLE;
+	}
+</script>
+
+<!-- BLOQUE #4 -->
+<script>
+	OCULTO="none";
+	VISIBLE="block";
+
+	function mostrar4(blo) {
+		document.getElementById(blo).style.display=VISIBLE;
+		document.getElementById('oculto4').style.display=OCULTO;
+		document.getElementById('visible4').style.display=OCULTO;
+	}
+	function ocultar4(blo) {
+		document.getElementById(blo).style.display=OCULTO;
+		document.getElementById('oculto4').style.display=OCULTO;
+		document.getElementById('visible4').style.display=VISIBLE;
+	}
+</script>
+
+<style type="text/css">
+	#visible1, #bloque1 { position:absolute; width:23.75%; top:0%; left:15.5%; }
+	#visible1 img { width:230px !important; height:218px !important; border:none !important; }
+
+	#visible2, #bloque2 { position:absolute; width:33%; top:3.6%; left:41.6%; }
+	#visible2 img { width:320px !important; height:160px !important; border:none !important; }
+
+	#visible3, #bloque3 { position:absolute; width:39.8%; top:39%; left:0%; }
+	#visible3 img { width:385px !important; height:312px !important; border:none !important; }
+
+	#visible4, #bloque4 { position:absolute; width:24.8%; top:32%; left:61.8%; }
+	#visible4 img { width:240px !important; height:180px !important; border:none !important; }
+
+	@media (max-width: 1199px) {
+		#visible1, #bloque1 { top:0%;  background: #2700ff57 !important; }
+		#visible2, #bloque2 { top:3.5%;  background: #2700ff57 !important; }
+		#visible3, #bloque3 { top:38%;  background: #2700ff57 !important; }
+		#visible4, #bloque4 { top:31.5%;  background: #2700ff57 !important; }
+	}	
+	@media (max-width: 991px) {
+		#visible2, #bloque2 { top:3.5%; }
+		#visible3, #bloque3 { top:39.5%; }
+		#visible4, #bloque4 { top:32.5%; }
+	}
+	@media (max-width: 767px) {
+		#visible3, #bloque3 { top:36.4%; }
+		#visible4, #bloque4 { top:29.7%; }
+	}
+	@media (max-width: 650px) {
+		#visible2, #bloque2 { top:3.1%; }
+		#visible3, #bloque3 { top:35.4%; }
+		#visible4, #bloque4 { top:29.1%; }
+	}
+	@media (max-width: 550px) {
+		#visible2, #bloque2 { top:2.9%; }
+		#visible3, #bloque3 { top:31.4%; }
+		#visible4, #bloque4 { top:26.1%; }
+	}
+</style>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="12">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a08_01.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a08_02.jpg' audio='p08_01'></div>
+		<div class="escena" numero='2' imagen='a08_01.jpg' audio='silencio01s'></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="app fade" style="position:absolute; top:0px; left:0px; width:100%; height:100%; background:url(media/a08_01.jpg)">
+	<!-- BLOQUE #1 -->
+	<div id="visible1">
+		<a href="javascript:;" onclick="mostrar1('bloque1'); return false"><img src="contenidos/modulo01/media/pixel.gif" /></a>
+	</div>
+	<div id="oculto1" style="display: none"><a href="#" onclick="ocultar1('bloque1'); return false">Ocultar bloque1</a></div>
+	<div id="bloque1" style="display: none"><img src="contenidos/modulo01/media/a08_03.jpg"  style="width: 100%;"/></div>
+	<!-- /BLOQUE #1 -->
+
+	<!-- BLOQUE #2 -->
+	<div id="visible2">
+		<a href="javascript:;" onclick="mostrar2('bloque2'); return false"><img src="contenidos/modulo01/media/pixel.gif" /></a>
+	</div>
+	<div id="oculto2" style="display: none"><a href="#" onclick="ocultar2('bloque2'); return false">Ocultar bloque2</a></div>
+	<div id="bloque2" style="display: none"><img src="contenidos/modulo01/media/a08_04.jpg"  style="width: 100%;"/></div>
+	<!-- /BLOQUE #2 -->
+
+	<!-- BLOQUE #3 -->
+	<div id="visible3">
+		<a href="javascript:;" onclick="mostrar3('bloque3'); return false"><img src="contenidos/modulo01/media/pixel.gif" /></a>
+	</div>
+	<div id="oculto3" style="display: none"><a href="#" onclick="ocultar3('bloque3'); return false">Ocultar bloque3</a></div>
+	<div id="bloque3" style="display: none"><img src="contenidos/modulo01/media/a08_05.jpg"  style="width: 100%;"/></div>
+	<!-- /BLOQUE #3 -->
+
+	<!-- BLOQUE #4 -->
+	<div id="visible4">
+		<a href="javascript:;" onclick="mostrar4('bloque4'); return false">
+			<img src="contenidos/modulo01/media/pixel.gif" />
+		</a>
+	</div>
+	<div id="oculto4" style="display: none"><a href="#" onclick="ocultar4('bloque4'); return false">Ocultar bloque4</a></div>
+	<div id="bloque4" style="display: none"><img src="contenidos/modulo01/media/a08_06.jpg"  style="width: 100%;"/></div>
+	<!-- /BLOQUE #4 -->
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en las <strong>CUATRO zonas</strong> donde encuentres movimiento o intercambio de dinero.
+	</div>
+</div>

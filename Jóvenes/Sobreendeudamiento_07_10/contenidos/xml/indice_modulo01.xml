@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<unidad titulo="">
+
+	<configuracion>
+		<curso>FEPCMAC</curso>
+		<ud>Cómo evitar el sobreendeudamiento</ud>
+		<portada activada="si" src="portada"  />
+		<retos num='0' tipo='...' />
+	<!--<calculoPuntuacion  retos="0" practicas="0" contenidos="100" completarpor="contenidos_score" puntuacionminima="100" />-->
+		<calculoPuntuacion  retos="0" practicas="0" contenidos="100" completarpor="contenidos" puntuacionminima="100" />
+	</configuracion>
+
+	<contenido  ruta="contenidos/modulo01">
+
+		<apartado	id="int"	tipo="apartado"	titulo="Objetivos del curso"												src="000_00"	audio="noaudio">
+		</apartado>
+
+		<apartado	id="int"	tipo="apartado"	titulo="Contexto a tener en cuenta"											src="000_01"	audio="noaudio">
+		</apartado>
+
+		<apartado	id="int"	tipo="apartado"	titulo="Módulo 1. Controlar mis finanzas"									src="001_00">
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="001_01"	audio="AP5"		visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="001_02"	audio="CONV_1"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="001_03"	audio="AP7_FB"	visible="false" audiostart="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="001_04"	audio="AP8"		visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="001_05"	audio="AP9"		visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="001_06"	audio="AP10"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="001_07"	audio="AP11_OK"	visible="false"></pagina>
+		</apartado>
+
+		<apartado	id="int"	tipo="apartado"	titulo="Módulo 2. Cómo analizar un crédito"									src="002_00"	audio="noaudio">
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="002_01"	audio="AP13"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="002_02"	audio="CONV_2"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="002_03"	audio="AP15_1"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="002_04"	audio="AP15_OK"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="002_05"	audio="AP17"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="002_06"	audio="AP18"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="002_07"	audio="AP19"	visible="false"></pagina>
+		</apartado>
+
+		<apartado	id="int"	tipo="apartado"	titulo="Módulo 3. Las instituciones financieras reguladas y no reguladas"	src="003_00"	audio="noaudio">
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="003_01"	audio="AP21"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="003_02"	audio="CONV_3"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="003_03"	audio="AP23_OK"	visible="false" audiostart="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="003_04"	audio="AP24"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="003_05"	audio="AP25_1"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="003_06"	audio="AP26"	visible="false"></pagina>
+		</apartado>
+
+		<apartado	id="int"	tipo="apartado"	titulo="Módulo 4. La información sobre los créditos"						src="004_00"	audio="noaudio">
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_01"	audio="AP28"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_02"	audio="CONV_4"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_03"	audio="AP30_1"	visible="false" audiostart="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_04"	audio="AP31"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_05"	audio="AP32"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_06"	audio="CONV_5"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_07"	audio="AP34"	visible="false"></pagina>
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="004_08"	audio="AP35_1"	visible="false"></pagina>
+		</apartado>
+
+	<!--<apartado	id="int"	tipo="apartado"	titulo="Módulo 5. Resumen"													src="005_00"	audio="">
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="005_01"	audio=""		visible="false"></pagina>
+		</apartado>-->
+
+		<apartado	id="int"	tipo="apartado"	titulo="Resumen"															src="005_01"	audio="AP36_OK">
+			<pagina	id="int"	tipo="pag"		titulo=""																	src="005_02"	audio="noaudio"	visible="false"></pagina>
+		</apartado>
+
+	</contenido>
+</unidad>

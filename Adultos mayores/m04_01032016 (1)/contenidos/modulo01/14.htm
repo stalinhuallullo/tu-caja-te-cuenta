@@ -1,0 +1,88 @@
+﻿<style type="text/css">
+	div.ejerciciocompletar { position:absolute; top:25px; left:20px; z-index: 1 !important; }
+	div.divejertable { width:750px; }
+	table.ejertable { width:100% !important; }
+	table.ejertable td { font-size:130%; line-height:120%; padding: 10px; vertical-align:middle; border-bottom: 1px solid #ccc; }
+	table.ejertable td.gray { background: #eee; }
+	table.ejertable select {border: 1px solid #E2001A; font-size:100% !important; }
+	/**/
+	.botoneraejercicios {
+		bottom: -45px !important;
+		position: absolute !important;
+		right: 1% !important;
+	}
+</style>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="9">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+        
+
+		<div class="escena" numero='0' imagen='a12_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+		<div class="escena" numero='1' imagen='' audio='Presentadoraud416' habla="narrador" bocadillo="" flecha="rt" bleft="375" btop="135" bwidth="390" oculta="" muestra="">
+        	<span>Según lo visto hasta ahora, di si son verdaderas o falsas las siguientes afirmaciones...</span>
+        </div>
+
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="789" ptop="25" alto="433"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div	class="ejerciciocompletar app fade"
+		intentos="3"
+		desactivanavegacion="false"
+		msg_vacio="Tienes que contestar todas las preguntas."
+		msg_error="Piensa mejor las respuestas e inténtalo otra vez."
+		msg_ko="A continuación te facilitamos las respuestas correctas."
+		msg_ok="¡Muy bien, has acertado todas las respuestas!"
+		msg_ayuda="Selecciona una de las opciones (verdadero o falso) para cada pregunta, y después haz clic en COMPROBAR.">
+
+		<div>
+
+			<div class="divejertable">
+			<table class="ejertable">
+				<tr>
+					<td>Las empresas del sistema financiero deberán tener a disposición del público solo la información referente a las tasas de interés y las comisiones.</td>
+					<td><input size="8" class="texto toselect" obligatoria="true" value='' opciones ='VERDADERO,FALSO' correcta="FALSO"></td>
+				</tr>
+                <tr>
+					<td class="gray">A través de la Banca Móvil puedes recargar el celular de cualquier operador.</td>
+					<td class="gray"><input size="8" class="texto toselect" obligatoria="true" value='' opciones ='VERDADERO,FALSO' correcta="VERDADERO"></td>
+				</tr>
+                <tr>
+					<td>La atención por ventanilla permite operaciones tales como retiro de efectivo, depósitos de efectivo, pagos, transferencias, etc.</td>
+					<td><input size="8" class="texto toselect" obligatoria="true" value='' opciones ='VERDADERO,FALSO' correcta="VERDADERO"></td>
+				</tr>
+                <tr>
+					<td class="gray">Cuando contratamos algún servicio financiero, el único costo será el de la cuota a pagar para devolver el crédito.</td>
+					<td class="gray"><input size="8" class="texto toselect" obligatoria="true" value='' opciones ='VERDADERO,FALSO' correcta="FALSO"></td>
+				</tr>
+			</table>
+			</div>
+
+			<div class="clear">&nbsp;</div>
+
+		</div>
+
+</div>
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Di si son verdaderas o falsas las siguientes afirmaciones, y pulsa en <strong>'Comprobar'</strong>.
+	</div>
+</div>
+
+
+
+
+<div class="mensaje bpopupwindow hideprint" title=""> 
+	<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+	<img src="../../interfaz/tema/media/htmltest/inf_incorrecto.png" border="0" class="imagen_izquierda" />
+	<p class="titulo"></p>
+	<p class="texto_mensaje"></p>
+</div>

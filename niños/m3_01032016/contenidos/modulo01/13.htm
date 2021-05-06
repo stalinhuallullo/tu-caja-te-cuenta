@@ -1,0 +1,106 @@
+﻿
+<style type="text/css">
+	.botoneraejercicios{
+		position:absolute;
+		bottom:140px !important;
+		right:33% !important;
+	}
+	select.selectejercicio { border: 1px solid #E2001A; font-size:100% !important; width: 100%; }
+
+	.content-input{
+		position: relative;
+    	top: 52%;
+		width: 70%;
+    	margin: 0 auto;
+	}
+	.content-input .encuadrado{
+		width: calc(100%/ 4) !important;
+		float: left;
+	}
+	@media (max-width: 991px){
+		/*#cuerpo, .contentArea, #fab20_body, #ventana-dialogo {
+			height: 493px !important;
+		}*/
+		.ayuda{
+			display: block;
+		}
+		.botoneraejercicios{
+			bottom: 80px !important;
+    		right: 26% !important;
+		}
+	}
+</style>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="11">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a13_00.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a13_01.jpg' audio='30'></div>
+		<div class="escena" numero='2' imagen='a13_00.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='3' imagen='a13_02.jpg' audio='silencio01s'></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+	<div	class="ejerciciocompletar app fade reto" style="position:absolute; top:0px; left:0px; width:100%; height:100%;"
+
+			reto="2"
+			intentos="3"
+			msg_vacio="Has dejado campos en blanco, debes rellenar todos los huecos necesarios."
+			msg_error="Reflexiona sobre las cuestiones dadas en este tema"
+			msg_ko="A continuación te facilitamos las respuestas correctas."
+			msg_ok="Correcto, has acertado todas las respuestas."
+			msg_ayuda="Elige la opción más adecuada para responder a la pregunta, y después, pulsa en COMPROBAR.">
+
+			<div class="content-input">
+
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='GASTOS,INGRESOS' correcta="GASTOS"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='GASTOS,INGRESOS' correcta="INGRESOS"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='GASTOS,INGRESOS' correcta="GASTOS"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='GASTOS,INGRESOS' correcta="INGRESOS"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+            
+				<div class="clear">&nbsp;</div>
+			</div>
+     </div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Indica si cada concepto es GASTO ó INGRESO, y después pulsa en 'Comprobar'.
+	</div>
+</div>
+
+<!--style type="text/css">
+	.underlined-block { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #ccc; font-size:70%}
+	.underlined-block strong { color: #dc291e}
+</style-->

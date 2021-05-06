@@ -1,0 +1,91 @@
+html, body{
+	height:100%;
+}
+
+body {
+	background: #fff;
+	font-family: 'Calibri', Helvetica, sans-serif;
+	color: rgb(51, 51, 51);
+}
+.contenedor {
+	font-size: 1em;
+	font-size-adjust: inherit;
+	line-height: 1.5em;
+	margin: 0 auto;
+	width: 90%;
+	padding: 5% 0 0 0;
+	font-family: 'Calibri Bold', Helvetica, sans-serif;
+}
+.contenedor .contenedor_izda {
+	float: left;
+	width: 48%;
+	padding: 0 2% 0 0;
+	text-align: right;
+	text-transform: uppercase;
+}
+.contenedor .contenedor_dcha {
+	float: right;
+	width: 48%;
+	padding: 0 0 0 2%;
+	text-align: left;
+	text-transform: uppercase;
+	background-image: url(../images/087021.jpg);
+	background-repeat: repeat-y;
+}
+.contenedor .contenedor_izda h2,
+.contenedor .contenedor_dcha h2 { font-size: 1.7em; margin: 0 0 0.25em 0; }
+.contenedor .contenedor_izda span { font-size: 2em; color: #087021; }
+.contenedor .contenedor_dcha span { font-size: 2em; color: #469459; }
+
+.btn_acceder { width: 130px; margin: 0 auto; }
+.btn_acceder a {
+	width: 130px;
+	font-size: 2.1em;
+	font-weight: normal !important;
+	background-color: #087021;
+	color: #fff;
+	/**/
+		-ms-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+	/**/
+	padding: 10px 25px;
+	display: inline-block;
+	margin: 40px 0px 0px 30px;
+}
+	.btn_acceder a:hover { background-color:#469459; }
+	.btn_acceder a img.acceder { left: 10px; position: relative; top: 0px; vertical-align: sub; }
+
+div.cliente { width: 203px; margin: 0 auto; padding: 2.5em 0 0 0; text-align: center; }
+div.ingenia { width: 107px; margin: 0 auto; padding: 1em 0 0 0; text-align: center; font-size: 1.1em; color: rgb(100, 100, 100); }
+
+	.contenedor .clearflt { clear: both; width: 1px !important; height: 1px !important; }
+	.contenedor .clearflt hr { visibility: hidden; width: 1px !important; height: 1px !important; }
+
+
+@media all and (min-width: 480px) {
+	.contenedor { width: 80%; }
+	.contenedor .contenedor_izda span { font-size: 2.2em; }
+	.contenedor .contenedor_dcha span { font-size: 2.2em; }
+}
+
+@media all and (min-width: 640px) {
+	.contenedor { width: 70%; }
+	.contenedor .contenedor_izda span { font-size: 2.4em; }
+	.contenedor .contenedor_dcha span { font-size: 2.4em; }
+}
+
+@media all and (min-width: 800px) {
+	.contenedor { line-height: 1.9em; width: 50%; }
+	.contenedor .contenedor_izda span { font-size: 2.7em; }
+	.contenedor .contenedor_dcha span { font-size: 2.7em; }
+}
+
+/**/
+table.labancatecuenta { max-width: 800px; }
+table.labancatecuenta h1 span,
+table.labancatecuenta a#accedercurso span { position: absolute !important; top: -10000px !important; display: none !important; width: 1px !important; height: 1px !important; }
+table.labancatecuenta a#accedercurso { display: block; width: 200px; height: 200px; background: url(../images/btn.jpg) no-repeat 0px 0px; }
+table.labancatecuenta a#accedercurso:hover { background-position: 0px -200px; }

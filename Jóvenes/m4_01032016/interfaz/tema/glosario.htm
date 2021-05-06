@@ -1,0 +1,171 @@
+﻿<div id="contenedor_glosario">
+
+	
+	<div class="clear"></div>
+	<div id="glosarioIndice_letras"></div>
+	<div id="formularioBusqueda">Buscar: <input type="text" id="txtbusqueda"  size='30'/><button class='btnGlos' onclick="buscar('')" >Buscar</button><button class='btnGlos' onclick="activarGlosario()" >ABC...</button> </div>
+    			
+                
+    <div class="contenedor_glosario_contenido">
+	   	<div id="formularioBusqueda"></div>
+    	<div class='bloque_letras' id='todas'></div>
+	</div>
+</div>
+
+<script>
+
+	var primeroConDatos=""
+	var actual=""
+	
+		$.ajax({
+		  type: 'GET',
+		  url: 'contenidos//xml//glosario_modulo01.xml',
+		  cache: false,
+		  dataType: ($.browser.msie) ? 'text' : 'xml', // Reconocemos el browser.
+		  success: function(data){
+			var xml;
+			if(typeof data == 'string'){
+			  xml = new
+			  ActiveXObject('Microsoft.XMLDOM');
+			  xml.async = false;
+			  xml.loadXML(data);
+			} else {
+			  xml = data;
+			}
+			
+			//$("#todas").fadeIn()
+			
+			
+			$(xml).find('letra').each(function(){			
+			 var id = $(this).attr('id');
+			 
+			 if($(this).find('palabra').length>0)  // Solo mostramos los bloques que tengan datos
+			 {
+			 		
+					 if(primeroConDatos=="") primeroConDatos="#contenido_" + id
+						// alert("id='contenido_"+id)
+					 	$('.contenedor_glosario_contenido').append("<div class='bloque_letras' id='contenido_"+id+"'></div>");
+					 	$('#contenido_'+id).append("<span class='letra'>"+id+"</span>");
+					  	$(this).find('palabra').each(function(){			
+						var nombre = $(this).attr('nombre');
+						var valor = $(this).text();
+						$('#contenido_'+id).append("<p class='palabra'>"+nombre+"</p><p class='descripcion'>"+ valor + "</p>");
+						$("#todas").append("<div class='palabraBusqueda'  palabra='"+ nombre +"' ><p class='palabra'>"+nombre+"</p><p class='descripcion'>"+ valor + "</p></div>");
+					  });			  
+			  }
+			  
+			  
+			});
+			
+			
+			// Si tenemos una cadena de busqueda en el interfaz, no mostramos el contenido de la primera letras, si no la lista de palabras para la busqueda.
+			if((GLOSARY_STRING_SEARCH!="")&&(GLOSARY_STRING_SEARCH!=undefined))
+			{
+				actual=primeroConDatos;
+				$("#glosarioIndice_letras").css("display","none")			
+			}
+			else
+			{
+				$(primeroConDatos).fadeIn()
+				actual=primeroConDatos;
+
+			}
+	
+		
+			// Indice del glosario
+			
+			var abc=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+		 	var strabc=""
+			var aux
+			for(i in abc)
+			{
+				
+				aux="#contenido_"+ abc[i].toLowerCase()
+				
+				if( $("#contenedor_glosario").find(aux).length>0)  // si se ha creado una capa con palabras para dicha letra
+				{
+						//alert( aux + " - " + $("#contenedor_glosario").find(aux).length)
+					strabc=strabc + "<span class='letra' id='indiceGlosario" + abc[i]+"' >"+ abc[i]+"</span>"
+				}				
+				else
+				{
+					//alert(aux + "  " + $("#contenedor_glosario").find(aux).length )
+					strabc=strabc + "<span class='letraOff' id='indiceGlosario" + abc[i]+"' >"+ abc[i]+"</span>"
+				}
+			
+			}
+			strabc=strabc + "<div class='lupa' id='lupa'></div>"
+			
+
+			var tmp=
+			$("#glosarioIndice_letras").html(strabc)			
+			$("#glosarioIndice_letras .letra").click(function(evento){
+				$('.letra').removeClass('activa')															  
+				$(this).addClass('activa')											  	
+				tmp="#contenido_"+ ($(this).text()).toLowerCase()
+				//alert(tmp)//$(this).text())
+				//alert($(tmp).toString())  //.css("display","none")
+					//alert(tmp +  " es igual a '#contenido_a' ? " + (tmp=="#contenido_a"))
+					
+					$(tmp).css("display","none")
+					$(actual).fadeOut(function(){
+					
+						$(tmp).fadeIn();
+						actual=tmp;
+					});
+					
+					
+			})
+			
+			$("#lupa").click(function(){			
+				activarBuscador()
+			})
+
+			//alert("glosario cargado")
+			
+		
+			if((GLOSARY_STRING_SEARCH!="")&&(GLOSARY_STRING_SEARCH!=undefined))
+			{
+				//alert(GLOSARY_STRING_SEARCH)
+				activarBuscador()			
+				buscar(GLOSARY_STRING_SEARCH)
+				GLOSARY_STRING_SEARCH=""
+			}
+		}
+		
+
+	});
+
+		
+
+		function activarGlosario()
+			{
+					
+				$("#todas").fadeOut(function(){
+					
+				 $(actual).fadeIn();
+				}
+				);
+				
+				$("#formularioBusqueda").fadeOut(
+				function(){
+						$("#glosarioIndice_letras").fadeIn()
+				
+				})
+				
+			
+			}
+			
+//$(F20_CAPA_TITULOPAGINA).html("<h1 class='contenido'>Glosario</h1>")
+
+//implementar tips
+</script>
+
+
+<script>
+$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'> BIBLIOTECA</div><div class='subtitulo'> Términos mas relevantes en la unidad </div>")
+
+</script>
+
+<button class="btn_volver" onclick="volverToContent()">volver al contenido</button>
+

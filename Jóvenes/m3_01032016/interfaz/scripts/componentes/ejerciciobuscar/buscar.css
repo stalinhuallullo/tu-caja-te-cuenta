@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************************
+ * EJERCICIO BUSCAR ELEMENTOS
+ * Autor: F.J.L.G.
+ * Fecha Creacion : 08 08 2014
+ * Escindido de la estructura anterior de JS y CSS
+ *********************************/
+
+#ejerciciobuscar #datos{
+	width:100%;
+	position: absolute;
+	top:-10px;
+	left:-20px;
+}
+
+#ejerciciobuscar #datos p{
+	display:inline;
+}
+	
+
+#ejerciciobuscar #datos .hoverblack{
+	background: url("../../media/help_bg.png") repeat scroll 0 0 #000;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 19px;
+    margin: 0 2px 0 0;
+    padding: 3px 10px;
+	 
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#cargador-imagen{
+	height: 485px;
+    left: -30px;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+    width: 970px;
+}
+
+#cargador-imagen div{
+	position:absolute;
+	cursor:pointer;
+	background:#FFFFFF;	
+	
+}
+
+#cargador-imagen div.encontrado{
+	cursor:default;
+}
+
+#cargador-imagen div p{
+	display:none;
+}
+
+#mensaje-encontrado{
+	background: none repeat scroll 0 0 #EEEEEE;
+    padding: 0 10px;
+    position: absolute;
+	display:none;
+}
+
+.mensaje-encontrado{
+	color: #515151;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+	margin:0 5px;
+	padding:0;
+	display:table-cell;
+	vertical-align:middle;
+}

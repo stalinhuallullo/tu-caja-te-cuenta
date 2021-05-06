@@ -1,0 +1,79 @@
+﻿
+
+<style type="text/css">
+	div.ejerciciocompletar { position:absolute; top:280px; left:210px; z-index: 1 !important; }
+	div.divejertable { width:640px; }
+	table.ejertable { width:100% !important; }
+	table.ejertable td { font-size:135%; line-height:120%; padding: 10px; vertical-align:middle; border-bottom: 1px solid #ccc;}
+	table.ejertable td.gray { }
+	table.ejertable select { border: 1px solid #E2001A; font-size:100% !important; }
+	/**/
+	.botoneraejercicios {
+		position: absolute !important;
+		bottom: -50px !important;
+		right: 38% !important;
+	}
+</style>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="11">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+        
+
+		<div class="escena" numero='0' imagen='a12_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+		<div class="escena" numero='1' imagen='' audio='PresentadoraUD317' habla="narrador" flecha="lt" bleft="190" btop="120" bwidth="340" oculta="" muestra="">
+        	<span>Ahora te toca a ti. Según lo visto, coloca cada imagen en su lugar correcto.</span>
+        </div>
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="23" ptop="23" alto="440"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+<div class="clear">&nbsp;</div>
+
+<div	class="ejerciciocompletar app fade"
+		intentos="3"
+		desactivanavegacion="false"
+		msg_vacio="Tienes que contestar todas las preguntas."
+		msg_error="Piensa mejor las respuestas e inténtalo otra vez."
+		msg_ko="A continuación te facilitamos las respuestas correctas."
+		msg_ok="¡Muy bien, has acertado todas las respuestas!"
+		msg_ayuda="Selecciona la opción correcta para cada imagen, y Pulsa después en COMPROBAR.">
+
+		<div>
+
+			<div class="divejertable">
+			<table class="ejertable">
+				<tr>
+					<td class="gray">&nbsp; <input size="8" class="texto toselect" obligatoria="true" value='' opciones ='FIJOS,VARIABLES' correcta="FIJOS"></td>
+					<td class="gray">&nbsp; <input size="8" class="texto toselect" obligatoria="true" value='' opciones ='FIJOS,VARIABLES' correcta="VARIABLES"></td>
+					<td class="gray">&nbsp; <input size="8" class="texto toselect" obligatoria="true" value='' opciones ='FIJOS,VARIABLES' correcta="VARIABLES"></td>
+					<td class="gray">&nbsp; <input size="8" class="texto toselect" obligatoria="true" value='' opciones ='FIJOS,VARIABLES' correcta="FIJOS"></td>
+					<td class="gray">&nbsp; <input size="8" class="texto toselect" obligatoria="true" value='' opciones ='FIJOS,VARIABLES' correcta="VARIABLES"></td>
+				</tr>
+			</table>
+			</div>
+
+			<div class="clear">&nbsp;</div>
+
+		</div>
+
+</div>
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Selecciona la opción correcta para cada imagen, y Pulsa después en <strong>'Comprobar'</strong>.
+	</div>
+</div>
+
+
+
+
+<div class="mensaje bpopupwindow hideprint" title=""> 
+	<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+	<img src="../../interfaz/tema/media/htmltest/inf_incorrecto.png" border="0" class="imagen_izquierda" />
+	<p class="titulo"></p>
+	<p class="texto_mensaje"></p>
+</div>

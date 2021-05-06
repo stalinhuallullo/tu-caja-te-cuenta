@@ -1,0 +1,79 @@
+﻿
+
+<style type="text/css">
+	a.bpopupbutton {
+		background:none !important;
+		border:none !important;
+		/**/
+		-webkit-border-radius: 0px !important;
+		-moz-border-radius: 0px !important;
+		-o-border-radius: 0px !important;
+		-ms-border-radius: 0px !important;
+		border-radius: 0px !important;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	/**/
+	a#lk-gastos, a#lk-ingresos { position:absolute; background: #8500ff8c !important; }	
+	a#lk-gastos span,
+	a#lk-ingresos span { position:absolute; top:-10000px; display:none; visibility:hidden; width:0px; height:0px; }
+
+	
+	a#lk-gastos { top: 17%; left: 29%; width: 22%; height: 41%; }
+	a#lk-ingresos { top: 17%; left: 58%; width: 21%; height: 51%; }
+	
+
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="15">
+	
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a02_01.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a02_02.jpg' audio='05'></div>
+		<div class="escena" numero='2' imagen='a02_03.gif' audio='silencio01s'></div>
+
+	</div>
+	
+</div>
+
+<div class="app fade" style="width:100%; height:100%;">
+
+	<a id="lk-gastos" class="bpopupbutton" href="javacript:;" title="Gastos" style="display:none;"><span>Gastos</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Gastos</strong></p>
+			<p class="centrado"><img src="contenidos/modulo01/media/a02_05.jpg" alt="Gastos" style="width: 100%;"/></p>
+		</div>
+	</div>
+
+	<a id="lk-ingresos" class="bpopupbutton" href="javacript:;" title="Ingresos" style="display:none;"><span>Ingresos</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Ingresos</strong></p>
+			<p class="centrado"><img src="contenidos/modulo01/media/a02_04.jpg" alt="Ingresos" style="width: 100%;"/></p>
+		</div>
+	</div>
+
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en los <strong>enlaces</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>

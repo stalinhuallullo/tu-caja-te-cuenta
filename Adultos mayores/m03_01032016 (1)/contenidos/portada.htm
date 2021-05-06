@@ -1,0 +1,39 @@
+﻿<div id="imagen-portada"></div>
+
+<div id="mensaje-portada" class="encuadrado grey-01"></div>
+
+<div class="imagen_acceder" onclick="indiceUnidad.firstPage()" title="acceder al contenido">acceder</div>
+<div id="recuperarPosicion" class="imagen_continuar" onclick="SCORM_accederUltimaPaginaAccedida()" title="Continuar la sesion">continuar</div>
+
+<script>	
+	var mensaje = ""
+	var curso = "Comunicación Institucional de la Junta de Andalucía"
+	var unidad = "Unidad 1: Introducción a la comunicación institucional"
+	//msg_debug(SCORM_ultimoAcceso)
+	if((SCORM_ultimoAcceso!="")&&(SCORM_ultimoAcceso!="1"))
+	{	
+ 		mensaje = "Le damos la bienvenida al curso <span>" + curso + "</span>. Pulse el botón <strong>&#8220;acceder&#8221;</strong> si desea comenzar la <span>"+ unidad +"</span> desde el principio o el botón <strong>&#8220;continuar&#8221;</strong> si desea volver a la página en la que lo cerró la última vez."
+		$('#recuperarPosicion').css('display', 'block');
+	} else {
+		$('#recuperarPosicion').css('display', 'none');
+		$('.imagen_acceder').css('right', '215px')
+		mensaje = "Le damos la bienvenida al curso <span>" + curso + "</span>. Pulse el botón <strong>&#8220;acceder&#8221;</strong> para comenzar a ver los contenidos de la <span>"+ unidad +"</span>."
+	}
+	
+	$('#mensaje-portada').html(mensaje);	
+	$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'> "+ curso +"</div><div class='subtitulo'> "+ unidad +" </div>")
+	
+	desactivaNavegacion();
+	
+	$('.imagen_acceder').click(function(){		
+		activaNavegacion();
+		$('.navanterior').addClass('inactivo');
+	});
+	
+	$('.imagen_continuar').click(function(){		
+		activaNavegacion();
+	});
+	
+		
+	$('#nombre-curso').html(curso)
+</script>

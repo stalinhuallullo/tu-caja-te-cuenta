@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <TITLE>FEPCMAC</TITLE>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="author" content="INGENIA" />
+        <link type="image/x-icon" href="favicon.png" rel="icon">
+        <link rel="stylesheet" type="text/css" href="interfaz/tema/css/estilos/style3.css" />
+		<!--[if lt IE 10]>
+				<link rel="stylesheet" type="text/css" href="interfaz/tema/css/estilos/style3IE.css" />
+		<![endif]-->
+
+		<!--  LIBRERIAS REQUERIDAS PARA PODER LEER LOS TEXTUALES  -->
+		<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/jquery.min.js"></script>
+		<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/ajax_fab20lib.js" > </script> 
+		<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/xml_ajax_fab20.js" > </script> 
+		<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/utiles/textuales.js" ></script> 
+		<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/fab20_jqueryWidgets.js" > </script> 
+		<script src="interfaz/scripts/interfaz/utl_initcontent.js" > </script>
+		<!-- <script src="interfaz/scripts/interfaz/SCRIPT_initcontent.js" > </script> -->
+
+		<script>
+			$(document).ready(function() {actualizaTextuales()})
+		</script>
+
+		<style type="text/css">
+			div.container {
+				background: url('./interfaz/tema/media/portada/globo.png') no-repeat scroll 30% 0% transparent;
+			}
+			div#curso {
+				letter-spacing: -1px !important;
+				color: #FFFFFF;
+				/**/
+				-ms-text-shadow:		3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+				-moz-text-shadow:		3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+				-o-text-shadow:			3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+				-webkit-text-shadow:	3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+				text-shadow:			3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+			}
+		</style>
+    </head>
+    <body>	
+		<table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td style="vertical-align:middle">          
+			<div class="container">
+				<div id="curso" idtextual="indextxt01" >loading text...</div>
+				<div id="contenido" idtextual="indextxt02">loading text...</div>
+				<div id="logotipo"></div>
+				<div id="audio" idtextual="indextxt03">loading text...</div>
+				<div id="acceder" style="margin-top:20px;">
+					<a href="#" onClick='abrircurso("interfaz.html?SCO=modulo01")'><span idtextual="indextxt04">loading text...</span></a>
+				</div>
+			</div>
+		</td></tr></table>
+    </body>
+</html>

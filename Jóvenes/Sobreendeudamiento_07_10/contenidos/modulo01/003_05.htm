@@ -1,0 +1,152 @@
+﻿
+
+<script>
+	$('.navsiguiente').addClass('inactivo');
+</script>
+
+<style type="text/css">
+.box24 {
+	position: absolute;
+}
+.box24 p {
+	font-size:18px;
+	line-height:19px;
+}
+.box24 div.bl_img {
+	float:left;
+	width:110px;
+	text-align:center;
+}
+.box24 div.bl_img img {
+}
+.box24 p.p_rgt {
+	width: 350px;
+	font-weight: normal;
+	text-align: justify;
+	font-size: 14px;
+}
+/**/
+.bpopupwindow a {
+	font-size:18px;
+	font-weight:bold;
+	color:#CC0000;
+	text-align:left;
+}
+.bpopupwindow a:hover {
+	color:#990000;
+	text-decoration:underline;
+}
+</style>
+
+<h2 class="encabezado_titulo" idtextual="m01p0024t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_read.png"/>
+	<h2 class="titulito" idtextual="m01p0024t01">loading text...</h2>
+</div>
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<!-- Bocadillos -->
+<div seqid="bocadillo_01" style="left:440px; top:160px; width:300px;" class="bocadillo dialogo rt" idtextual="m01p0024t02" >loading text...</div>
+
+<!-- CONTENT -->
+<div seqid="bloque1" class="box24" style="top:190px; left:50px; width:70px;">
+	<img src="./contenidos/modulo01/media/p24_img_01.png" style="margin-bottom:7px; width:100%; height:100%;"/>
+	<p style="width:70px; font-weight:bold; text-align:center;" idtextual="m01p0024t03">loading text...</p>
+</div>
+
+<div seqid="arrow" style="position:absolute; top:220px; left:142px;">
+	<img src="./contenidos/modulo01/media/arrow3_r.png" style="width:60px; height:50px;"/>
+</div>
+
+<div seqid="bloque2" class="box24" style="top:180px; left:220px; width:120px;">
+	<img src="./contenidos/modulo01/media/p24_img_02.png" style="margin-bottom:10px; width:100%; height:100%;"/>
+	<p style="width:120px; font-weight:bold; text-align:center;" idtextual="m01p0024t04">loading text...</p>
+</div>
+
+<div seqid="corchete" style="position:absolute; top:95px; left:370px;">
+	<img src="./contenidos/modulo01/media/corchete.png" style="opacity:0.5;"/>
+</div>
+
+<div seqid="bloque3" class="box24" style="top:70px; left:420px;">
+	<div class="bl_img"><img src="./contenidos/modulo01/media/p24_img_03.png" style="width:60%; height:60%;"/></div>
+	<p class="p_rgt" style="margin-top:20px;" idtextual="m01p0024t05">loading text...</p>
+</div>
+
+<div seqid="bloque4" class="box24" style="top:150px; left:420px;">
+	<div class="bl_img"><img src="./contenidos/modulo01/media/p24_img_04.png" style="width:70%; height:70%;"/></div>
+	<p class="p_rgt" style="margin-top:45px;" idtextual="m01p0024t06">loading text...</p>
+</div>
+
+<div seqid="bloque5" class="box24" style="top:260px; left:420px;">
+	<div class="bl_img"><img src="./contenidos/modulo01/media/p24_img_07.png" style="width:45%; height:45%;"/></div>
+	<p class="p_rgt" style="" idtextual="m01p0024t07">loading text...</p>
+</div>
+
+<div seqid="bloque6" class="box24" style="top:350px; left:420px;">
+	<div class="bl_img"><img src="./contenidos/modulo01/media/p24_img_06.png" style="width:70%; height:70%; margin-bottom:20px;"/></div>
+	<p class="p_rgt" style="" idtextual="m01p0024t08">loading text...</p>
+</div>
+
+<!-- POPUP -->
+<div seqid="masinfo" style="position:absolute; top:390px; left:20px;">
+	<a class="bpopupbutton" onclick="activaBotonSiguiente();" style="z-index:1 !important;"><span idtextual="m01p0024t09">loading text...</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow" style="width:708px; border: 5px solid #E20513;">
+			<p class="bClose btnContinuar"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p idtextual="m01p0024t09" class="titulo">loading text...</p>
+			<p idtextual="m01p0024t10" style="margin-bottom:2px;">loading text...</p>
+			<p>
+				<img src="./contenidos/modulo01/media/arrow.png" style="vertical-align:middle; margin-right:5px;"/>
+				<a href="http://www.sbs.gob.pe/principal/categoria/cajas-municipales/1742/c-1742" target="_blank">http://www.sbs.gob.pe/principal/categoria/cajas-municipales/1742/c-1742</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda04" style="bottom:70px; left:290px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="personaje_calla" start="1" action="fade" />
+
+	<div elem="personaje_calla" start="6" action="fadeout" />
+	<div elem="personaje_habla" start="3" action="fade" />
+
+	<div elem="bocadillo_01" start="3" action="fade" />
+	<div elem="bocadillo_01" start="90" action="fadeout" />
+
+		<div elem="bloque1" start="90" action="lefttoright" />
+		<div elem="arrow" start="92" action="lefttoright" />
+		<div elem="bloque2" start="94" action="lefttoright" />
+		<div elem="corchete" start="96" action="bottomtotop" />
+		<div elem="bloque3" start="96" action="poping" />
+		<div elem="bloque4" start="123" action="poping" />
+		<div elem="bloque5" start="143" action="poping" />
+		<div elem="bloque6" start="215" action="poping" />
+
+	<div elem="personaje_habla" start="297" action="fadeout" />
+	<div elem="personaje_calla" start="294" action="fade" />
+
+	<div elem="masinfo" start="300" action="fade" />
+
+	<div elem="help" start="310" action="fade" />
+
+</div>
+
+<script>
+	function activaBotonSiguiente() {
+		$('.navsiguiente').removeClass('inactivo');
+		$('.navsiguiente').addClass('activo');
+	}
+</script>

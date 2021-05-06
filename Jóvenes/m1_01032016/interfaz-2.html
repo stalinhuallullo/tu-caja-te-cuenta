@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head>
+  <TITLE>SEGMENTO JÓVENES | UNIDAD 1</TITLE>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Calibri' rel='stylesheet' type='text/css'> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript;"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  	<!-- AGREGADO -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/vendor/slick/css/slick.css"/>
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+	<!--  LIBRERIAS  -->
+
+	<!-- UTILIDADES   -->
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/utiles/timeinterval.js" ></script> 
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/utiles/infwindow.js" ></script>     
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/interfaz_msg.js" ></script>
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/interfaz_pdf.js" ></script> 
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/utiles/barradepuracion.js" ></script>
+    
+	<!-- SCORM  -->
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_tadvars.js" ></script> 	
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_cfg.js" ></script> 
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_pack.js" ></script>     
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_accesoAPI.js" ></script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_inicio.js" ></script> 
+   	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_cierresesion.js" ></script>
+   	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_infoscorm.js" ></script> 
+	
+
+     <!-- Librerias JQUERY  -->
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/jquery.min.js"></script>
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/jquery-ui.min.js"></script>
+	<script src="interfaz/scripts/lib/jquery.transit.js"></script>
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/swfobject_modified.js" ></script>
+
+  	<!-- Fancy Box (Modal windows)-->
+	<script type="text/javascript" src="interfaz/scripts/lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="interfaz/scripts/lib/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="interfaz/scripts/lib/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+    
+	<!-- ...................................	 -->
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/cfg/cfg.js" ></script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/interfaz_recursos.js" ></script>
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/utl_initcontent.js" ></script>
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/ajax_fab20lib.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/xml_ajax_fab20.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/tad/fab20_indexobject.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/SCRIPT_init_interfaz.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/tema/js/jstheme.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/fab20_jqueryWidgets.js" > </script> 
+
+	<!-- INSERTS relacionados con componente HTMLTEST  (antonio 15/6/2012) -->     
+	<script type="text/javascript" src="interfaz/scripts/componentes/htmltest/cuestionariotest.js"><!-- --></script>                        
+	<script type="text/javascript" src="interfaz/scripts/componentes/htmltest/html_test.js"><!-- --></script>
+	<script type="text/javascript" src="interfaz/scripts/utiles/aleatorio.js"><!-- --></script>	
+	<script type="text/javascript" src="interfaz/scripts/interfaz/interfaz_menu.js"><!-- --></script>
+
+	<!-- Ventana modal bpopup -->
+	<script src="interfaz/scripts/lib/bpopup.min.js"> </script> 
+		
+	<!-- Funtions & Plugins -->
+	<script src="interfaz/scripts/lib/functions.js"></script>
+	<script src="interfaz/scripts/lib/plugins.js"></script>
+	
+		
+	<!-- CSS  -->
+	
+	<link rel="stylesheet" type="text/css" href="interfaz/tema/css/estilos.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="interfaz/tema/css/debug.css" media="screen" />	  
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="interfaz/tema/css/ie7fix.css"><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="interfaz/tema/css/ie8fix.css"><![endif]-->	
+
+	<style>
+		#loaderpersonajes{
+			display: none;
+		}
+	</style>
+</head>
+ 
+<body onbeforeunload="SCORM_cierreSesion()">
+    <!--<div id="loaderpersonajes" style="position:absolute; top:-1000px; display:none;" >
+        <img src="contenidos/modulo01/personajes/conductor-calla.gif" />
+        <img src="contenidos/modulo01/personajes/conductor-habla.gif" />
+        <img src="contenidos/modulo01/personajes/carlos-calla.gif" />
+        <img src="contenidos/modulo01/personajes/carlos-habla.gif" />
+        <img src="contenidos/modulo01/personajes/luis-calla.gif" />
+        <img src="contenidos/modulo01/personajes/luis-habla.gif" />
+    </div>-->
+    
+	<div id="main-wrapper" class="container content-margin ">
+		<div class="">
+			<div class="col-md-12">
+				<div class="content-image">
+					<div class="image-sprites tu-caja"></div>
+					<div class="image-sprites tu-segmento"></div>
+					<div class="image-sprites image-sprites tu-unidad"></div>
+					<!-- <div class="image-sprites tu-contador"></div> -->
+					
+					<a href="javascript: void(0);" id="btn_salir" onclick="window.close()" class="image-sprites tu-close"></a>
+				</div>
+			</div>
+			<div class="col-md-12 ">
+				<div id="CapaIndicePaginas"  class="block-center">
+					<p>1/10</p>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="col-md-12">
+				<div class="cuerpo" id="cuerpo">
+					<div class="contentArea" id="contentArea">
+						<div class="full-page">				
+							<div id="taskbar"></div>
+							<div id="fab20_body">
+								<noscript>
+									Este contenido requiere Javascript para funcionar...
+								</noscript>	
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="content-controls">
+							<div class="navanterior">
+								<div class="pag" onClick="indiceUnidad.previousPageAnim()" title="retroceder página"></div>
+							</div>
+							<div class="navsiguiente">
+								<div class="pag" onClick="indiceUnidad.nextPageAnim()" title="avanzar página"></div>
+							</div>
+						</div>
+					</div>
+					<div id="cargador">
+						<img src="interfaz/tema/media/loading.gif" />
+					</div>
+					
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="col-md-12">
+				<div class="content-image-footer">
+					<div class="image-sprites image-sprites tu-unidad"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="fab20_debug"></div> -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<!-- <span class="close">&times;</span> -->
+			<h2 class="text-center">
+				<div class="mb-15">
+					<svg width="36px" height="36px" viewBox="-21 0 512 512"  xmlns="http://www.w3.org/2000/svg">
+						<path fill="#FE7664" d="m448 232.148438c-11.777344 0-21.332031-9.554688-21.332031-21.332032 0-59.839844-23.296875-116.074218-65.601563-158.402344-8.339844-8.339843-8.339844-21.820312 0-30.164062 8.339844-8.339844 21.824219-8.339844 30.164063 0 50.371093 50.367188 78.101562 117.335938 78.101562 188.566406 0 11.777344-9.554687 21.332032-21.332031 21.332032zm0 0"/>
+						<path fill="#FE7664" d="m21.332031 232.148438c-11.773437 0-21.332031-9.554688-21.332031-21.332032 0-71.230468 27.734375-138.199218 78.101562-188.566406 8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.34375 8.34375 21.824219 0 30.164062-42.304687 42.304688-65.597656 98.5625-65.597656 158.402344 0 11.777344-9.558594 21.332032-21.335938 21.332032zm0 0"/>
+						<path fill="#FE7664" d="m434.753906 360.8125c-32.257812-27.265625-50.753906-67.117188-50.753906-109.335938v-59.476562c0-75.070312-55.765625-137.214844-128-147.625v-23.042969c0-11.796875-9.558594-21.332031-21.332031-21.332031-11.777344 0-21.335938 9.535156-21.335938 21.332031v23.042969c-72.253906 10.410156-128 72.554688-128 147.625v59.476562c0 42.21875-18.496093 82.070313-50.941406 109.503907-8.300781 7.105469-13.058594 17.429687-13.058594 28.351562 0 20.589844 16.746094 37.335938 37.335938 37.335938h352c20.585937 0 37.332031-16.746094 37.332031-37.335938 0-10.921875-4.757812-21.246093-13.246094-28.519531zm0 0"/>
+						<path fill="#FE7664" d="m234.667969 512c38.632812 0 70.953125-27.542969 78.378906-64h-156.757813c7.421876 36.457031 39.742188 64 78.378907 64zm0 0"/>
+					</svg>
+				</div>
+				Por favor coloca tu móvil en horizontal para una mejor experiencia y comodidad
+			</h2>
+			<div class="text-center">
+				<br>
+				<button class="btn btn-default btn-close">Aceptar</button>
+			</div>
+		</div>
+	</div>
+
+</BODY>
+</HTML>
+
+

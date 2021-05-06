@@ -1,0 +1,94 @@
+/* Menu desplegable 
+
+ul#navegacion #contenidoMenu ul li{margin:0; padding:0; line-height:1em}
+ul#navegacion #contenidoMenu ul li.apartado{margin:10px 0; line-height:1em}
+
+ul#navegacion #contenidoMenu ul li p.apartadosup, ul#navegacion #contenidoMenu ul li p.apartadoinf, .apartadosombra{display:none}
+
+ ul#navegacion #contenidoMenu ul li p.apartadotext,  ul#navegacion #contenidoMenu ul li ul li p.apartadotext{line-height:normal; margin:0; padding:10px} 
+ ul#navegacion #contenidoMenu ul a, ul#navegacion #contenidoMenu ul li a,  ul#navegacion #contenidoMenu ul li li a{margin:0; padding:0; line-height:normal;}
+ ul#navegacion #contenidoMenu ul li{}
+
+.ruta{min-width:70px !important;}
+#CapaIndicePaginas{top:-30px !important;}
+
+iframe{border:0px !important;}
+
+.navanterior, .block-center, .navsiguiente, .recursos {
+	display:inline;
+}
+*/
+
+
+ul.recursos{
+	display:inline;
+	width:550px;
+}
+
+#contenedor-progreso{
+	position:absolute;
+	right:0;
+	width:698px;
+}
+
+#mcs_container{
+
+}
+
+#mcs_container{
+	float:left;
+	width:auto;
+}
+
+#navegacion{
+	background:url("../../media/sprite.png") no-repeat scroll right -1100px transparent;	
+}
+
+
+.lt.bpopupbutton, .lb.bpopupbutton, .rt.bpopupbutton, .rb.bpopupbutton{
+	width:160px;
+	padding:0 5px 0 35px;
+}
+
+.bpopupbutton .icon{
+	left:5px;
+	top:6px;
+	position:absolute;
+}
+
+.tabsup ul.tabmenu{
+	z-index:-1;
+}
+
+.tabsup ul.tabmenu li{
+	display:inline;
+	margin-right:5px;
+}
+
+.contentArea{top:0 !important; margin-top:0px;}
+
+#cuerpo{
+	top:0;
+	margin-top:85px;
+}
+
+.taskbar{
+	height:0px;
+	overflow:hidden;
+}
+
+#ejerciciosimulado{
+	z-index:-1;
+}
+
+.tabcontenedor  div.stop{
+	width:95%;
+}
+
+.tabcontenedor  div.info{
+	width:95%;
+}
+
+.tabcontenedor  div.tenencuenta{
+	width:95%;
+}

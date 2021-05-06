@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+#retos {
+	background:url('retosbg.png') no-repeat scroll top right;
+	border-radius: 3px;
+    bottom: 10px;
+    left: 0;
+    padding: 0 80px 0 10px;
+    position: absolute;
+}
+
+#retos .textoretos{
+	display:block;
+	position:absolute;
+	top:-18px;
+	left:10px;
+}
+
+
+#retos > div {
+    background: none;
+    display: inline-block;
+    height: 53px;
+    margin-right: 5px;
+    padding: 0;
+}
+
+#reto1{
+}

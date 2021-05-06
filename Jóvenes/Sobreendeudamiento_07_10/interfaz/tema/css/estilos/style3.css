@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'museo300';
+    src: url('fuentes/Museo300.eot');
+    src: url('fuentes/Museo300.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/Museo300.woff2') format('woff2'),
+         url('fuentes/Museo300.woff') format('woff'),
+         url('fuentes/Museo300.ttf') format('truetype'),
+         url('fuentes/Museo300.svg#museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo700';
+    src: url('fuentes/Museo700.eot');
+    src: url('fuentes/Museo700.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/Museo700.woff2') format('woff2'),
+         url('fuentes/Museo700.woff') format('woff'),
+         url('fuentes/Museo700.ttf') format('truetype'),
+         url('fuentes/Museo700.svg#museo700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+	font-family:'museo700',Arial,Helvetica,sans-serif;
+}
+
+
+html, body{
+	height:100%;
+}
+
+body {
+	font-size: 15px;
+	background: url("../../media/interface/index.jpg") no-repeat scroll 50% 50% #72c5cb;
+	margin:0;
+}
+
+#logotipo{
+	width:530px;
+	height:150px;	
+	background-image:url("../../media/portada/logotipo.png");
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:bottom right;
+	/*background-size:cover;*/
+	margin:auto;
+}
+
+#curso, #contenido, #acceder{
+	width:500px;
+	text-align:right;
+	margin:auto;
+}
+
+
+#curso{
+	font-size:50px;
+	color:#ffffff;
+	letter-spacing:-3px;
+	line-height:55px;
+}
+
+#contenido{
+	font-size:27px;
+	color:#000000;
+	letter-spacing:-1px;
+}
+
+#acceder a{	
+	/*color:#6d7173;*/
+	color:#ffffff;
+	display:block;
+	float:right;
+	text-decoration:none;
+	width:305px;
+	height:131px;	
+	/*background-image:url("../../media/portada/acceder.png");*/
+	background-image:url("../../media/portada/accederhv.png");
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:50% 50%;
+	background-size:cover;
+	/*text-shadow: 1px 2px 0px rgba(255, 255, 255, 1);*/
+	text-shadow:none;
+}
+
+#acceder a span{
+	font-size:42px;
+	line-height: 134px;
+	letter-spacing:-1px;
+	margin-right:35px;
+}
+
+#acceder a:hover{
+	/*text-shadow:none;*/
+	text-shadow: 1px 2px 0px rgba(255, 255, 255, 1);
+	/*background-image:url("../../media/portada/accederhv.png");*/
+	background-image:url("../../media/portada/acceder.png");
+	/*color:#ffffff;*/
+	color:#6d7173;
+}
+
+
+
+
+#audio {
+	position:absolute;
+	top:10px;
+	left:10px;
+	width: 270px;
+	height: 65px;
+	padding: 30px 0px 0px 130px;
+	background-image:url("../../media/portada/audio.png");
+	background-repeat: no-repeat;
+	color: #FFF;
+}

@@ -1,0 +1,110 @@
+﻿
+
+<style type="text/css">
+	div.ejerciciocompletar { position:absolute; top:-10px; left:0px; z-index: 1 !important; }
+	.botoneraejercicios { position: absolute; bottom: 130px !important; right: 35% !important; }
+	select.selectejercicio { border: 1px solid #E2001A; font-size:100% !important; width: 100%;}
+	.encuadrado { padding: 2%; }
+
+	.content-input{
+		position: relative;
+		top: 52%;
+		width: 80%;
+		margin: 0 auto;
+		margin-left: 12%;
+	}
+	.content-input .encuadrado{
+		width: calc(100%/ 4) !important;
+		float: left;
+	}
+	@media (max-width: 991px){
+		/*#cuerpo, .contentArea, #fab20_body, #ventana-dialogo {
+			height: 493px !important;
+		}*/
+		.ayuda{
+			display: block;
+		}
+		.botoneraejercicios{
+			bottom: 80px !important;
+    		right: 26% !important;
+		}
+	}
+</style>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="4">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a02_00.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a02_01.jpg' audio='p2_01'></div>
+		<div class="escena" numero='2' imagen='a02_02.jpg' audio='silencio01s'></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+	<div	class="ejerciciocompletar app fade reto" style="position:absolute; top:0px; left:0px; width:100%; height:100%;"
+
+			reto="2"
+			intentos="3"
+			msg_vacio="Has dejado campos en blanco, debes rellenar todos los huecos necesarios."
+			msg_error="Reflexiona sobre las cuestiones dadas en este tema"
+			msg_ko="A continuación te facilitamos las respuestas correctas."
+			msg_ok="Correcto, has acertado todas las respuestas."
+			msg_ayuda="Elige la opción más adecuada para responder a la pregunta y después pulsa en COMPROBAR.">
+
+			<div class="content-input">
+
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='CHINA,BRASIL,IRLANDA,PERU' correcta="CHINA"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='LATINOAMERICANOS,EUROPEOS,ASIATICOS,AFRICANOS' correcta="ASIATICOS"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='ASIA,AFRICA,EUROPA,LATINOAMERICA' correcta="LATINOAMERICA"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+				<div class="encuadrado">
+				
+					<div class="underlined-block">
+						<input size="26" class="texto toselect" obligatoria="true" value="" opciones ='10% DEL INGRESO,20% DEL INGRESO,25% DEL INGRESO,50% DEL INGRESO' correcta="10% DEL INGRESO"></input>
+					</div>
+					<div class="clear">&nbsp;</div>
+
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div>
+
+			<div class="clear">&nbsp;</div>
+     </div>
+
+	</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Elige la respuesta que creas más adecuada para cada pregunta y haz clic en comprobar.
+	</div>
+</div>
+
+<!--style type="text/css">
+	.underlined-block { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #ccc; font-size:70%}
+	.underlined-block strong { color: #dc291e}
+</style-->

@@ -1,0 +1,70 @@
+.cajaAzul{
+	position:absolute;
+	background:#a1d8ed;
+}
+
+.dragdrop .drag:hover{
+	z-index:9;
+	cursor:move;
+	opacity:1;
+}
+
+.ddTitulo, .ddTexto{
+	position:absolute;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+	font-weight:bold;
+}
+
+.ddTitulo{
+	color:#44b2dc;
+	font-size:18px;
+	line-height:18px;
+	text-align:left;
+}
+
+.ddTexto{
+	color:#212121;
+	font-size:14px;
+	line-height:12px;
+	text-align:center;
+}
+
+.finished, .error{
+	display:none;
+	text-align: center;
+	position: absolute;
+	background: rgba(255,255,255,0.9);	
+}
+
+.finished p, .error p{
+	clear: both;
+	font-size:17px;
+	line-height:22px;
+	padding: 5px 10px;
+	text-align: center;
+	margin-top: 10px;
+	font-weight:bold;
+}
+
+.btnComprobar, .btnReiniciar{
+	position:absolute;
+	background:#D92A3E;
+	margin: 0px;
+	padding: 10px 12px 8px;
+	border-radius: 6px;
+	font-size:16px;
+	line-height:18px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+
+.btnComprobar:hover, .btnReiniciar:hover{
+	background:#DF4A5B ;
+}
+
+.dragdrop .drag, .dragdrop .dropp{
+	position:absolute;
+}

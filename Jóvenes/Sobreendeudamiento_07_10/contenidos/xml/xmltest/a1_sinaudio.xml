@@ -1,0 +1,33 @@
+﻿<cuestionario>
+
+	<!-- ========================================= CONFIGURACION =======================================  -->
+	<configuracion>
+		<aleatorias	num='0' />
+		<intentos	num='3'/>
+	</configuracion>
+
+	<preguntas>
+	<!-- ========================================== PREGUNTA 1 =========================================  -->
+		<pregunta cod='0001'  tipo='test' feedback='¡Respuesta Correcta! ¡Felicidades! Estás atento.' feedback_negativo='¡Respuesta Incorrecta! Por favor, revisa de nuevo el caso anterior para responder la pregunta correctamente.' >
+			<enunciado>
+				<![CDATA[De acuerdo al caso de Tomás, ¿cuál de las siguientes afirmaciones es correcta?]]>
+			</enunciado>
+			<respuestas>
+				<respuesta correcta='Falso' feedback='' >
+					<![CDATA[Muchas veces no sabemos con seguridad cuánto dinero nos queda cada mes para pagar los créditos.]]>
+				</respuesta>
+				<respuesta correcta='Falso' feedback='' >
+					<![CDATA[Compramos algo porque está en oferta, y no porque existe realmente la necesidad de comprar.]]>
+				</respuesta>
+				<respuesta correcta='Falso' feedback='' >
+					<![CDATA[Tratamos de pagar las deudas adquiriendo nuevos créditos.]]>
+				</respuesta>
+				<respuesta correcta='Verdadero' feedback='' >
+					<![CDATA[Todas las anteriores.]]>
+				</respuesta>
+			</respuestas>
+		</pregunta>
+	<!-- ===============================================================================================  -->
+	</preguntas>
+
+</cuestionario>

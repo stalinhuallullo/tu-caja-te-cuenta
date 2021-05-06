@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head>
+  <TITLE>SEGMENTO MAYORES | UNIDAD 3</TITLE>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Calibri' rel='stylesheet' type='text/css'> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript;"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<!--  LIBRERIAS  -->
+
+	<!-- UTILIDADES   -->
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/utiles/timeinterval.js" ></script> 
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/utiles/infwindow.js" ></script>     
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/interfaz_msg.js" ></script>
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/interfaz_pdf.js" ></script> 
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/utiles/barradepuracion.js" ></script>
+    
+	<!-- SCORM  -->
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_tadvars.js" ></script> 	
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_cfg.js" ></script> 
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_pack.js" ></script>     
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_accesoAPI.js" ></script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_inicio.js" ></script> 
+   	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_cierresesion.js" ></script>
+   	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/scorm/SCORM_infoscorm.js" ></script> 
+	
+
+     <!-- Librerias JQUERY  -->
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/jquery.min.js"></script>
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/jquery-ui.min.js"></script>
+	<script src="interfaz/scripts/lib/jquery.transit.js"></script>
+    <script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/swfobject_modified.js" ></script>
+
+  	<!-- Fancy Box (Modal windows)-->
+	<script type="text/javascript" src="interfaz/scripts/lib/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="interfaz/scripts/lib/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="interfaz/scripts/lib/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+    
+	<!-- ...................................	 -->
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/cfg/cfg.js" ></script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/interfaz_recursos.js" ></script>
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/utl_initcontent.js" ></script>
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/ajax_fab20lib.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/xml_ajax_fab20.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/tad/fab20_indexobject.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/interfaz/SCRIPT_init_interfaz.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/tema/js/jstheme.js" > </script> 
+	<script charset="UTF-8" type="text/javascript" src="interfaz/scripts/lib/fab20_jqueryWidgets.js" > </script> 
+
+	<!-- INSERTS relacionados con componente HTMLTEST  (antonio 15/6/2012) -->     
+	<script type="text/javascript" src="interfaz/scripts/componentes/htmltest/cuestionariotest.js"><!-- --></script>                        
+	<script type="text/javascript" src="interfaz/scripts/componentes/htmltest/html_test.js"><!-- --></script>
+	<script type="text/javascript" src="interfaz/scripts/utiles/aleatorio.js"><!-- --></script>	
+	<script type="text/javascript" src="interfaz/scripts/interfaz/interfaz_menu.js"><!-- --></script>
+
+	<!-- Ventana modal bpopup -->
+	<script src="interfaz/scripts/lib/bpopup.min.js"> </script> 
+		
+	<!-- Funtions & Plugins -->
+	<script src="interfaz/scripts/lib/functions.js"></script>
+	<script src="interfaz/scripts/lib/plugins.js"></script>
+	
+		
+	<!-- CSS  -->
+	
+	<link rel="stylesheet" type="text/css" href="interfaz/tema/css/estilos.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="interfaz/tema/css/debug.css" media="screen" />	  
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="interfaz/tema/css/ie7fix.css"><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="interfaz/tema/css/ie8fix.css"><![endif]-->	
+
+</head>
+ 
+<body onbeforeunload="SCORM_cierreSesion()">
+
+<a id="topmark"></a>
+
+<table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td style="vertical-align:middle">
+	
+	<div id="Wrapper">
+		<div id="course-image"></div>
+		<div id="PageWrapper">
+	<!--    <div class="pageTop"></div> -->
+			<div id="Header"></div>
+			<div id="leftblock"></div>
+			
+			<!--<div id="logo-cliente"></div>-->
+			
+			<!--div id="titulopagina" class="tab">					
+				<div class='pretitulo'></div>
+				<h1 class="contenido"><span></span></h1>
+			</div-->
+			
+			<div id="salir">
+				<div id="btn_salir" onClick="window.close()" title="Salir"></div>
+			</div>
+			
+			<div class="cuerpo" id="cuerpo">
+				
+				<div class="contentArea" id="contentArea">
+					<div class="full-page">				
+						<div id="taskbar"></div>
+							<!--<div class="clear">&nbsp;</div>-->
+						
+						<!--INICIO ZONA PRODUCCIÓN -->    	     
+						<div id="fab20_body">
+							<noscript>
+								Este contenido requiere Javascript para funcionar...
+							</noscript>	
+						</div>
+						<!--FIN ZONA PRODUCCIÓN -->
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="cargador">
+					<img src="interfaz/tema/media/loading.gif" />
+				</div>
+			</div>
+	
+	
+				
+	<div id="rightblock">
+		<div id="titulocurso">SEGMENTO MAYORES</div>
+		<div id="titulomodulo">Unidad 3: ¿Cómo se calcula la compensación por tiempo de servicios y su libre disposición?</div>
+		
+		<div class="ruta">
+			
+			<!--<ul class="recursos" id="recursos"></ul>-->
+
+			<div id="nav" class="">
+				<div class="navanterior">
+					<div class="pag" onClick="indiceUnidad.previousPageAnim()" title="retroceder página"></div>
+				</div>
+
+				<div id="CapaIndicePaginas"  class="block-center">
+					<p>1/10</p>
+				</div>
+
+				<div class="navsiguiente">
+					<div class="pag" onClick="indiceUnidad.nextPageAnim()" title="avanzar página"></div>
+				</div>
+			</div>
+		</div>
+
+	<!--
+		<div id="contenedor-progreso">			
+			<div id="barra-progreso"></div>
+			<div id="nombre-curso"></div>
+			<div id="porcentaje-progreso">0 %</div>
+		</div>
+	-->
+		
+	</div>
+	<div id="mcs_container">
+		
+			<div class="">
+				<div class="container">
+					<div class="content">						
+						<ul id="navegacion" class="claseMenu">
+							<div id="navegacion-title">
+								<span id="navegacion-close"></span>
+							</div>
+							<li> 
+								<div id="contenidoMenu"></div>
+							</li>
+							<div id="navegacion-scroll">
+								<span id="navegacion-up"></span>
+								<span id="navegacion-down"></span>
+							</div>
+						</ul> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+   <!--<div class="piecuerpo"></div>-->
+	<!--<div id="taskbar"></div>-->
+</div>
+
+</td></tr></table>
+
+<!--
+<div id="taskbar">
+</div>	-->
+  <!--  Capa para acciones de debug -->
+<div id="fab20_debug"></div>
+ 
+<div id="loaderpersonajes" style="position:absolute; top:2000px; display:none;" >
+    <img src="contenidos/modulo01/personajes/conductor-calla.gif" />
+    <img src="contenidos/modulo01/personajes/conductor-habla.gif" />
+    <img src="contenidos/modulo01/personajes/adulto-carlos-calla.gif" />
+    <img src="contenidos/modulo01/personajes/adulto-carlos-habla.gif" />
+    <img src="contenidos/modulo01/personajes/manuel-calla.gif" />
+    <img src="contenidos/modulo01/personajes/manuel-habla.gif" />
+    <img src="contenidos/modulo01/personajes/miguel-calla.gif" />
+    <img src="contenidos/modulo01/personajes/miguel-habla.gif" />
+    <img src="contenidos/modulo01/personajes/maria-calla.gif" />
+    <img src="contenidos/modulo01/personajes/maria-habla.gif" />
+</div>
+</BODY>
+</HTML>
+
+

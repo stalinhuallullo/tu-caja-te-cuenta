@@ -1,0 +1,53 @@
+
+<div id="panelProgreso"></div>
+<script>
+$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'>Progreso de la unidad<span class='subtitulo'>Avance global y por apartados.</span></div>")
+
+
+var auxStrProgress=""	
+var unitProgress 
+var totalUnitProgress=indiceUnidad.indice.getNumElement()
+ 
+var indice
+var auxObjUnidad
+var indAux
+//totalUnitProgress=
+var totalAccedidas=0
+var totalPag=0
+
+	
+for(unitProgress=1;unitProgress<=totalUnitProgress;unitProgress++)
+{
+
+	indAux="1." + unitProgress
+	auxObjUnidad=indiceUnidad.indice.elements[unitProgress-1];
+
+	auxPagAccedidas=indiceUnidad.countPagesCompleted(auxObjUnidad);
+	totalAccedidas+=auxPagAccedidas;
+	auxPagTotales=indiceUnidad.countPages(auxObjUnidad);
+	totalPag+=auxPagTotales
+	porcentaje=Math.round(auxPagAccedidas/auxPagTotales*100);	
+
+	auxStrProgress=auxStrProgress+ "<div class='progresstitle'> <h2> " + auxObjUnidad.titulo+  "</h2>";
+	auxStrProgress=auxStrProgress+ "<div class='progresstext'>"+ porcentaje + "% ("+auxPagAccedidas+"/" +auxPagTotales+ ")</div><div class='progressbar'><div class='progressbar_end'></div><div class='progressbarfill' style='width:"+porcentaje*0.9999+"%;'></div></div>";
+	//auxStrProgress=auxStrProgress+ auxPagTotales + "  " + auxPagAccedidas;
+	auxStrProgress=auxStrProgress+ "<div class='clear'>&nbsp;</div>"
+	
+}
+ 
+	porcentaje=Math.round(totalAccedidas/totalPag*100);
+	estiloporcentaje = (Math.round(porcentaje/5) * 5) % 101;
+	auxStrProgress="<div id='fullprogress'><div class='fulprogressimg porcentaje"+estiloporcentaje+"'></div><h2> Avance total : " + porcentaje + "% </h2> </div>"+ auxStrProgress
+	
+
+
+AJAX_cargarHTMLContent("#panelProgreso", auxStrProgress);
+
+
+
+</script>
+
+<button class="btn_volver" onclick="volverToContent()">volver al contenido</button>
+
+<br />
+<br />

@@ -1,0 +1,224 @@
+.drag{
+	position:absolute;
+}
+
+.cajaAzul{
+	position:absolute;
+	background:#a1d8ed;
+}
+
+.dragdrop .drag:hover{
+	z-index:9;
+	cursor:move;
+	opacity:1;
+}
+
+.dragdrop2 .drag:hover{
+	z-index:9;
+	cursor:move;
+	opacity:1;
+}
+
+.ddTitulo, .ddTexto{
+	position:absolute;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+	font-weight:bold;
+}
+
+.ddTitulo{
+	color:#44b2dc;
+	font-size:18px;
+	line-height:18px;
+	text-align:left;
+}
+
+.ddTexto{
+	color:#212121;
+	font-size:14px;
+	line-height:12px;
+	text-align:center;
+}
+
+.dragdrop .finished, .dragdrop .error{
+	display:none;
+	text-align: center;
+	background: rgba(255,255,255,0.9);		
+	left: -20px;
+	top: -10px;
+	width: 94%;
+	height: 84%;
+	position: absolute;
+	z-index: 1;
+	padding: 5%;
+	z-index:9;
+}
+.dragdrop2 .finished, .dragdrop2 .error{
+	display:none;
+	text-align: center;
+	background: rgba(255,255,255,0.9);		
+	left: -20px;
+	top: -10px;
+	width: 94%;
+	height: 84%;
+	position: absolute;
+	z-index: 1;
+	padding: 5%;
+	z-index:9;
+}
+
+.finished p, .error p{
+	clear: both;
+	font-size:20px;
+	line-height:22px;
+	padding: 5px 10px;
+	text-align: center;
+	margin-top: 10px;
+	font-weight:bold;
+}
+
+
+.contenedorDrags{
+	min-width: 250px;
+}
+
+
+
+.tituloDropp{
+	font-size:20px;
+	background-image:url('separador.png');
+	background-attachment:scroll;
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	padding-bottom:5px;
+}
+
+.drag{
+	position:relative;
+	z-index:1;
+	padding: 3px 5px;
+	background: #dedede;
+	margin-bottom: 2px;
+	line-height: 14px;
+	height: auto;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.drag p{
+	margin:0;
+}
+
+.dropp > .drag{
+	position:relative;
+	background:#FFFFFF;
+}
+
+.dropp{
+	padding:10px;
+}
+
+#fab20_body p.tituloRecapitulacion{
+	font-family:'Eras-Bold', Arial, Helvetica, sans-serif;
+	font-size:24px;
+}
+
+.dragdrop .fondoPagina{
+	position:relative;
+	top:-10px;
+	left: -3%;
+	width: 106%;	
+}
+
+.dragdrop2 .fondoPagina{
+	position:relative;
+	top:-10px;
+	left: -3%;
+	width: 106%;	
+}
+
+
+.contenedorBtns{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.contenedorBtns > div{
+	display:inline-block;
+	margin-bottom:0;
+}
+
+.contenedorBtns .btnComprobar, .contenedorBtns .btnReiniciar{
+	background-color:#006f9f;
+	border-top:#006f9f;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding:0 40px 0 20px;
+}
+
+.contenedorBtns .btnComprobar:hover, .contenedorBtns .btnReiniciar:hover{
+	background:#006f9f;
+}
+
+.contenedorBtns .btnComprobar > img, .contenedorBtns .btnReiniciar > img{
+	position: absolute;
+	top: 30%;
+	right: 11px;
+	width:18px;
+}
+
+
+/*
+@media (max-width:768px){
+	.dragdrop{
+		height:auto !important;
+	}
+	
+	.dragdrop .flotante{
+		position:absolute;
+	}
+	
+	.contenedorDrags{
+		width: 96% !important;
+		padding: 2%;
+	}
+	
+	.dropp{
+		width: 96% !important;
+		padding: 2%;
+		height: auto !important;
+		min-height:30px;
+		position: static !important;
+		margin-bottom:10px;
+	}
+	
+	.contenedorBtns{
+		position:static;
+	}
+	
+	.dragdrop .error, .dragdrop .finished{
+		position: fixed;
+		height: 100%;
+		z-index: 0;
+	}
+}
+
+@media (min-width:769px){
+	.flotante{
+		position:absolute;
+	}
+}
+
+
+@media (min-width:1025px){
+	.dragdrop .fondoPagina{
+		left: -20px;
+		width: auto;
+	}
+}
+*/

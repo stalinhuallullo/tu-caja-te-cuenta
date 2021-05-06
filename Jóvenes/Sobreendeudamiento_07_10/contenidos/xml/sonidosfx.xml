@@ -1,0 +1,9 @@
+﻿<sonidosfx>
+
+<fx id="01"   audio="audio01" />
+<fx id="02"   audio="audio02" />
+<fx id="03"   audio="audio03" /> 
+<fx id="04"   audio="audio04" />
+<fx id="05"   audio="audio05" />
+
+</sonidosfx>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+   <head>
+		<title>SEGMENTO NI&Ntilde;OS | UNIDAD 1</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript;"/>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/vendor/slick/css/slick.css"/>
+		<link rel="stylesheet" href="../assets/css/style.css">
+
+		<script>
+			function getURLParams(name)
+			{	
+				var v,resultado,i,v2
+				resultado=""
+				if (location.search.split("?").length ==2)
+				{
+					v=location.search.split("?")[1].split("&")
+					for (i=0;i<v.length;i++)
+					{
+						v2=v[i].split("=")
+						if (v2.length==2 && v2[0]==name) resultado=v2[1]
+					}
+				}
+				return resultado
+			}
+		</script>
+   </head>
+   <body onbeforeunload="SCORM_cierreSesion()">
+
+		<div class="container content-margin">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="content-image">
+						<div class="image-sprites tu-caja"></div>
+						<div class="image-sprites tu-segmento"></div>
+						<div class="image-sprites image-sprites-4 tu-unidad"></div>
+						<div class="image-sprites tu-contador"></div>
+						<a href="javascript: void(0);" id="btn_salir" onclick="window.close()" class="image-sprites tu-close"></a>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="content-video-play">
+						<div class="videos-mdsa">
+							<div class="video-background">
+								<div class="video-foreground">
+									<div id="video-placeholder" class="ytplayer"></div>
+								</div>
+							</div>
+							<a class="v-anterior"><span></span></a>
+							<a class="v-siguiente"><span></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="content-image-footer">
+						<div class="image-sprites image-sprites-4 tu-unidad"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script charset="UTF-8" type="text/javascript" src="../assets/vendor/jquery/jquery.min.js"></script>
+		<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../assets/vendor/slick/js/slick.min.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="../assets/jsc/script.youtube.js"></script>
+		<script>
+
+			// console.log("meee", getURLParams("SCO"));
+			// console.log("taaa", getURLParams("mey"));
+
+		  	$(document).ready(function(){
+
+				$('.v-anterior').on('click', function () { eventPlayList("anterior") });
+
+				$('.v-siguiente').on('click', function () { eventPlayList("siguiente") });
+
+
+				function eventPlayList(event){
+					$('.v-anterior').removeClass( "disabled")
+					$('.v-siguiente').removeClass( "disabled")
+					if(player){
+						var info = player.playerInfo;
+						var playlist = info.playlist;
+						var playlistIndex = info.playlistIndex;
+						
+						if(playlist != undefined) {
+							if(event == "anterior") {
+								if(playlist.length > 0 && playlistIndex > 0) player.previousVideo()
+								if((playlistIndex - 1) <= 0) $('.v-anterior').addClass( "disabled")
+							}
+							else {
+								if(playlistIndex < (playlist.length - 1)) player.nextVideo();
+								if((playlistIndex + 1) >= (playlist.length - 1)) $('.v-siguiente').addClass( "disabled")
+							}
+						}
+					}
+					else {
+						$('.v-anterior').addClass( "disabled")
+					}
+				}
+				eventPlayList();
+			});
+	  	</script>
+   </body>
+</html>

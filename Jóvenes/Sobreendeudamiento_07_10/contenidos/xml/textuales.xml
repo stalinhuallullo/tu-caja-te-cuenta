@@ -1,0 +1,413 @@
+﻿<textuales>
+
+<!-- Index -->
+<txt id="indextxt01"><![CDATA[Cómo evitar el sobreendeudamiento]]></txt>
+<txt id="indextxt02"><![CDATA[CURSO ONLINE]]></txt>
+<txt id="indextxt03"><![CDATA[Este curso cuenta con audio. Recuerda disponer de audífonos.]]></txt>
+<txt id="indextxt04"><![CDATA[Acceder]]></txt>
+
+<!-- Ayudas -->
+<txt id="ayuda00"><![CDATA[Pulsa sobre el botón <b>'siguiente'</b> <span class='bullet bulletavanzar'></span> para pasar página.]]></txt>
+<txt id="ayuda01"><![CDATA[Pulsa sobre el botón <b>'siguiente'</b> <span class='bullet bulletavanzar'></span> para comenzar los contenidos del curso.]]></txt>
+<txt id="ayuda02"><![CDATA[<span>cerrar ventana</span>]]></txt>
+<txt id="ayuda03"><![CDATA[Pulsa sobre los botones para ampliar la información.]]></txt>
+<txt id="ayuda04"><![CDATA[Pulsa sobre el botón para ampliar la información.]]></txt>
+<txt id="ayuda05"><![CDATA[Pulsa sobre la pregunta para mostrar la información.]]></txt>
+<txt id="ayuda06"><![CDATA[Pulsa sobre las diferentes pestañas para mostrar más información.]]></txt>
+<txt id="ayuda07"><![CDATA[Pulsa sobre los bloques para mostrar más información.]]></txt>
+<txt id="ayuda08"><![CDATA[Pulsa sobre los elementos indicados por la <strong>'mano'</strong><span class='bullet bulletmano'></span> para ver la información.]]></txt>
+<txt id="ayuda09"><![CDATA[Pulsa sobre las <strong>imágenes</strong><span class="bullet bulletmano"></span> para ver la información.]]></txt>
+<txt id="ayuda10"><![CDATA[Pulsa sobre las pestañas para ver la información.]]></txt>
+<txt id="ayuda11"><![CDATA[Haz clic en la/s alternativa/s que consideres adecuada/s, y luego pulsa en <strong>'Enviar'</strong>.]]></txt>
+<txt id="ayuda11_2"><![CDATA[Haz clic en la alternativa que consideres adecuada, y luego pulsa en <strong>'Enviar'</strong>.]]></txt>
+<txt id="ayuda12"><![CDATA[Pulsa sobre el <strong>vínculo</strong><span class="bullet bulletmano"></span> para ver más información.]]></txt>
+<txt id="ayuda13"><![CDATA[Ingresa las cantidades según corresponda, y luego pulsa en <strong>'Calcular'</strong>.]]></txt>
+<txt id="ayuda14"><![CDATA[Pulsa sobre el botón <b>'siguiente'</b> <span class='bullet bulletavanzar'></span> para comenzar el test de evaluación.]]></txt>
+<txt id="ayuda15"><![CDATA[Pulsa sobre el botón <b>'salir'</b> <span class='bullet bulletsalir'></span> para cerrar la ventana del curso.]]></txt>
+<txt id="ayuda16"><![CDATA[Arrastra a la caja 'Crédito' las tres opciones que consideres correctas, y luego pulsa en <strong>'Comprobar'</strong>.]]></txt>
+
+
+	<!-- ********** -->
+	<!-- APARTADO 0 -->
+<!--<txt id="introap00_capitulo"><![CDATA[MÓDULO 0]]></txt>-->
+<!--<txt id="introap00_titulo"><![CDATA[Objetivos del curso]]></txt>-->
+
+<!-- Página 1 -->
+<txt id="m01p0001t00"><![CDATA[Objetivos]]></txt>
+<txt id="m01p0001t01"><![CDATA[Los objetivos de este curso son:]]></txt>
+<txt id="m01p0001t02"><![CDATA[Comprender los posibles impactos negativos del sobreendeudamiento.]]></txt>
+<txt id="m01p0001t03"><![CDATA[Conocer información que permita evitar el  sobreendeudamiento.]]></txt>
+<txt id="m01p0001t04"><![CDATA[Identificar los componentes del crédito para tomar mejores decisiones.]]></txt>
+<txt id="m01p0001t05"><![CDATA[Conocer los beneficios de trabajar con una entidad financiera regulada.]]></txt>
+<txt id="m01p0001t06"><![CDATA[Identificar los beneficios del pronto pago.]]></txt>
+
+<!-- Página 2 -->
+<txt id="m01p0002t00"><![CDATA[<strong>Debes tener en cuenta lo siguiente:</strong>]]></txt>
+<txt id="m01p0002t01"><![CDATA[El desarrollo financiero es considerado un factor integral del crecimiento económico de un país.]]></txt>
+<txt id="m01p0002t02"><![CDATA[Un sistema financiero que funciona bien (movilizando ahorros, distribuyendo recursos a través de los créditos con una adecuada gestión de riesgos) contribuye al crecimiento económico apoyando la acumulación de capital,  mejorando la eficiencia de la inversión, promoviendo el consumo de los hogares a través del acceso a los servicios financieros.]]></txt>
+<txt id="m01p0002t03"><![CDATA[El crédito tiene como base la promesa de un pago futuro. Por ello, es importante evitar el sobreendeudamiento  por el número y monto de créditos atrasados, que a la larga puede afectar el sistema financiero y, por ende la situación económica de un país.]]></txt>
+<txt id="m01p0002t04"><![CDATA[El sobreendeudamiento de las personas también conlleva al sufrimiento familiar por tener que vender o subastar propiedades para poder pagar los créditos.]]></txt>
+
+
+	<!-- ********** -->
+	<!-- APARTADO 1 -->
+	<txt id="introap01_capitulo"><![CDATA[MÓDULO 1]]></txt>
+	<txt id="introap01_titulo"><![CDATA[Controlar mis finanzas]]></txt>
+
+<!-- Página 4 -->
+<txt id="m01p0004t00"><![CDATA[¡Hola! Soy Verónica, asesora de tu Caja Municipal.]]></txt>
+<txt id="m01p0004t01"><![CDATA[Hoy trataremos un tema muy importante. Hablaremos acerca del sobreendeudamiento, es decir, cuando contratamos varios créditos sin poder pagarlos todos. Lo que a veces no nos deja dormir tranquilos...]]></txt>
+<txt id="m01p0004t02"><![CDATA[Para evitar esto, aquí te damos algunos consejos de cómo hacer frente a este tema. Ahora, conoceremos el caso de Tomás.]]></txt>
+
+<!-- Página 5 -->
+<txt id="m01p0005t00"><![CDATA[Caso]]></txt>
+<txt id="m01p0005t01"><![CDATA[Escucha con atención el caso de Tomás.]]></txt>
+<txt id="m01p0005t02"><![CDATA[¡Tomás! ¡Tomás! ¡Qué ha sido de tu vida, mucho tiempo sin verte! ¿Cómo estás?]]></txt>
+<txt id="m01p0005t03"><![CDATA[¡Sarita!]]></txt>
+<txt id="m01p0005t04"><![CDATA[¡Qué gusto! ¿Cómo estás?]]></txt>
+<txt id="m01p0005t05"><![CDATA[Estoy bien, aquí haciendo el mercado. La situación está complicada. No sé cómo hacer para que me alcance el dinero. Ya ni puedo comprar pollo, ya no me alcanza...]]></txt>
+<txt id="m01p0005t06"><![CDATA[Sé que cambiaste de trabajo, pensé que con el trabajo nuevo te estaba yendo mejor...]]></txt>
+<txt id="m01p0005t07"><![CDATA[¡Se supone! Pero cada vez tenemos más compromisos que pagar. Compramos un juego de sala con la tarjeta de crédito de Juanita, que ella paga. También, ya estoy por terminar de pagar un crédito que saqué para comprar un televisor, que estaba en oferta por el Día de la Madre. En pagar las cuotas mensuales se nos va casi todo el dinero del mes.]]></txt>
+<txt id="m01p0005t08"><![CDATA[Dime, ¿tu televisor antiguo ya no servía?]]></txt>
+<txt id="m01p0005t09"><![CDATA[Sí servía, pero la oferta nos pareció buena. Además, el televisor es más grande, y se ven mejor las novelas y los partidos de fútbol. La verdad todavía estaremos cortos de dinero por un tiempo más. Aunque, Juanita ya no quiere esperar más para sacar otro crédito y poner un negocio de hamburguesas al paso los fines de semana para que podamos ahorrar y comprarnos una camioneta.]]></txt>
+
+<!-- Página 6 -->
+<txt id="m01p0006t00"><![CDATA[Actividad]]></txt>
+<txt id="m01p0006t01"><![CDATA[Lee con atención y responde la siguiente pregunta.]]></txt>
+<txt id="m01p0006t02"><![CDATA[Vamos a hacer una breve reflexión de la situación de Tomás y Juanita.]]></txt>
+<txt id="m01p0006t03"><![CDATA[De acuerdo al caso de Tomás, ¿cuál de las siguientes afirmaciones es correcta?]]></txt>
+<txt id="m01p0006t04"><![CDATA[Muchas veces no sabemos con seguridad cuánto dinero nos queda cada mes para pagar los créditos.]]></txt>
+<txt id="m01p0006t05"><![CDATA[Compramos algo porque está en oferta, y no porque existe realmente la necesidad de comprar.]]></txt>
+<txt id="m01p0006t06"><![CDATA[Tratamos de pagar las deudas adquiriendo nuevos créditos.]]></txt>
+<txt id="m01p0006t07"><![CDATA[Todas las anteriores.]]></txt>
+<txt id="m01p0006t08"><![CDATA[¡Respuesta Incorrecta! Por favor, revisa de nuevo el caso anterior para responder la pregunta correctamente.]]></txt>
+<txt id="m01p0006t09"><![CDATA[¡Respuesta Correcta! ¡Felicidades! Estás atento. ]]></txt>
+
+<!-- Página 7 -->
+<txt id="m01p0007t00"><![CDATA[¿Conoces un caso como el de Tomás? ¿Alguna vez has contratado tantos créditos que después de pagar las cuotas del mes, te quedaste sin dinero para comprar cosas esenciales como la comida?]]></txt>
+<txt id="m01p0007t01"><![CDATA[O, ¿alguna vez compraste algo de manera impulsiva y con el tiempo te diste cuenta que gastaste tanto que ya no te alcanzó el dinero hasta el fin del mes, y tuviste que pedir prestado de algún familiar o amigo? ]]></txt>
+<txt id="m01p0007t02"><![CDATA[Esto es lo que les está pasando a Tomás y a Juanita. Contrataron dos créditos para un juego de sala y un televisor sin pensar que esto les podía causar problemas de pago más adelante, y ahora no les alcanza para comprar alimentos.]]></txt>
+<txt id="m01p0007t03"><![CDATA[Sin embargo, Juanita quiere sacar otro crédito adicional para poner un negocio extra.]]></txt>
+<txt id="m01p0007t04"><![CDATA[En lugar de esto, Tomás y Juanita deberían pensar cómo mejorar su situación actual para no tener percances en comprar cosas esenciales como la comida.]]></txt>
+<txt id="m01p0007t05"><![CDATA[Sigue las indicaciones del siguiente esquema para controlar los gastos y el dinero disponible.]]></txt>
+<txt id="m01p0007t06"><![CDATA[Estrategias para evitar el sobreendeudamiento]]></txt>
+<txt id="m01p0007t07"><![CDATA[<strong>Realiza un presupuesto</strong>]]></txt>
+<txt id="m01p0007t08"><![CDATA[El presupuesto familiar permitirá conocer en qué gastas y cómo puedes reducir gastos. Aunque existen otras medidas.]]></txt>
+<txt id="m01p0007t09"><![CDATA[<strong>Separa el dinero para gastos</strong>]]></txt>
+<txt id="m01p0007t10"><![CDATA[Separa el dinero que estás ahorrando del dinero que usas para tus gastos. Guarda todo tu dinero en un lugar seguro o directamente en una Caja Municipal.]]></txt>
+<txt id="m01p0007t11"><![CDATA[<strong>Créditos</strong>]]></txt>
+<txt id="m01p0007t12"><![CDATA[Paga tus créditos según tu cronograma de pagos. Así no tendrás que pagar intereses sobre lo que debas.]]></txt>
+<txt id="m01p0007t13"><![CDATA[<strong>Cuenta de ahorros</strong>]]></txt>
+<txt id="m01p0007t14"><![CDATA[Piensa en la posibilidad de abrir una cuenta de ahorros en una Caja Municipal.]]></txt>
+<txt id="m01p0007t15"><![CDATA[<strong>Pago en fecha</strong>]]></txt>
+<txt id="m01p0007t16"><![CDATA[Paga tus facturas en fecha. Así no tendrás que pagar cargos adicionales por pagos atrasados.]]></txt>
+
+<!-- Página 8 -->
+<txt id="m01p0008t00"><![CDATA[Actividad]]></txt>
+<txt id="m01p0008t01"><![CDATA[Realiza el siguiente ejercicio.]]></txt>
+<txt id="m01p0008t02"><![CDATA[Ahora, resolvamos juntos el siguiente ejercicio para entender bien cómo calcular un presupuesto. Por favor, ingresa los datos según corresponda.]]></txt>
+<txt id="m01p0008t03"><![CDATA[Cálculo de Presupuesto Mensual*]]></txt>
+<txt id="m01p0008t04"><![CDATA[Ingreso mensual:]]></txt>
+<txt id="m01p0008t05"><![CDATA[Gastos mensuales:]]></txt>
+<txt id="m01p0008t06"><![CDATA[Alquiler:]]></txt>
+<txt id="m01p0008t07"><![CDATA[Comida:]]></txt>
+<txt id="m01p0008t08"><![CDATA[Luz:]]></txt>
+<txt id="m01p0008t09"><![CDATA[Cable y teléfono:]]></txt>
+<txt id="m01p0008t10"><![CDATA[Pensiones escolares:]]></txt>
+<txt id="m01p0008t11"><![CDATA[Seguros:]]></txt>
+<txt id="m01p0008t12"><![CDATA[Transporte, comida y ropa:]]></txt>
+<txt id="m01p0008t13"><![CDATA[Pagos de créditos:]]></txt>
+<txt id="m01p0008t14"><![CDATA[Imprevistos:]]></txt>
+<txt id="m01p0008t15"><![CDATA[Dinero disponible por mes:]]></txt>
+<txt id="m01p0008t16"><![CDATA[Cálculo automático]]></txt>
+<txt id="m01p0008t17"><![CDATA[Ten en cuenta que en algunos meses tendrás gastos adicionales, como la  matrícula escolar, los costos de los servicios de salud, las reparaciones de los electrodomésticos, etc. El monto disponible por mes no debe ser gastado en su totalidad para que no te quedes sin dinero para cualquier emergencia.]]></txt>
+<txt id="m01p0008t18"><![CDATA[Calcula tu Presupuesto Mensual para conocer tu situación financiera. Coloca tus ingresos y gastos mensuales en la calculadora, y conoce cuánto dinero realmente dispones cada mes para pagar las cuotas de un crédito. Al final puedes imprimir el presupuesto calculado.]]></txt>
+<txt id="m01p0008t19"><![CDATA[Calcular]]></txt>
+<txt id="m01p0008t20"><![CDATA[Imprimir]]></txt>
+<txt id="m01p0008t21"><![CDATA[*<strong>Debes completar todos los campos</strong>. Si en alguno de ellos no tienes gastos (teléfono, seguro, etc) <strong>deberás ingresar el número '0'</strong>.]]></txt>
+
+<!-- Página 9 -->
+<txt id="m01p0009t00"><![CDATA[Lecciones aprendidas]]></txt>
+<txt id="m01p0009t01"><![CDATA[Lee con atención la siguiente infomación.]]></txt>
+<txt id="m01p0009t02"><![CDATA[Entonces, ¿qué aprendimos del caso de Tomás y Juanita?]]></txt>
+<txt id="m01p0009t03"><![CDATA[¿Qué aprendimos del caso de Tomás?]]></txt>
+<txt id="m01p0009t04"><![CDATA[No hacer compras grandes impulsivamente.]]></txt>
+<txt id="m01p0009t05"><![CDATA[Pensar bien antes de hacer inversiones fuertes o adquirir  nuevos créditos.]]></txt>
+<txt id="m01p0009t06"><![CDATA[Antes de solicitar un crédito, estar seguros que podemos afrontar los pagos con nuestro Presupuesto Mensual.]]></txt>
+<txt id="m01p0009t07"><![CDATA[No asumir nuevos créditos, si los pagos afectan la cobertura de nuestras necesidades básicas familiares.]]></txt>
+<txt id="m01p0009t08"><![CDATA[Comprar un artículo de promoción proporciona satisfacción momentánea, que luego se convierte en preocupación.]]></txt>
+
+<!-- Página 10 -->
+<txt id="m01p0010t00"><![CDATA[Consejos para evitar el sobreendeudamiento]]></txt>
+<txt id="m01p0010t01"><![CDATA[Lee con atención la siguiente información.]]></txt>
+<txt id="m01p0010t02"><![CDATA[Reglas de oro para evitar el sobreendeudamiento]]></txt>
+<txt id="m01p0010t03"><![CDATA[Piensa detenidamente antes de contratar un crédito.]]></txt>
+<txt id="m01p0010t04"><![CDATA[Conoce tu Presupuesto Mensual antes de contratar un crédito.]]></txt>
+<txt id="m01p0010t05"><![CDATA[Revisa bien el Cronograma de Pagos de tu posible crédito para que veas si puedes cumplirlo, una vez que tengas claro tu Presupuesto Mensual.]]></txt>
+<txt id="m01p0010t06"><![CDATA[Recuerda que...]]></txt>
+<txt id="m01p0010t07"><![CDATA[Y como ayuda, acuérdate siempre qué es un Cronograma de Pagos:]]></txt>
+<txt id="m01p0010t08"><![CDATA[Haz clic aquí para descargar un formato de Cronograma de Pagos.]]></txt>
+<txt id="m01p0010t09"><![CDATA[El cronograma de pagos]]></txt>
+<txt id="m01p0010t10"><![CDATA[Es un documento que contiene el detalle de las cuotas y las fechas de pago de tu crédito. Asimismo, te informa del total del crédito y la Tasa de Costo Efectivo Anual (TCEA). Cada valor de cuota indica el monto del principal (capital) e intereses, las comisiones y los gastos en los que haya incurrido la entidad financiera. El gasto más común son los seguros.]]></txt>
+
+
+	<!-- ********** -->
+	<!-- APARTADO 2 -->
+	<txt id="introap02_capitulo"><![CDATA[MÓDULO 2]]></txt>
+	<txt id="introap02_titulo"><![CDATA[Cómo analizar un crédito]]></txt>
+
+<!-- Página 12 -->
+<txt id="m01p0012t00"><![CDATA[Continuemos con el caso de Tomás. ¿Cuáles serán los planes de Tomás y Juanita para recuperar su situación económica?]]></txt>
+
+<!-- Página 13 -->
+<txt id="m01p0013t00"><![CDATA[Caso]]></txt>
+<txt id="m01p0013t01"><![CDATA[Escucha con atención el siguiente caso.]]></txt>
+<txt id="m01p0013t02"><![CDATA[Tomás, me gusta tu idea del negocio. Pero, ¿cómo conseguirán el dinero para poner el negocio?]]></txt>
+<txt id="m01p0013t03"><![CDATA[Juanita y yo intentaremos conseguir otro crédito. ¡Porque ahorrar es difícil! Por eso, espero que nos den el crédito. Aunque, serán unos meses complicados, en lo que terminamos de pagar los otros créditos.]]></txt>
+<txt id="m01p0013t04"><![CDATA[Y, ¿ya planearon cuáles serían sus gastos cada mes?]]></txt>
+<txt id="m01p0013t05"><![CDATA[Aún no, ya veremos cómo hacer, tenemos que ponerle ganas. Yo creo que sí saldremos adelante. Las cuotas mensuales no son tan altas, si sacamos el crédito con un plazo de pago de cinco años.]]></txt>
+<txt id="m01p0013t06"><![CDATA[¿Sabes? yo antes pensaba igual, pero al final me quedé con tantas deudas que casi pierdo mi casa. Entonces, fui a una Caja Municipal, y ahí me asesoraron para terminar con el pago de las deudas. La asesora de la Caja Municipal elaboró un plan que reunía todas mis deudas, y así quedé con una sola deuda que ya casi termino de pagar. Pero vamos paso por paso. Ven, vamos a sentarnos ahí en la sombra para explicarte.]]></txt>
+<txt id="m01p0013t07"><![CDATA[A ver Tomás según entendí, ¿quieres adquirir un nuevo crédito para poner un negocio?]]></txt>
+<txt id="m01p0013t08"><![CDATA[Sí, para el negocio de hamburguesas al paso.]]></txt>
+<txt id="m01p0013t09"><![CDATA[Bien, entonces se trata de un crédito para negocio.]]></txt>
+<txt id="m01p0013t10"><![CDATA[Sarita, ¿existen créditos sólo para negocio?]]></txt>
+<txt id="m01p0013t11"><![CDATA[¡Claro! Existen diferentes tipos de crédito. Crédito para negocio, y también para consumo. Por ejemplo, para comprar un juego de sala o un televisor. Según el tipo de crédito, varían las condiciones, es decir, los plazos de pago, los intereses, las comisiones, los tipos de seguro y las garantías. Además, los créditos no cuestan lo mismo en todas las instituciones financieras. Por eso, es importante informarnos bien sobre los costos que implican los créditos, así como comparar en diferentes instituciones financieras.]]></txt>
+<txt id="m01p0013t12"><![CDATA[De haber sabido antes, hubiera comparado el costo de los créditos en diferentes instituciones financieras porque me está saliendo muy caro mi crédito. Sarita, imagínate, ya llevo dos años pagando el crédito que adquirí para un televisor.]]></txt>
+<txt id="m01p0013t13"><![CDATA[Mmm, ¿acaso no te diste cuenta de esto cuando lo contrataste?]]></txt>
+<txt id="m01p0013t14"><![CDATA[No tan claro como ahora. Nunca pregunté bien cuánto me costaba el crédito en total. Sólo me fijé que decía “Está en oferta" y en cuánto tenía que pagar cada semana. Creí que sí me alcanzaba, así que lo tramité.]]></txt>
+<txt id="m01p0013t15"><![CDATA[También me pasó lo mismo, pero cuando fui a la Caja Municipal me informaron mejor. ¿Tienes claro qué conocer para saber qué tan caro te sale un crédito de verdad? Se llama Tasa de Costo Efectivo Anual (TCEA), que incluye todos los gastos de un crédito. Muchas veces te cobran por semana, y así te hacen creer que pagas poco cuando realmente es mucho.]]></txt>
+<txt id="m01p0013t16"><![CDATA[¿En serio?, y ¿dónde puedo preguntar por la TCEA de un crédito? Ay, Sarita, ¿por qué no me topé contigo hace dos años, antes de sacar ese crédito?]]></txt>
+
+<!-- Página 14 -->
+<txt id="m01p0014t00"><![CDATA[Actividad]]></txt>
+<txt id="m01p0014t01"><![CDATA[Lee con atención y arrastra los elementos a la caja “Crédito”, según corresponda.]]></txt>
+<txt id="m01p0014t02"><![CDATA[Bien, ya sabemos un poco más sobre la situación de Tomás. Antes de tramitar un crédito, ¿cuáles de los siguientes aspectos se deben considerar? <strong>¡Ojo, no todas las alternativas son correctas!</strong>]]></txt>
+<txt id="m01p0014t03"><![CDATA[Antes de tramitar un crédito, ¿cuáles de los siguientes aspectos se deben considerar?]]></txt>
+<txt id="m01p0014t04"><![CDATA[Que esté "de oferta”.]]></txt>
+<txt id="m01p0014t05"><![CDATA[Los intereses y las comisiones.]]></txt>
+<txt id="m01p0014t06"><![CDATA[Los plazos para los pagos.]]></txt>
+<txt id="m01p0014t07"><![CDATA[La buena atención del Funcionario de la oficina.]]></txt>
+<txt id="m01p0014t08"><![CDATA[La Tasa de Costo Efectivo Anual que incluye información sobre el monto total y las cuotas a pagar, las garantías y los pagos por seguros.]]></txt>
+<txt id="m01p0014t09"><![CDATA[<strong>CRÉDITO</strong>]]></txt>
+<txt id="m01p0014t10"><![CDATA[Comprobar]]></txt>
+<txt id="m01p0014t11"><![CDATA[Reiniciar]]></txt>
+<txt id="m01p0014t12"><![CDATA[<span style='color:#c60000;'><strong>¡No has acertado!</strong></span> Por favor, vuelve a intentarlo.]]></txt>
+<txt id="m01p0014t13"><![CDATA[<span style='color:#00AA00;'><strong>¡Es correcto!</strong></span> Es necesario saber bien: <strong>los intereses y comisiones de un crédito</strong>, <strong>el plazo para pagarlo</strong> y <strong>la Tasa de Costo Efectivo Anual</strong>.]]></txt>
+<txt id="m01p0014t14"><![CDATA[<span style='color:#c60000;'><strong>¡Has fallado todos los intentos!</strong></span> Antes de tramitar un crédito, los aspectos se deben considerar son: <span class='show_respuesta'>Los intereses y comisiones de un crédito.</span> <span class='show_respuesta'>El plazo para pagarlo.</span> <span class='show_respuesta'>La Tasa de Costo Efectivo Anual.</span>]]></txt>
+
+<!-- Página 15 -->
+<txt id="m01p0015t00"><![CDATA[<strong>¡Muchas gracias por apoyarme!</strong> En el caso anterior vimos que Tomás no se informaba bien antes de contratar su crédito actual, sino que sólo se fijaba en las ofertas. Así, hace dos años adquirió un crédito para comprar un juego de sala, y luego contrató otro crédito para comprar un televisor. Ahora Tomás tiene problemas en el trabajo y no le alcanza el dinero ni para comprar algunas necesidades básicas, como los alimentos.]]></txt>
+<txt id="m01p0015t01"><![CDATA[Tasa de Costo Efectivo Anual]]></txt>
+<txt id="m01p0015t02"><![CDATA[Lee con atención la siguiente información.]]></txt>
+<txt id="m01p0015t03"><![CDATA[Tasa de Costo Efectivo Anual (TCEA) ]]></txt>
+<txt id="m01p0015t04"><![CDATA[Crédito de S/ 1,000 a un año.]]></txt>
+<txt id="m01p0015t05"><![CDATA[Si la Tasa Efectiva Anual (TEA) es de 25%, la cuota resultante es de S/ 93.85.]]></txt>
+<txt id="m01p0015t06"><![CDATA[Si hay una comisión mensual S/ 10 ]]></txt>
+<txt id="m01p0015t07"><![CDATA[La “TEA calculada” a partir de una cuota de S/ 103.85 se convierte en 52%.]]></txt>
+<txt id="m01p0015t08"><![CDATA[¡Ese 52% es el verdadero costo de tu crédito, es decir la TCEA!]]></txt>
+<txt id="m01p0015t09"><![CDATA[25%]]></txt>
+<txt id="m01p0015t10"><![CDATA[52%]]></txt>
+<txt id="m01p0015t11"><![CDATA[TASA DE COSTO EFECTIVO ANUAL]]></txt>
+<txt id="m01p0015t12"><![CDATA[Ahora conozcamos la información que nos brinda la TCEA.]]></txt>
+
+<!-- Página 16 -->
+<txt id="m01p0016t00"><![CDATA[Lecciones aprendidas]]></txt>
+<txt id="m01p0016t01"><![CDATA[Lee con atención.]]></txt>
+<txt id="m01p0016t02"><![CDATA[¿Qué aprendimos del caso de Tomás?]]></txt>
+<txt id="m01p0016t03"><![CDATA[Al momento de contratar algún crédito debemos:]]></txt>
+<txt id="m01p0016t04"><![CDATA[Prestar mucha atención a todos los siguientes detalles.]]></txt>
+<txt id="m01p0016t05"><![CDATA[Plazo]]></txt>
+<txt id="m01p0016t06"><![CDATA[Intereses y comisiones]]></txt>
+<txt id="m01p0016t07"><![CDATA[Monto total y cuotas a pagar, seguros...]]></txt>
+<txt id="m01p0016t08"><![CDATA[Visitar varias instituciones financieras y comparar las condiciones de los créditos que ofrecen.]]></txt>
+<txt id="m01p0016t09"><![CDATA[Revisar la TCEA para saber el costo final de los créditos.]]></txt>
+
+<!-- Página 17 -->
+<txt id="m01p0017t00"><![CDATA[Lecciones aprendidas]]></txt>
+<txt id="m01p0017t01"><![CDATA[Lee con atención la siguiente información.]]></txt>
+<txt id="m01p0017t02"><![CDATA[Recuerda que... Antes de contratar un crédito debemos:]]></txt>
+<txt id="m01p0017t03"><![CDATA[Pensar detenidamente para determinar si realmente necesitamos el crédito.]]></txt>
+<txt id="m01p0017t04"><![CDATA[Visitar al menos 3 instituciones financieras para comparar las condiciones de los créditos que ofrecen.]]></txt>
+<txt id="m01p0017t05"><![CDATA[Al momento de comparar, revisar la Tasa de Costo Efectivo Anual (TCEA) que todas las instituciones financieras están obligadas a brindar a sus clientes. Es importante preguntarle al asesor de la entidad financiera, si no encontramos la TCEA.]]></txt>
+<txt id="m01p0017t06"><![CDATA[Más información]]></txt>
+<txt id="m01p0017t07"><![CDATA[Para conocer la Tasa de Costos Efectivo Anual (TCEA) de diferentes tipos de créditos en diferentes instituciones financieras, consulta en:]]></txt>
+
+<!-- Página 18 -->
+<txt id="m01p0018t00"><![CDATA[¿Cómo ves? ¿Sí comparaste las condiciones de los créditos que ofrecen las instituciones financieras? ¿Te sorprendió? ¡Muy bien! Para continuar avancemos con el siguiente módulo.]]></txt>
+
+
+	<!-- ********** -->
+	<!-- APARTADO 3 -->
+	<txt id="introap03_capitulo"><![CDATA[MÓDULO 3]]></txt>
+	<txt id="introap03_titulo"><![CDATA[Las instituciones financieras reguladas y no reguladas]]></txt>
+
+<!-- Página 20 -->
+<txt id="m01p0020t00"><![CDATA[Recuerdas que Sarita le dio algunos consejos a Tomás sobre qué debe considerar antes de sacar un crédito. Ahora, ¿qué pasará con Tomás y Sarita? ¡Sigamos con el caso!]]></txt>
+
+<!-- Página 21 -->
+<txt id="m01p0021t00"><![CDATA[Caso]]></txt>
+<txt id="m01p0021t01"><![CDATA[Escucha con atención el siguiente caso.]]></txt>
+<txt id="m01p0021t02"><![CDATA[¿Ya sabes dónde adquirir el nuevo crédito? Pero dime, ¿dónde sacaste tu crédito para el televisor?]]></txt>
+<txt id="m01p0021t03"><![CDATA[En una financiera nueva que estaba de promoción y daba muchas ofertas. Por ejemplo, el crédito en tres días y sin aval.]]></txt>
+<txt id="m01p0021t04"><![CDATA[Oye y, ¿te aseguraste que se trataba de una institución financiera regulada por la Superintendencia de Bancos, Seguros y AFP?]]></txt>
+<txt id="m01p0021t05"><![CDATA[Sarita, la verdad no, pero me dio confianza porque sus agencias se veían muy elegantes.]]></txt>
+<txt id="m01p0021t06"><![CDATA[Tomás, te recomiendo que siempre te asegures de que estás con una institución financiera regulada para cuando saques un crédito, y es más importante si tienes planes de ahorrar en el futuro.]]></txt>
+<txt id="m01p0021t07"><![CDATA[Porque si la institución financiera no está regulada, el principal riesgo es que te hagan un fraude. Entonces podrías resultar afectado al no contar con apoyo legal que esté de tu lado.]]></txt>
+<txt id="m01p0021t08"><![CDATA[Sí, tienes mucha razón. No pensé en eso, como necesitaba el dinero sólo aproveché la oferta...]]></txt>
+
+<!-- Página 22 -->
+<txt id="m01p0022t00"><![CDATA[Actividad]]></txt>
+<txt id="m01p0022t01"><![CDATA[Lee y responde la siguiente pregunta.]]></txt>
+<txt id="m01p0022t02"><![CDATA[Muy bien, resolvamos la siguiente pregunta. Desde tu perspectiva, ¿cuál es la diferencia entre una institución regulada y otra no-regulada por la Superintendencia de Banca, Seguros y AFP?]]></txt>
+<txt id="m01p0022t03"><![CDATA[Desde tu perspectiva, ¿cuál es la diferencia entre una institución regulada y otra no-regulada por la Superintendencia de Seguros y AFP?]]></txt>
+<txt id="m01p0022t04"><![CDATA[La no-regulada me puede hacer fraude.]]></txt>
+<txt id="m01p0022t05"><![CDATA[La regulada puede dar más crédito.]]></txt>
+<txt id="m01p0022t06"><![CDATA[En caso de fraude, en la no-regulada me puedo quedar sin apoyo para realizar un juicio.]]></txt>
+<txt id="m01p0022t07"><![CDATA[La regulada da más seguridad por contar con el Fondo de Seguro de Depósitos.]]></txt>
+
+<!-- Página 23 -->
+<txt id="m01p0023t00"><![CDATA[Las instituciones financieras no autorizadas]]></txt>
+<txt id="m01p0023t01"><![CDATA[Lee con atención la siguiente información.]]></txt>
+<txt id="m01p0023t02"><![CDATA[Y tú...Cuando te acercas a una institución financiera, ¿te aseguras de que sea una institución regulada?]]></txt>
+<txt id="m01p0023t03"><![CDATA[¿Qué consecuencias genera la elección de instituciones financieras no reguladas?]]></txt>
+<txt id="m01p0023t04"><![CDATA[El desconocimiento de la confiabilidad y la legalidad de la institución financiera pone en riesgo nuestro dinero.]]></txt>
+<txt id="m01p0023t05"><![CDATA[Para los créditos, pueden existir cobros indebidos y garantías que se pierden.]]></txt>
+<txt id="m01p0023t06"><![CDATA[Como la institución financiera no está supervisada por una entidad del Estado, no hay ningún respaldo para los reclamos.]]></txt>
+
+<!-- Página 24 -->
+<txt id="m01p0024t00"><![CDATA[Las instituciones financieras reguladas]]></txt>
+<txt id="m01p0024t01"><![CDATA[Lee con atención la siguiente información.]]></txt>
+<txt id="m01p0024t02"><![CDATA[Antes de adquirir un crédito, siempre debemos asegurarnos de acudir a una entidad financiera regulada. Esto brinda los siguientes beneficios.]]></txt>
+<txt id="m01p0024t03"><![CDATA[Crédito]]></txt>
+<txt id="m01p0024t04"><![CDATA[Entidad financiera regulada]]></txt>
+<txt id="m01p0024t05"><![CDATA[Mayor seguridad de respaldo de nuestro dinero.]]></txt>
+<txt id="m01p0024t06"><![CDATA[Menores costos del crédito.]]></txt>
+<txt id="m01p0024t07"><![CDATA[Acceso a canales de atención (agentes corresponsales, cajeros automáticos, banca móvil, entre otros).]]></txt>
+<txt id="m01p0024t08"><![CDATA[En caso de fraudes u otros, se cuenta con el respaldo de la Superintendencia de Banca, Seguros y AFP.]]></txt>
+<txt id="m01p0024t09"><![CDATA[Más información]]></txt>
+<txt id="m01p0024t10"><![CDATA[Para conocer si la institución financiera que te ofrece crédito o algún otro servicio financiero está regulada, consulta en:]]></txt>
+
+<!-- Página 25 -->
+<txt id="m01p0025t00"><![CDATA[¿Has revisado si tu institución está regulada? ¡Excelente! Para continuar, avancemos con el siguiente módulo.]]></txt>
+
+
+	<!-- ********** -->
+	<!-- APARTADO 4 -->
+	<txt id="introap04_capitulo"><![CDATA[MÓDULO 4]]></txt>
+	<txt id="introap04_titulo"><![CDATA[La información sobre los créditos]]></txt>
+
+<!-- Página 27 -->
+<txt id="m01p0027t00"><![CDATA[¿Qué más podemos aprender con Tomás y Sarita? Escuchémoslos.]]></txt>
+
+<!-- Página 28 -->
+<txt id="m01p0028t00"><![CDATA[Caso]]></txt>
+<txt id="m01p0028t01"><![CDATA[Escucha con atención el siguiente caso.]]></txt>
+<txt id="m01p0028t02"><![CDATA[Tomás, lo bueno es que estás a tiempo para informarte mejor de todo antes de solicitar otro crédito. ¿Cuánto necesitas para el negocio?]]></txt>
+<txt id="m01p0028t03"><![CDATA[Pues, como cinco mil soles.]]></txt>
+<txt id="m01p0028t04"><![CDATA[Y, ¿cuánto más podrías pagar de hoy a mañana, pensando que no te alcanzó para el gasto semanal de comida de tu familia?]]></txt>
+<txt id="m01p0028t05"><![CDATA[La verdad no sé, pero ya hablé con mi mamá, y en caso sea necesario me va a prestar para no quedar mal. Así, cuando el negocio esté funcionando bien, le pagaré su dinero.]]></txt>
+<txt id="m01p0028t06"><![CDATA[Uy Tomás, deberías pensarlo bien, porque con más deudas puedes terminar quedando sobreendeudado.]]></txt>
+<txt id="m01p0028t07"><![CDATA[Pero, pues no van a saber si no les digo. Además, a Juanita y a mí nos gusta cumplir con nuestros compromisos.]]></txt>
+<txt id="m01p0028t08"><![CDATA[¡De eso estoy segura! Sólo que cuando hagas tu solicitud de crédito, van a validar que tengas los ingresos para pagar el crédito y que no tengas dificultades con tu crédito actual y, especialmente que no estés sobreendeudado, es decir que tengas deudas que no puedas pagar.]]></txt>
+<txt id="m01p0028t09"><![CDATA[¿Y cómo revisan eso?]]></txt>
+
+<!-- Página 29 -->
+<txt id="m01p0029t00"><![CDATA[Actividad]]></txt>
+<txt id="m01p0029t01"><![CDATA[Lee con atención y responde la siguiente pregunta.]]></txt>
+<txt id="m01p0029t02"><![CDATA[Como has escuchado, hay una nueva situación que Tomás debe resolver. Desde tu perspectiva, si fueses Tomás ¿cuáles de las siguientes opciones elegirías?]]></txt>
+<txt id="m01p0029t03"><![CDATA[Desde tu perspectiva, si fueses Tomás, ¿cuáles de las siguientes opciones elegirías?]]></txt>
+<txt id="m01p0029t04"><![CDATA[Confiar en el apoyo que su mamá dijo le daría.]]></txt>
+<txt id="m01p0029t05"><![CDATA[Solicitar otro crédito y guardar una parte de éste para usarlo cuando no tenga dinero.]]></txt>
+<txt id="m01p0029t06"><![CDATA[Ahorrar, aunque lleve tiempo.]]></txt>
+<txt id="m01p0029t07"><![CDATA[Elaborar un presupuesto familiar considerando las deudas, a fin de proteger sus finanzas.]]></txt>
+
+<!-- Página 30 -->
+<txt id="m01p0030t00"><![CDATA[Las Centrales de Riesgos]]></txt>
+<txt id="m01p0030t01"><![CDATA[Lee con atención y aprende.]]></txt>
+<txt id="m01p0030t02"><![CDATA[¿Conocías esta información?]]></txt>
+<txt id="m01p0030t03"><![CDATA[CENTRALES DE RIESGOS]]></txt>
+<txt id="m01p0030t04"><![CDATA[Son los sistemas de información donde aparecen todos los créditos que han adquirido las personas y la forma cómo han manejado sus créditos.]]></txt>
+<txt id="m01p0030t05"><![CDATA[Cuando no se cumple con algún pago en una institución financiera, nuestro "historial de crédito“ se afecta negativamente, y así futuras posibilidades para tomar nuevos créditos.]]></txt>
+<txt id="m01p0030t06"><![CDATA[En algunos empleos se verifica el historial de crédito de las personas.]]></txt>
+
+<!-- Página 31 -->
+<txt id="m01p0031t00"><![CDATA[Lecciones aprendidas]]></txt>
+<txt id="m01p0031t01"><![CDATA[Lee con atención la siguiente información.]]></txt>
+<txt id="m01p0031t02"><![CDATA[¿Con qué nos quedamos aquí?]]></txt>
+<txt id="m01p0031t03"><![CDATA[Las instituciones financieras trabajan con Centrales de Riesgos.]]></txt>
+<txt id="m01p0031t04"><![CDATA[Sistemas de Información.]]></txt>
+<txt id="m01p0031t05"><![CDATA[Mal manejo créditos.]]></txt>
+<txt id="m01p0031t06"><![CDATA[Problemas para futuros créditos.]]></txt>
+<txt id="m01p0031t07"><![CDATA[Buena administración de créditos.]]></txt>
+<txt id="m01p0031t08"><![CDATA[Mejores condiciones para futuros créditos.]]></txt>
+<txt id="m01p0031t09"><![CDATA[Más información]]></txt>
+<txt id="m01p0031t10"><![CDATA[Puedes consultar tu historial de crédito en el siguiente enlace:]]></txt>
+
+<!-- Página 32 -->
+<txt id="m01p0032t00"><![CDATA[Caso]]></txt>
+<txt id="m01p0032t01"><![CDATA[Escucha con atención el caso de Tomás.]]></txt>
+<txt id="m01p0032t02"><![CDATA[¿Has visitado el enlace para consultar tu historial de crédito? ¡Qué bueno!, Ahora, regresemos con nuestros dos amigos, Tomás y Sarita.]]></txt>
+<txt id="m01p0032t03"><![CDATA[¡Qué bien informada estás, Sarita! ¡Deberías trabajar para la Caja Municipal!]]></txt>
+<txt id="m01p0032t04"><![CDATA[Ja,ja,ja. Sí, ¿verdad? Por lo pronto, sólo adelantaré el pago de mi crédito para que me hagan la reducción correspondiente de intereses.]]></txt>
+<txt id="m01p0032t05"><![CDATA[¿Se puede? Si pagas antes, ¿te cobran menos?]]></txt>
+<txt id="m01p0032t06"><![CDATA[¡Claro! Mira, el jueves iré a pagar. ¿Por qué no me acompañas? Y te presento a la asesora que me atendió para que te recomiende cómo resolver lo de tus créditos y las mejores opciones para poner tu negocio.]]></txt>
+<txt id="m01p0032t07"><![CDATA[¡Seguro que sí! El jueves te acompaño.]]></txt>
+
+<!-- Página 33 -->
+<txt id="m01p0033t00"><![CDATA[Y tú, ¿actualmente tienes un crédito? ¿Sabes si haces pagos anticipados de tus cuotas, te ofrecen algunos beneficios? ]]></txt>
+<txt id="m01p0033t01"><![CDATA[Muchas veces, como en el caso de Sarita, sí hay estas opciones que te permiten ahorrar dinero o te traen otros beneficios.]]></txt>
+<txt id="m01p0033t02"><![CDATA[Puedes verificar esto en tu contrato de crédito o bien en tu próxima visita a la entidad financiera donde contrataste tu crédito. Y tal vez encontrarás también otros beneficios que antes no conocías.]]></txt>
+
+
+<!-- Página 34 -->
+<txt id="m01p0034t00"><![CDATA[El pago anticipado]]></txt>
+<txt id="m01p0034t01"><![CDATA[Lee con atención la siguiente información.]]></txt>
+<txt id="m01p0034t02"><![CDATA[¿Identificas los aspectos importantes de un crédito cuando realizas un pago anticipado o pronto pago?]]></txt>
+<txt id="m01p0034t03"><![CDATA[¿Cuáles son los beneficios del pago anticipado o pronto pago?]]></txt>
+<txt id="m01p0034t04"><![CDATA[El pago anticipado se da cuando se adelantan cuotas futuras, y a cambio se paga menos intereses y comisiones previstas al inicio.]]></txt>
+<txt id="m01p0034t05"><![CDATA[El pronto pago puede darse en reducir el monto de las cuotas de tu crédito o del plazo.]]></txt>
+<txt id="m01p0034t06"><![CDATA[Las instituciones financieras están obligadas a aceptarlo sin ninguna penalidad.]]></txt>
+<txt id="m01p0034t07"><![CDATA[Revisa bien las condiciones de tu crédito.]]></txt>
+<txt id="m01p0034t08"><![CDATA[Recuerda que...]]></txt>
+<txt id="m01p0034t09"><![CDATA[Recuerda que para sacar el máximo provecho de un crédito es necesario conocer y revisar todas las condiciones, sobre todo cuando no se está seguro.]]></txt>
+<txt id="m01p0034t10"><![CDATA[Si ya tienes un crédito, ten en cuenta bajo qué condiciones lo tienes. Esta información está en la Hoja Resumen que te entrega tu entidad financiera cuando firmas el contrato de crédito.]]></txt>
+<txt id="m01p0034t11"><![CDATA[Este documento forma parte del contrato, y contiene información sobre las tasas de interés, comisiones y gastos que se te podrían cobrar a lo largo de la vida del crédito. Es decir, el resumen de los aspectos relevantes de las condiciones del crédito y tus responsabilidades.]]></txt>
+<txt id="m01p0034t12"><![CDATA[En otras palabras, la Hoja Resumen contiene información sobre los aspectos relevantes de las condiciones del crédito y tus responsabilidades.]]></txt>
+
+	<!-- ********** -->
+	<!-- APARTADO 5 -->
+<!--<txt id="introap05_capitulo"><![CDATA[MÓDULO 5]]></txt>-->
+<!--<txt id="introap05_titulo"><![CDATA[Resumen]]></txt>-->
+
+<!-- Página 35 -->
+<txt id="m01p0035t00"><![CDATA[Sobreendeudamiento]]></txt>
+<txt id="m01p0035t01"><![CDATA[Medidas para evitarlo:]]></txt>
+<txt id="m01p0035t02"><![CDATA[Hoy hemos revisado temas muy importantes. Vamos a repasar un poco lo que hemos aprendido en este curso.]]></txt>
+<txt id="m01p0035t03"><![CDATA[<strong>Pensar detenidamente antes de decidir</strong>]]></txt>
+<txt id="m01p0035t04"><![CDATA[No debes contratar un crédito de manera impulsiva. Es importante pensar bien antes de tomar la decisión de adquirir un crédito, para no arrepentirte después cuando te falte el dinero para pagar las cuotas.]]></txt>
+<txt id="m01p0035t05"><![CDATA[<strong>Prestar atención a todos los detalles del crédito</strong>]]></txt>
+<txt id="m01p0035t06"><![CDATA[Antes de contratar un nuevo crédito, es importante prestar mucha atención a todas las condiciones del crédito, no sólo a la cuota que pagarás.]]></txt>
+<txt id="m01p0035t07"><![CDATA[<strong>Comprobar las condiciones de varias instituciones financieras</strong>]]></txt>
+<txt id="m01p0035t08"><![CDATA[Para asegurarte de encontrar las mejores condiciones, visita por lo menos  3 instituciones financieras reguladas, y compara el costo de los créditos que ofrecen revisando su Tasa de Costo Efectivo Anual (TCEA).]]></txt>
+<txt id="m01p0035t09"><![CDATA[<strong>Comprobar que es una institución financiera regulada</strong>]]></txt>
+<txt id="m01p0035t10"><![CDATA[Asegúrate que trabajas con una institución financiera regulada. Esto te dará más seguridad y beneficios.]]></txt>
+<txt id="m01p0035t11"><![CDATA[<strong>Central de Riesgos</strong>]]></txt>
+<txt id="m01p0035t12"><![CDATA[Las instituciones financieras utilizan sistemas de información donde se registra el "historial de crédito" de las personas, es decir los créditos adquiridos.]]></txt>
+<txt id="m01p0035t13"><![CDATA[Un mal "historial de crédito" te puede afectar negativamente para adquirir futuros créditos y hasta para que te contraten en una empresa.]]></txt>
+<txt id="m01p0035t14"><![CDATA[¡Felicitaciones, ahora estás preparado para tomar mejores decisiones!]]></txt>
+<txt id="m01p0035t15"><![CDATA[Muchas gracias por tu interés en este curso. Ha sido un gusto compartir contigo información de gran valor. ¡Espero que sea muy útil para ti!]]></txt>
+<txt id="m01p0035t16"><![CDATA[Puedes visitarnos las veces que quieras, estamos para apoyarte a ti y tus finanzas.]]></txt>
+<txt id="m01p0035t17"><![CDATA[Y no te olvides descargar este resumen que te va a ayudar recordando los temas importantes la próxima vez que contrates un crédito. <strong>¡Hasta pronto!</strong>]]></txt>
+<txt id="m01p0035t18"><![CDATA[Descargar Resumen]]></txt>
+<txt id="m01p0035t19"><![CDATA[TEST DE EVALUACIÓN]]></txt>
+<txt id="m01p0035t20"><![CDATA[A continuación, <strong>debes demostrar lo que has aprendido en el curso </strong>, a través de la realización de un test de evaluación que consta de diez preguntas.]]></txt>
+<txt id="m01p0035t21"><![CDATA[La realización de este test es de carácter <strong>obligatorio</strong>, por lo que debes contestar todas las preguntas para finalizar el curso.]]></txt>
+<txt id="m01p0035t22"><![CDATA[Puedes comenzar el test en la página siguiente.]]></txt>
+<txt id="m01p0035t23"><![CDATA[<strong>¡BUENA SUERTE!</strong>]]></txt>
+
+<!-- Página 36 -->
+<txt id="m01p0036t00"><![CDATA[Test de evaluación]]></txt>
+<txt id="m01p0036t01"><![CDATA[Lee y responde las siguientes preguntas.]]></txt>
+
+
+</textuales>

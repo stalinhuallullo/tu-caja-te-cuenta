@@ -1,0 +1,234 @@
+﻿
+
+<style type="text/css">
+	a.bpopupbutton {
+		background:none !important;
+		border:none !important;
+		/**/
+		-webkit-border-radius: 0px !important;
+		-moz-border-radius: 0px !important;
+		-o-border-radius: 0px !important;
+		-ms-border-radius: 0px !important;
+		border-radius: 0px !important;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	a#lk-necesidad,	a#lk-recursos, a#lk-escasez, a#lk-costo { position:absolute; display:block; }
+	a#lk-necesidad span, a#lk-recursos span, a#lk-escasez span, a#lk-costo span { position:absolute; top:-10000px; display:none; visibility:hidden; width:0px; height:0px; }
+	/**/
+	a#lk-necesidad { top:15%; left:24%; width:24%; height:30%; }
+	a#lk-recursos { top:15%; left:52%; width:24%; height:30%; }
+	a#lk-escasez { top:47%; left:24%; width:24%; height:31%; }
+	a#lk-costo { top:47%; left:52%; width:24%; height:31%; }
+	/**/
+	table.tabla_basica { width: 100%; background: #fff; border: none; }
+	table.tabla_basica th,
+	table.tabla_basica td { padding: 10px; border: none; vertical-align: top; }
+	table.tabla_basica th { font-size:120%; font-weight: bold; color: #333; text-transform: uppercase; }
+	table.tabla_basica td { font-size:110%; }
+	table.tabla_basica th.rayado,
+	table.tabla_basica td.rayado { border-left: 10px solid #EDEDED; }
+
+	.aside-derecha,
+	.aside-izquierda,
+	.content-2-derecha,
+	.content-2-izquierda{
+		text-align: center;
+	}
+	.content-2-derecha img,
+	.content-2-izquierda img{
+		width: 100%;
+	}
+	.title-module{
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+		color: #333;
+		text-transform: uppercase;
+	}
+
+	@media (max-width: 991px) {
+		.img-nube{
+			width: 100%;
+		}
+		.content-element{
+			margin-bottom: 2rem;
+		}
+		.content-2-derecha img,
+		.content-2-izquierda img{
+			width: 300px;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		a#lk-necesidad { top:13%; height:29%; }
+		a#lk-recursos { top:13%; height:29%; }
+		a#lk-escasez { top:43%; height:29%; }
+		a#lk-costo { top:43%; height:29%; }
+	}
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="27">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a04_00.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a04_01.jpg' audio='12_01'></div>
+		<div class="escena" numero='2' imagen='a04_02.jpg' audio='12_02'></div>
+		<div class="escena" numero='3' imagen='a04_03.jpg' audio='12_03'></div>
+		<div class="escena" numero='4' imagen='a04_04.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='5' imagen='a04_05.jpg' audio='silencio01s'></div>
+	</div>
+</div>
+
+<div class="app fade" style="width:970px; height:530px;">
+	<a id="lk-necesidad" class="bpopupbutton" href="javacript:;" title="Necesidad y deseo" style="display:none;"><span>Necesidad y deseo</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Necesidad y deseo</strong></p>
+			<p>La <strong>necesidad</strong> es la sensación  de que algo nos falta.</p>
+			<div class="col-md-12">
+				<p class="title-module">Todos tenemos necesidades</p>
+				<div class="col-md-12">
+					<div class="col-md-4 content-element">
+						<div class="text-center">
+							<img src="contenidos/modulo01/media/casa.png" alt="Casa" />
+							<br/>
+							<strong>Casa</strong>
+						</div>
+					</div>
+					<div class="col-md-4 content-element">
+						<div class="text-center">
+							<img src="contenidos/modulo01/media/comida.png" alt="Comida" />
+							<br/>
+							<strong>Comida</strong>
+						</div>
+					</div>
+					<div class="col-md-4 content-element">
+						<div class="text-center">
+							<img src="contenidos/modulo01/media/ropa.png" alt="Ropa" />
+							<br/>
+							<strong>Ropa</strong>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<p class="title-module">Algunas necesidades se convierten en deseos</p>
+					<p><strong>Ejemplo</strong>: si tenemos sed (necesidad) y sólo nos queremos tomar <strong>una gaseosa</strong>, eso es un <strong>deseo</strong>. Hay que <strong>balancear</strong> deseos y necesidades.</p>
+					<div class="col-md-12">
+						<img src="contenidos/modulo01/media/pensamientoRefresco.png" alt="Comida" width="400px" class="img-nube"/>
+						<br>
+						<img src="contenidos/modulo01/media/lengua.gif" alt="Comida" width="200px"/>
+					</div>
+				</div>
+
+				<!--<div class="row">
+					<div class="col-md-6 aside-derecha">
+						<p class="title-module">Todos tenemos necesidades</p>
+						<div class="text-center">
+							<img src="contenidos/modulo01/media/casa.png" alt="Casa" />
+							<br/>
+							<strong>Casa</strong>
+						</div>
+						<div class="text-center">
+							<img src="contenidos/modulo01/media/comida.png" alt="Comida" />
+							<br/>
+							<strong>Comida</strong>
+						</div>
+					</div>
+					<div class="col-md-6 aside-izquierda">
+						<p class="title-module">Algunas necesidades se convierten en deseos</p>
+						<div class="text-center">
+							<strong>Ejemplo</strong>: si tenemos sed (necesidad) y sólo nos queremos tomar <strong>una gaseosa</strong>, eso es un <strong>deseo</strong>. Hay que <strong>balancear</strong> deseos y necesidades.
+							<br/>
+							<br/>
+							<img src="contenidos/modulo01/media/pensamientoRefresco.png" alt="Comida" width="400px"/>
+							<img src="contenidos/modulo01/media/lengua.gif" alt="Comida" width="200px"/>
+						</div>
+						
+					</div>
+				</div>-->
+			</div>
+			
+			<!--<table class="tabla_basica" border="0">
+				<tr>
+					<th align="center">Todos tenemos necesidades</th>
+					<th align="left" class="rayado">Algunas necesidades se convierten en deseos</th>
+				</tr>
+				<tr>
+					<td align="center"><img src="contenidos/modulo01/media/casa.png" alt="Casa" /><br /><strong>Casa</strong></td>
+					<td rowspan="3" class="rayado">
+						<strong>Ejemplo</strong>: si tenemos sed (necesidad) y sólo nos queremos tomar <strong>una gaseosa</strong>, eso es un <strong>deseo</strong>. Hay que <strong>balancear</strong> deseos y necesidades.
+						<br /><br />
+						<img src="contenidos/modulo01/media/pensamientoRefresco.png" alt="Comida" width="400px"/>
+						<img src="contenidos/modulo01/media/lengua.gif" alt="Comida" width="200px"/>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="contenidos/modulo01/media/comida.png" alt="Comida" /><br /><strong>Comida</strong></td> 
+				</tr>
+				<tr>
+					<td align="center"><img src="contenidos/modulo01/media/ropa.png" alt="Ropa" /><br /><strong>Ropa</strong></td> 
+				</tr>
+			</table>-->
+		</div>
+	</div>
+
+  <a id="lk-recursos" class="bpopupbutton" href="javacript:;" title="Recursos" style="display:none;"><span>Recursos</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Recursos</strong></p>
+			<div class="col-md-12 row">
+				<p>La <strong>necesidades y los deseos son ilimitados, pero los recursos para satisfacerlos no.</strong></p>
+				<div class="col-md-6 content-2-derecha">
+					<img src="contenidos/modulo01/media/blocNotas.gif" alt="blocNota" width="392px"/>
+				</div>
+				<div class="col-md-6 content-2-izquierda">
+					<img src="contenidos/modulo01/media/cuadro.png" width="378px" alt="Agua, tiempo y dinero." />
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <a id="lk-escasez" class="bpopupbutton" href="javacript:;" title="Escasez" style="display:none;"><span>Escasez</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Escasez</strong></p>
+			<br/>
+			<p>Es la <strong>insuficiencia de recursos para satisfacer todas nuestras necesidades y deseos.</strong></p>
+				<img src="contenidos/modulo01/media/cuadro2.png" class="imagen_centrada" alt="Escasez" />
+		</div>
+	</div>
+
+  <a id="lk-costo" class="bpopupbutton" href="javacript:;" title="Costo de oportunidad" style="display:none;"><span>Costo de oportunidad</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Costo de oportunidad</strong></p>
+			<br/>
+			<p>Es <strong>aquello a lo que renunciamos para elegir otra cosa.</strong> Puede ser un objeto, ir a un lugar en vez de a otro… </strong></p>
+				<img src="contenidos/modulo01/media/cuadro3.png" class="imagen_centrada"  alt="Escasez" />
+		</div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en los <strong>enlaces</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>

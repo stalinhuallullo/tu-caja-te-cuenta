@@ -1,0 +1,81 @@
+﻿<div id="contenedor_creditos">
+    <div class="contenedor_creditos_contenido">
+	<script type="text/javascript">
+		$.ajax({
+		  type: 'GET',
+		  url: 'contenidos/xml/creditos_modulo01.xml',
+		  cache: false,
+		  dataType: ($.browser.msie) ? 'text' : 'xml', // Reconocemos el browser.
+		  success: function(data){
+			var xml;
+			if(typeof data == 'string'){
+			  xml = new
+			  ActiveXObject('Microsoft.XMLDOM');
+			  xml.async = false;
+			  xml.loadXML(data);
+			} else {
+			  xml = data;
+			}
+			
+			var descripcion = $(xml).find('descripcion').text();
+			$('.contenedor_creditos_contenido').append("<div id='descripcion'>"+descripcion+"</div>");
+			
+			$(xml).find('autor').each(function(){			
+				var id = $(this).attr('id');				
+				var foto = $(this).find('foto').text();
+				if (foto==""){foto="sinfoto.png"}
+				var nombre = $(this).find('nombre').text();
+				var correocorporativo = $(this).find('correocorporativo').text();
+				var correopersonal = $(this).find('correopersonal').text();
+				var telefono = $(this).find('telefono').text();
+				var twitter = $(this).find('twitter').text();	
+				// -----------------------------------------------------
+					var datoautor1 = $(this).find('datoautor1').text();
+					var datoautor2 = $(this).find('datoautor2').text();
+					var datoautor3 = $(this).find('datoautor3').text();
+				// -----------------------------------------------------
+				$('.contenedor_creditos_contenido').append("<div class='autor' id='autor_"+id+"'></div>");
+				//$('#autor_'+id).append("<IMG src='contenidos/modulo01/media/"+foto+"' alt='"+nombre+"'>");
+				$('#autor_'+id).append("<ul class='datos'></ul>");
+				$('#autor_'+id+' .datos').append("<li class='nombre'>"+nombre+"</li>");
+				if (correocorporativo==""){} else{$('#autor_'+id+' .datos').append("<li class='correocorporativo'> Correo corporativo: <a href:'mailto:"+correocorporativo+"'>"+correocorporativo+"</a></li>");}
+				if (correopersonal==""){} else{$('#autor_'+id+' .datos').append("<li class='correopersonal'> Correo personal: <a href:'mailto:"+correopersonal+"'>"+correopersonal+"</a></li>");}
+				if (telefono==""){} else{$('#autor_'+id+' .datos').append("<li class='telefono'>Teléfono: "+telefono+"</li>");}
+				// -------------------------------------------------------------------------------------------------------------
+					if (datoautor1==""){} else{$('#autor_'+id+' .datos').append("<li class='datoautor1'>"+datoautor1+"</li>");}
+					if (datoautor2==""){} else{$('#autor_'+id+' .datos').append("<li class='datoautor2'>"+datoautor2+"</li>");}
+					if (datoautor3==""){} else{$('#autor_'+id+' .datos').append("<li class='datoautor3'>"+datoautor3+"</li>");}
+				// -------------------------------------------------------------------------------------------------------------
+				if (twitter==""){} else{$('#autor_'+id+' .datos').append("<li class='twitter'>Twitter: <a href:'https://twitter.com/"+twitter+"'>"+twitter+"</a></li>");}
+			});			
+			
+			$(xml).find('colaborador').each(function(){		
+				var id = $(this).attr('id');				
+				var nombre = $(this).find('nombre').text();
+				var logo = $(this).find('logotipo').text();
+				var descripcion = $(this).find('descripcion').text();
+				var enlace = $(this).find('enlace').text();
+				
+				$('.contenedor_creditos_contenido').append("<div class='colaborador' id='colaborador_"+id+"'></div>");
+				$('#colaborador_'+id).append("<p class='nombre'>"+nombre+"</p>");
+				$('#colaborador_'+id).append("<IMG src='contenidos/modulo01/media/"+logo+"'>");				
+				$('#colaborador_'+id).append("<p class='descripcion'>"+descripcion+"</p>");
+				$('#colaborador_'+id).append("<a href='"+enlace+"' class='enlace' target='_blank'>"+enlace+"</a>");
+			});
+			
+		  }
+		});
+	
+	
+		</script> 
+		</div>
+	</div>
+
+<script>
+$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'>Unidad 1: Introducción a la comunicación institucional.</div><div class='subtitulo'>Créditos: Aportaciones de personas y empresas</div>")
+</script>
+
+<button class="btn_volver" onclick="volverToContent()">volver al contenido</button>
+
+<br />
+<br />

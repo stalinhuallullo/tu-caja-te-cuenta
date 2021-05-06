@@ -1,0 +1,17 @@
+/* Menu desplegable */
+
+ul#navegacion #contenidoMenu ul li{margin:0; padding:0; line-height:1em}
+ul#navegacion #contenidoMenu ul li.apartado{margin:10px 0; line-height:1em}
+
+ul#navegacion #contenidoMenu ul li p.apartadosup, ul#navegacion #contenidoMenu ul li p.apartadoinf, .apartadosombra{display:none}
+
+ ul#navegacion #contenidoMenu ul li p.apartadotext,  ul#navegacion #contenidoMenu ul li ul li p.apartadotext{line-height:normal; margin:0; padding:10px} 
+ ul#navegacion #contenidoMenu ul a, ul#navegacion #contenidoMenu ul li a,  ul#navegacion #contenidoMenu ul li li a{margin:0; padding:0; line-height:normal;}
+ ul#navegacion #contenidoMenu ul li{}
+
+#mcs_container{z-index:-1; overflow:hidden !important}
+
+.ruta{width:70px !important;}
+#CapaIndicePaginas{top:-30px !important;}
+
+iframe{border:0px !important;}

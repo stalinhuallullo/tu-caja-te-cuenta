@@ -1,0 +1,84 @@
+/**************************
+ * MONITOR CSS
+ * Francisco Javier López
+ * v 1.0.0
+ * 20/03/2014
+ **************************/
+ 
+ .monitor{
+	position:relative;
+	width:629px;
+	height:485px;
+	background:url('monitor.png') scroll no-repeat 50% 50% transparent;
+	margin:auto;
+}
+
+.monitor .monitor-botonera{
+	bottom: 125px;
+    position: absolute;
+    text-align: center;
+    width: 629px;
+}
+
+.monitor .monitor-botonera li{
+	border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0 5px;
+    position: relative;
+    text-shadow: none;
+	background:url('monitor-btn.png') scroll repeat-x 0 0 transparent;
+}
+
+
+.monitor-contenido {
+    height: 255px;
+    left: 31px;
+    overflow: hidden;
+    position: absolute;
+    top: 65px;
+    width: 568px;
+}
+
+.monitor-contenido .slide{
+    margin: 0;
+    padding: 0 10px 10px;
+    top: 0;
+    width: 510px;
+	position:absolute;
+}
+
+.monitor .scroll{
+	display:none;
+	margin: 0;
+    padding: 0;
+}
+
+.monitor .scroll li{
+	width:25px;
+	height:25px;
+	background:#f00;
+	position:absolute;
+	right:40px;
+	padding:0;
+	margin:0;
+	cursor:pointer;
+}
+
+.monitor .scroll li.subir{
+	background:url('arrow_up.png') scroll no-repeat 0 0 #f0f0f0;
+	top:75px;
+}
+
+.monitor .scroll li.bajar{
+	background:url('arrow_down.png') scroll no-repeat 0 0 #f0f0f0;
+	bottom:175px;
+}
+
+.monitor .scroll li.subir:hover, .monitor .scroll li.bajar:hover{
+	background-color:#44a444;
+}

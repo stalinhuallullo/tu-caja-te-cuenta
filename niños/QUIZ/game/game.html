@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablero Quiz</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=830">
+    <script type="text/javascript" src="../core/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../core/lib/jCanvaScript.1.5.15.js"></script>
+    <script type="text/javascript" src="../core/jquery.css3finalize.min.js"></script>
+    <script type="text/javascript" src="../core/spiral.tools.js"></script>
+    <script type="text/javascript" src="../core/spiral.plugins.js"></script>
+    <script type="text/javascript" src="../core/core.js"></script>
+    <script type="text/javascript" src="../core/scorm.js"></script>
+    <script type="text/javascript" src="js/callback.js"></script>
+    <script type="text/javascript" src="../core/snowjs-spriteanim.min.js"></script>
+
+    <script type="text/javascript">
+        GAMEPREFIX = "boardgame";
+    </script>
+    <script type="text/javascript" src="js/boardgame.js"></script>
+
+    <link href="../core/core.css" rel="stylesheet" media="all"/>
+    <link href="css/boardgame.css" rel="stylesheet" media="all"/>
+    <link href="fonts/stylesheet.css" rel="stylesheet" media="all"/>
+
+<style type="text/css">
+	div.game #step1continuebutton {
+		left: 305px !important;
+		top: 380px !important;
+		position: absolute !important;
+	}
+	div.game #step5replaybutton {
+		left: 275px !important;
+		top: 400px !important;
+		position: absolute !important;
+	}
+	div.score-description {
+		top: 265px !important;
+	}
+	/**/
+	div.game a.button {
+		color: #fff !important;
+		padding: 12px 50px !important;
+		box-shadow: none !important;
+		-webkit-background: -moz-linear-gradient(center top , #E2001A 0%, #900 100%) repeat scroll 0% 0% transparent !important;
+		-moz-background: -moz-linear-gradient(center top , #E2001A 0%, #900 100%) repeat scroll 0% 0% transparent !important;
+		-o-background: -moz-linear-gradient(center top , #E2001A 0%, #900 100%) repeat scroll 0% 0% transparent !important;
+		-ms-background: -moz-linear-gradient(center top , #E2001A 0%, #900 100%) repeat scroll 0% 0% transparent !important;
+		background: -moz-linear-gradient(center top , #E2001A 0%, #900 100%) repeat scroll 0% 0% transparent !important;
+	}
+	div.game a.button:hover {
+		color: #ccc !important;
+		-webkit-background: -moz-linear-gradient(center top , #707070 0%, #3A3A3A 100%) repeat scroll 0% 0% transparent !important;
+		-moz-background: -moz-linear-gradient(center top , #707070 0%, #3A3A3A 100%) repeat scroll 0% 0% transparent !important;
+		-o-background: -moz-linear-gradient(center top , #707070 0%, #3A3A3A 100%) repeat scroll 0% 0% transparent !important;
+		-ms-background: -moz-linear-gradient(center top , #707070 0%, #3A3A3A 100%) repeat scroll 0% 0% transparent !important;
+		background: -moz-linear-gradient(center top , #707070 0%, #3A3A3A 100%) repeat scroll 0% 0% transparent !important;
+	}
+	div.game div.score {
+		color: #E2001A !important;
+	}
+	div.game .step-2-description {
+		font-family: 'Calibri', Arial, Helvetica, sans-serif !important;
+		border: none !important;
+		/*background: none !important;*/
+		background: url(config/images/title.png) no-repeat top center !important;
+		padding: 50px 0 0 0 !important;
+		width: 600px !important;
+		height: 250px !important;
+	}
+	div.game .step-2-description h1 {
+		/*color: #E2001A !important;*/
+		/*font-size: 200% !important;*/
+		position: absolute !important;
+		top: -10000 !important;
+		display: none !important;
+		visibility: hidden;
+		width: 1px !important;
+		height: 1px !important;
+	}
+	.question-block .scrollable {
+		font-family: 'Calibri', Arial, Helvetica, sans-serif !important;
+		font-size: 16px !important;
+	}
+	.question-choose .variant .table {
+		font-family: 'Calibri', Arial, Helvetica, sans-serif !important;
+		font-weight: bold !important;
+		font-size: 13px !important;
+		color: #000 !important;
+	}
+	div.game .racer-variant-1 { width: 51px !important; }
+	div.game .racer-variant-2 { width: 65px !important; }
+	div.game .racer-variant-3 { width: 51px !important; }
+	div.game .racer-variant-4 { width: 65px !important; }
+	/**/
+</style>
+
+</head>
+<body class="gamebody">
+
+<div id="game" class="game step-0" style="margin-top:4% !important;">
+    <div id="animation">
+
+    </div>
+
+    <div class="step-0">
+        <div style="line-height: 540px; color: white; text-align: center">Cargando...</div>
+    </div>
+    <div class="step-1">
+        <div class="logo1"></div>
+        <center style="padding-top: 400px">
+            <a href="#" id="step1continuebutton" class="button button-game-start-1 bundle-continue" title="Continuar"></a>
+        </center>
+    </div>
+    <div class="step-2">
+
+        <div class="logo2"></div>
+        <div class="step-2-description">
+           <div class="description">
+               <div class="scrollable"></div>
+           </div>
+            <div class="choose-racer">
+                <div class="racer-description"></div>
+                <div racer="1" class="racer-variant racer-variant-1">
+                    <div class="marker">
+                        <div></div>
+                    </div>
+                </div>
+              <div racer="2" class="racer-variant racer-variant-2">
+                    <div class="marker">
+                        <div></div>
+                    </div>
+                </div>
+                <div racer="3" class="racer-variant racer-variant-3">
+                    <div class="marker">
+                        <div></div>
+                    </div>
+                </div>
+                <div racer="4" class="racer-variant racer-variant-4">
+                    <div class="marker">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="step-3">
+        <div class="logo3"></div>
+		<div class="ayuda">
+			<p style="margin: 65px 0 10px 0;"><strong>CÓMO SE JUEGA</strong></p>
+			<p>Pulsa sobre el dado para hacer una jugada.</p>
+			<p>Pulsa sobre las cartas para mostrar la siguiente pregunta.</p>
+		</div>
+		<div class="caja-puntuacion">
+        	<div class="progressbar">PREGUNTA:</div>
+        	<div class="puntuacion">PUNTUACIÓN: </div>
+			<div class="score">0</div>
+		</div>
+        <div class="lose_panel">
+            <div class="lose_text"><span>X</span></div>
+            <a href="#" id="losecontinuebutton" class="button"></a>
+        </div>
+        <div class="board">
+            <div class="sequence">
+
+            </div>
+            <div class="board-start"></div>
+            <div class="board-finish"></div>
+            <div class="card-stack  with-marker">
+                <div class="card4"></div>
+                <div class="card3"></div>
+                <div class="card2"></div>
+                <div class="card1"></div>
+                <div class="card0"></div>
+                <div class="card-question">
+
+                </div>
+                <div class="marker">
+                    <div></div>
+                </div>
+            </div>
+            <div class="dice rolled dice-6 needsrolling with-marker">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="d4"></div>
+                <div class="d5"></div>
+                <div class="d6"></div>
+                <div class="marker">
+                    <div></div>
+                </div>
+            </div>
+            <div class="racer-variant">
+                <div class="marker">
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="step-4 unanswered">
+        <div class="logo3"></div>
+		<div class="ayuda">
+			<p>Selecciona la respuesta adecuada a la pregunta planteada.</p>
+			<p>Pulsa continuar para volver al tablero.</p>
+		</div>
+		<div class="caja-puntuacion">
+        	<div class="progressbar">PREGUNTA:</div>
+        	<div class="puntuacion">PUNTUACIÓN: </div>
+			<div class="scoreboard">
+				<div class="score">0</div>
+			</div>
+		</div>
+        <div class="question-vertical-shift"></div>
+        <div class='question-block-wrapper-bg'></div>
+        <div class='question-block-wrapper'>
+            <div class="question-image"></div>
+            <div class='question-block-wrapper-inner'>
+                <div class='question-block'>
+                    <div class="scrollable"></div>
+                </div>
+            </div>
+        </div>
+        <div class="question-feedback-vertical-shift"></div>
+        <div class='question-choose-wrapper'>
+            <div class='question-choose'>
+
+            </div>
+        </div>
+        <div class='question-answered-block-wrapper'>
+            <div>
+                <div class="question-answered-block">
+                    <div class="scrollable"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons buttons-continue">
+            <a href="#" id="step4continuebutton" class="button button-question-continue bundle-continue"></a>
+        </div>
+        <div class="buttons buttons-confirm">
+            <a href="#" id="step4confirmbutton" class="button button-question-confirm bundle-confirm"></a>
+        </div>
+
+    </div>
+    <div class="step-5">
+       
+        <div class='result-block-wrapper'>
+            <div>
+                <div class='result-block'>                    
+                    <div class="score-description"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="#" id="step5replaybutton" class="button button-result-continue bundle-replay"></a>
+        </div>
+    </div>
+</div>
+
+<audio class="error" type="audio/mpeg">
+    No se encuentra soporte de audio. Intente instalar Quick Time.
+</audio>
+
+<!-- Background -->
+<img id="background" src="config/images/bg.jpg" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index:-1 !important;">
+<!---------------->
+
+</body>
+</html>

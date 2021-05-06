@@ -1,0 +1,313 @@
+/** RECURSOS **/
+
+#btn_salir, #btn_ayuda, #btn_volver, #indice_btn, #btn_creditos, #btn_bibliografia, #btn_glosario, #btn_anexos, #btn_tips, #btn_print, #btn_progreso, #btn_mindmap{
+	background-attachment: scroll;
+    background-image: url("../../media/sprite.png");
+    background-position: -8px -893px;
+    background-repeat: no-repeat;	
+    cursor: pointer;
+	float: left;
+    height: 44px;
+    width: 54px;
+}
+
+#indice_btn{
+	width:134px;
+}
+
+#indice_btn:hover{background-position:-8px -952px;}
+#indice_btn.inactivo{background-position:-8px -893px; cursor:auto;}
+
+#btn_ayuda{
+	background-position:-143px -893px;
+}
+
+#btn_ayuda:hover{
+	background-position:-143px -952px;
+}
+
+#btn_volver{
+	background-position:-703px -893px;
+}
+
+#btn_volver:hover{
+	background-position:-703px -952px;
+}
+
+#btn_creditos{
+	background-position:-521px -893px;
+}
+
+#btn_creditos:hover{
+	background-position:-521px -952px;
+}
+
+#btn_bibliografia{
+	background-position:-359px  -893px;
+}
+
+#btn_bibliografia:hover{
+	background-position:-359px -952px;
+}
+
+#btn_glosario{
+	background-position:-197px  -893px;
+}
+
+#btn_glosario:hover{
+	background-position:-197px -952px;
+}
+
+#btn_anexos{
+	background-position:-413px -893px;
+}
+
+#btn_anexos:hover{
+	background-position:-413px -952px;
+}
+
+#btn_tips{
+	background-position:-467px -893px;
+}
+
+#btn_tips:hover{
+	background-position:-467px -952px;
+}
+
+#btn_print{
+	background-position:-305px -893px;
+}
+
+#btn_print:hover{
+	background-position:-305px -952px;
+}
+
+#btn_progreso{
+	background-position:-251px -893px;
+}
+
+#btn_progreso:hover{
+	background-position:-251px -952px;
+}
+
+#btn_mindmap{
+	background-position:-757px -893px;
+}
+
+#btn_mindmap:hover{
+	background-position:-757px -952px;
+}
+
+#btn_ayuda, #btn_volver{
+	display:none;
+}
+ 
+#btn_salir{
+	background-color:transparent;
+    background-position: -119px -1623px;
+    height: 34px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 34px;
+}
+
+#btn_salir:hover{
+	background-position:-119px -1682px;
+}
+
+ul.recursos {		
+    margin: 0;
+    padding-left: 0;
+	float:left;
+}
+
+ul.recursos li{	
+	padding:0;
+	border:0;
+	float:right;
+	background:transparent;
+}
+
+ul.recursos li#home{
+	background:none;
+}
+/** PROGRESO **/
+
+
+#fullprogress h2{color:#505050; font-size:30px; font-weight:bold; text-align:center}
+#fullprogress > h2 {
+    display: none;
+}
+#full{}
+.fulprogressimg{width:250px; height:130px; margin:auto; background-image:url(../../media/sprite_progreso_general.png);  background-position:0 0; background-repeat:no-repeat; display:none;}
+.porcentaje0{background-position:0 0;}
+.porcentaje5{background-position:-250px 0;}
+.porcentaje10{background-position:-500px 0;}
+.porcentaje15{background-position:-750px 0;}
+.porcentaje20{background-position:-1000px 0;}
+.porcentaje25{background-position:-1250px 0;}
+.porcentaje30{background-position:-1500px 0;}
+.porcentaje35{background-position:-1750px 0;}
+.porcentaje40{background-position:-2000px 0;}
+.porcentaje45{background-position:-2250px 0;}
+.porcentaje50{background-position:-2500px 0;}
+.porcentaje55{background-position:-2750px 0;}
+.porcentaje60{background-position:-3000px 0;}
+.porcentaje65{background-position:-3250px 0;}
+.porcentaje70{background-position:-3500px 0;}
+.porcentaje75{background-position:-3750px 0;}
+.porcentaje80{background-position:-4000px 0;}
+.porcentaje85{background-position:-4250px 0;}
+.porcentaje90{background-position:-4500px 0;}
+.porcentaje95{background-position:-4750px 0;}
+.porcentaje100{background-position:-5000px 0;}
+
+#fab20_body #panelProgreso h2{border: 0 none;
+    color: #505050;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 0 0 3px;}
+	
+#panelProgreso{
+	margin-top:30px;
+}
+.progressbar{
+	background: url("../../media/content_title_bg.png") no-repeat scroll 0 -228px transparent;
+    float: right;
+    height: 35px;
+    padding: 0;
+    width: 59%;
+	}
+.progressbar_end{width:1%; height:35px; float:left;background:url('../../media/content_title_bg.png') no-repeat 0 -193px; float:right; position:relative; right:-3px}
+.progresstext{
+	color: #087021;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 0;
+    text-align: center;
+    width: 100px;}
+.progressbarfill{
+	background:url(../../media/progressbarfill_bg.png) repeat scroll 50% 50%;
+	border-radius: 6px;
+    height: 29px;
+    position: relative;
+    top: 4px;
+	left:3px;}  
+	
+
+
+/** GLOSARIO **/
+
+#contenedor_glosario{width:99%;	margin:0 auto;}
+#contenedor_glosario .contenedor_glosario_letras{clear:both;}
+#contenedor_glosario .contenedor_glosario_contenido{
+	/*height:430px;*/
+	width:100%;
+	overflow:auto;
+	font-family:'Arial',Verdana,Tahoma;
+	font-size:10pt;
+	clear:both;
+}
+#contenedor_glosario .contenedor_glosario_contenido .bloque_letras{}
+#contenedor_glosario .contenedor_glosario_contenido .bloque_letras span.letra{display:block; color:#e1d48c; margin:0; padding-left:0; font-size:36px; text-transform:uppercase; font-weight:bold}
+#contenedor_glosario .contenedor_glosario_contenido p.palabra{color:#0099cc; font-weight:bold; display:block; font-size:16px; margin:10px 0 0 0; text-transform:uppercase;}
+#contenedor_glosario .contenedor_glosario_contenido p.descripcion{color:#606060; display:block; font-size:12px; line-height:18px; border-bottom:1px dotted #CCCCCC}
+
+/** BIBLIOGRAFIA **/
+
+#contenedor_bibliografia{width:99%;	margin:0 auto;}
+#contenedor_bibliografia .contenedor_bibliografia_letras{clear:both;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido{
+	/*height:430px;*/
+	width:100%;
+	overflow:auto;
+	font-family:'Arial',Verdana,Tahoma;
+	font-size:10pt;
+	clear:both;
+}
+
+#contenedor_bibliografia .contenedor_bibliografia_contenido img{float:left; width:75px; margin:10px 10px 10px 0; clear:both;}
+
+#contenedor_bibliografia .contenedor_bibliografia_contenido a{display:block;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido .bibliografia_bloque{padding:20px; margin-bottom:5px; background:#f0f0f0;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido .bibliografia_bloque p{margin:0 100px 0 0;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido a.enlazado{cursor:pointer; background:#f0f0f0 url(../../media/biblio_enlace_bg.png) scroll no-repeat right 50%;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido a.enlazado:hover{background-color:#e1d48c;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido h2{margin-top:0px;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido p.volver{color:#0066FF; text-decoration:underline; text-align:right; margin-right:10px; cursor:pointer;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido .bibliografia_bloque .titulo_bibliografia{color:#0099cc; font-weight:bold; display:block; font-size:16px;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido .bibliografia_bloque .descripcion_bibliografia{color:#606060; display:block; font-size:12px; line-height:18px;}
+#contenedor_bibliografia .contenedor_bibliografia_contenido h1.bibliotitle {color:#606060; border-bottom:1px dotted #909090; margin: 20px 0 0; padding: 10px 0;}
+
+/** CREDITOS **/
+
+#contenedor_creditos{width:99%; margin:0 auto;}
+#contenedor_creditos .contenedor_creditos_letras{clear:both;}
+#contenedor_creditos .contenedor_creditos_contenido{
+	/*height:430px;*/
+	width:100%;
+	overflow:auto;
+	font-family:'Arial',Verdana,Tahoma;
+	font-size:10pt;
+	clear:both;
+}
+
+div.autor {background:#F0F0F0; padding:20px; margin:20px auto}
+div.autor img{float:left; margin:0 20px 10px 0;}
+div.autor ul.datos, div.autor ul.datos li{margin:0; padding:0; line-height:24px;}
+.colaborador .nombre, .datos li.nombre{font-size:16px; font-weight:bold; color:#0099cc;}
+
+.colaborador {background:#f0f0f0; margin:20px auto; padding:20px;}
+.colaborador img{float:left; margin:0 10px 10px 0;}
+.colaborador p.descripcion{font-size:12px; color:#606060; line-height:18px;}
+
+
+/** TIPS O CONSEJOS **/
+
+#tips{}
+.tips{margin:0; padding:0;}
+.tips li{width:48%; float:right; margin:0; margin-bottom:20px;}
+.tips li:nth-child(2n+1){float:left; clear:left;}
+
+.tip_img, .tip_text{margin:0;}
+
+.tip_img img{width:100%;}
+.tip_text {line-height:11pt; font-size:9pt; font-style:italic; color:#606060; text-align:center !important; padding:0 !important; margin:3px 0 0 0 !important;}
+
+.tabs blockquote.anotacion{
+	padding:10px 20px;
+}
+
+
+/** ANEXOS **/
+
+#anexos{margin:0; clear:both;}
+.anexos{margin:0; padding:0;}
+.anexos li{width:30%; float:left; margin:0 0 20px 0;}
+.anexos li.left, .anexos li.center{float:left;}
+.anexos li.left{margin-right:7%}
+.anexos li.right{float:right; clear:right;}
+
+.anexo_img, .anexo_text{margin:0; text-align:center;}
+
+.anexo_img img{width:50%;}
+.anexo_text {line-height:11pt; font-size:9pt; font-style:italic; color:#606060; padding:0 20px;}
+
+/** BOTON VOLVER **/
+
+.btn_volver{
+	color:#087021;
+	background:#F8F8F8;
+	height:35px;
+	border:1px solid #E6E6E6;
+	margin:5px 5px 0 0;
+	font-weight:bold;
+	cursor:pointer;
+	
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px; 
+}

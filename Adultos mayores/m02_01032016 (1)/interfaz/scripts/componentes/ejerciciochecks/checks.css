@@ -1,0 +1,42 @@
+.ejerciciochecks{
+	position:relative;
+}
+
+.ejerciciochecks input{
+	display:none;
+}
+.ejerciciochecks .checkbox{
+	width:20px;
+	height:20px;
+	background-color:#000;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	position:absolute;
+	cursor:pointer;
+	
+	opacity:0.8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.ejerciciochecks .checkbox.checked{
+	background-image:url('check-ok-grey.png');
+}
+
+
+.ejerciciochecks .checkbox.error{
+	background-image:url('check-cross-red.png');
+}
+
+
+.ejerciciochecks .checkbox.correcta.error{
+	background-image:url('check-ok-green.png');
+}
+
+.ejerciciochecks .etiqueta-check{
+	font-size:14px;
+	position:absolute;
+	text-transform:uppercase;
+	font-weight:bold;	
+}

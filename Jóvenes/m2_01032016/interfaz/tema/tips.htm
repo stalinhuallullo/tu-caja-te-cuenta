@@ -1,0 +1,67 @@
+﻿<script>
+initAllComponents()
+</script>
+
+<div id="tips">
+	<ul class="tips">
+		<li class="left">
+			<p class="tip_img"><a class="ampliar" href="#video" title="Conducción Eficiente"><img src="contenidos/modulo01/media/videoconsejo02.png" alt="Conducción Eficiente" /></a></p>
+			<p class="tip_text">Conducción Eficiente</p>			
+		</li>
+		<li class="right">
+			<p class="tip_img"><a class="ampliar" href="#video2" title="El Activo"><img src="contenidos/modulo01/media/activoperverso.png" alt="El Activo" /></a></p>
+			<p class="tip_text">El Activo</p>	
+		</li>
+		<!--
+		<div class="clear"></div>
+		<li class="left">
+			<p class="tip_img"><a id="video1" href="contenidos/modulo01/video1.htm" title="video"><img src="contenidos/modulo01/media/video1.png" alt="video" /></a></p>
+			<p class="tip_text">Vídeo presentación de Rocío López</p>
+		</li>
+		<li class="right">
+			<p class="tip_img"><a id="video3" href="contenidos/modulo01/video1.htm" title="video"><img src="contenidos/modulo01/media/video1.png" alt="video" /></a></p>
+			<p class="tip_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra...</p>
+		</li>
+		-->
+	</ul>
+</div>
+
+<div class="clear"></div>
+<script>
+$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'>Consejos<span class='subtitulo'>Vídeos de esta unidad</span></div>")
+//implementar tips
+
+</script>
+
+<button class="btn_volver" onclick="volverToContent()">volver al contenido</button>
+
+
+<div style="position:absolute; bottom:-1200px;">
+	<div id="video" style="width:920px; height:518px; margin:auto; text-align:center; overflow:hidden;">
+		<video width="920" height="518" controls>			
+			<source src="contenidos/modulo01/media/metodologia.mp4" type="video/mp4">			
+			<source src="contenidos/modulo01/media/metodologia.ogv" type="video/ogg">
+			<object width="920 "height="518" type="application/x-shockwave-flash" data="contenidos/modulo01/media/player.swf">
+				<param name=FlashVars value="file=video.mp4"/>
+				<param name="movie" value="contenidos/modulo01/media/player.swf" />
+				<param name="allowFullScreen" value="true" />
+				<param name="play" value="true" />
+				<param name="autoStart" value="false" />
+			</object>
+		</video> 	
+	</div>
+	
+	<div id="video2" style="width:920px; height:518px; margin:auto; text-align:center; overflow:hidden;">
+		<video width="920" height="518" controls>			
+			<source src="contenidos/modulo01/media/metodologia.mp4" type="video/mp4">			
+			<source src="contenidos/modulo01/media/metodologia.ogv" type="video/ogg">
+			<object width="920 "height="518" type="application/x-shockwave-flash" data="contenidos/modulo01/media/player.swf">
+				<param name=FlashVars value="file=video.mp4"/>
+				<param name="movie" value="contenidos/modulo01/media/player.swf" />
+				<param name="allowFullScreen" value="true" />
+				<param name="play" value="true" />
+				<param name="autoStart" value="false" />
+			</object>
+		</video> 	
+	</div>
+</div>

@@ -1,0 +1,99 @@
+﻿
+
+<style type="text/css">
+	.imagen_izquierda { background: #ededed  !important; padding: 0px  !important; border: none  !important; }
+	/**/
+	a.bpopupbutton {
+		background:none !important;
+		border:none !important;
+		/**/
+		-webkit-border-radius: 0px !important;
+		-moz-border-radius: 0px !important;
+		-o-border-radius: 0px !important;
+		-ms-border-radius: 0px !important;
+		border-radius: 0px !important;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	/**/
+	a#lk-captacion, a#lk-creditos { position:absolute; background: #8500ff8c !important; }	
+	a#lk-captacion span,
+	a#lk-creditos span { position:absolute; top:-10000px; display:none; visibility:hidden; width:0px; height:0px; }
+
+	a#lk-captacion { top: 16%; left: 15%; width: 34%; height: 57%; }
+	a#lk-creditos { top: 16%; left: 51%; width: 35%; height: 57%; }
+
+
+	@media (max-width: 1199px){
+		a#lk-captacion { left: 15%; width: 35%; }
+		a#lk-creditos { top: 15%; left: 51%; width: 35%; }
+	}
+	@media (max-width: 991px){
+		a#lk-captacion { top: 16%; left: 15%; width: 34%; height: 59%; }
+		a#lk-creditos { top: 16%; left: 51%; width: 35%; height: 59%; }
+		h3{
+			font-size: 105% !important;
+		}
+	}
+</style>
+
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="37">
+	
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a12_00.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a12_01.jpg' audio='27'></div>
+		<div class="escena" numero='2' imagen='a12_02.jpg' audio='28'></div>
+		<div class="escena" numero='3' imagen='a12_03.jpg' audio='29'></div>
+		<div class="escena" numero='4' imagen='a12_00.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='5' imagen='a12_04.jpg' audio='silencio01s'></div>
+
+	</div>
+	
+</div>
+
+
+<div class="app fade" style="position: absolute; width:100%; height:100%;">
+
+	<h3 style="font-size:130%; text-align:center;"><strong>Las Cajas Municipales <br/>se dedican fundamentalmente a la CAPTACIÓN y colocación del dinero a través de CRÉDITOS:</strong></h3>
+
+	<a id="lk-captacion" class="bpopupbutton" href="javacript:;" title="Captación de ahorros" style="display:none;"><span>Captación de ahorros</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Captación de ahorros</strong></p>
+			<p><img src="contenidos/modulo01/media/a12_05.jpg" class="imagen_izquierda">Es captar o recolectar el dinero de las personas y empresas. Por este dinero que dejamos las Cajas Municipales por ejemplo nos dan intereses.</p>
+		</div>
+	</div>
+
+	<a id="lk-creditos" class="bpopupbutton" href="javacript:;" title="Créditos" style="display:none;"><span>Créditos</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p class="titulo"><strong>Créditos</strong></p>
+			<p><img src="contenidos/modulo01/media/a12_06.jpg" class="imagen_izquierda">Mediante los créditos las Cajas Municipales ponen en circulación el dinero. Gracias al dinero que guardamos mediante la captación de ahorros, las Cajas Municipales prestan dinero a otras personas (Créditos) que lo necesitan.</p>
+			<p>Las personas deben devolver este dinero y un poco más (intereses) y así las Cajas Municipales ganan dinero.</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en los <strong>enlaces</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>

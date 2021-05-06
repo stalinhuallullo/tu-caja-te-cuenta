@@ -1,0 +1,91 @@
+﻿
+
+<style type="text/css">
+.noordenada.marcas > li {
+	background:none !important;
+	border:0px;
+	text-align:justify;
+	border-left: 1px solid #CC0000;
+	margin-bottom:30px;
+	padding-left: 15px;
+	font-size: 18px;
+	color: #000;
+	line-height: 20px;
+}
+.noordenada.marcas > li span.num {
+	position: absolute;
+	left: -35px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #CC0000;
+	padding-right: 6px;
+}
+</style>
+
+<!--<div style="overflow: hidden; position:absolute; top:5px; left:0px; width:990px; height:476px;">
+	<img src="./contenidos/modulo01/media/fondo00.jpg" style="margin-top:-9px;"/>
+</div>-->
+
+<!--<div seqid="panel" style="position:absolute; top:5px; left:0px;">
+	<div style="width:990px; height:476px; background-color:#FFF; opacity:0.8;"></div>
+</div>-->
+
+<h2 seqid="encabezado" class="encabezado_titulo" idtextual="m01p0023t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_read.png"/>
+	<h2 class="titulito" idtextual="m01p0023t01">loading text...</h2>
+</div>
+
+<!-- Titular -->
+<h1 seqid="question" style="color:#337AB7; position:absolute; width:660px; top:80px; left:90px; text-align:center; font-weight:bold; text-transform:uppercase;" idtextual="m01p0023t03"></h1>
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<!-- Bocadillos -->
+<div seqid="bocadillo_01" style="left:440px; top:160px; width:300px;" class="bocadillo dialogo rt" idtextual="m01p0023t02" >loading text...</div>
+
+<!-- LISTADO -->
+<ul class="noordenada marcas" style="position:absolute; top:160px; left:105px; width:644px;">
+	<li seqid="list_1"><span class="num" style="top:10px;">1</span> <span idtextual="m01p0023t04">loading text...</span></li>
+	<li seqid="list_2"><span class="num" style="top:10px;">2</span> <span idtextual="m01p0023t05">loading text...</span></li>
+	<li seqid="list_3"><span class="num" style="top:10px;">3</span> <span idtextual="m01p0023t06">loading text...</span></li>
+</ul>
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda00" style="bottom:70px; left:290px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="personaje_calla" start="1" action="fade" />
+
+<!--<div elem="panel" start="10" action="fade" />-->
+
+	<div elem="personaje_calla" start="7" action="fadeout" />
+	<div elem="personaje_habla" start="5" action="fade" />
+
+	<div elem="bocadillo_01" start="5" action="fade" />
+	<div elem="bocadillo_01" start="75" action="fadeout" />
+
+	<div elem="encabezado" start="1" action="fade" />
+	<div elem="cab" start="1" action="fade" />
+
+		<div elem="question" start="75" action="righttoleft" />
+		<div elem="list_1" start="125" action="lefttoright" />
+		<div elem="list_2" start="200" action="lefttoright" />
+		<div elem="list_3" start="255" action="lefttoright" />
+
+	<div elem="personaje_habla" start="332" action="fadeout" />
+	<div elem="personaje_calla" start="330" action="fade" />
+
+	<div elem="help" start="340" action="fade" />
+
+</div>

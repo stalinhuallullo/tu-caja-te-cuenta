@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<creditos>  
+	
+	<descripcion>© Instituto Andaluz de Administración Pública. Consejería de Hacienda y Administración Pública. Todos los derechos reservados.</descripcion>
+	
+    <autor id="1">
+		<nombre>Inmaculada Jiménez Gómez</nombre>
+		<datoautor1>Asesora Técnica. Gabinete de Comunicación Institucional</datoautor1>
+		<datoautor2>Dirección General de Comunicación Social</datoautor2>
+		<datoautor3>Consejería de la Presidencia</datoautor3>	
+	</autor>	
+	
+	<colaborador id="1">
+		<nombre>Adaptación pedagógica y producción: Ingeniería e Integración Avanzadas (Ingenia), S.A.</nombre>
+		<logotipo>ingenia.png</logotipo>
+		<sobre>Ingeniería e Integración Avanzadas (Ingenia), S.A. </sobre>
+		<enlace>http://www.ingenia.es</enlace>
+	</colaborador>
+	
+</creditos>  

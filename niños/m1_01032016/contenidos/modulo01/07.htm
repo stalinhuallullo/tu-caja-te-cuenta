@@ -1,0 +1,139 @@
+﻿
+
+<style type="text/css">
+	div.contenedorpopup {}
+	a.bpopupbutton {
+		background:none !important;
+		border:none !important;
+		/**/
+		-webkit-border-radius: 0px !important;
+		-moz-border-radius: 0px !important;
+		-o-border-radius: 0px !important;
+		-ms-border-radius: 0px !important;
+		border-radius: 0px !important;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	a#lk-personasesperandoelbus, a#lk-ninosconmochila, a#lk-panaderia, a#lk-caja { position:absolute; display:block; }
+	a#lk-personasesperandoelbus span, a#lk-ninosconmochila span, a#lk-panaderia span, a#lk-caja span { position:absolute; top:-10000px; display:none; visibility:hidden; width:0px; height:0px; }
+	/**/
+	a#lk-personasesperandoelbus  { top:29%; left:70%; width:190px; height:300px; }
+	a#lk-ninosconmochila		 { top:60%; left:3%; width:320px; height:160px; }
+	a#lk-panaderia				 { top:17%; left:37%; width:160px; height:80px; }
+	a#lk-caja					 { top:20%; left:10%; width:180px; height:110px; }
+
+
+	@media (max-width: 1199px) {
+		a#lk-personasesperandoelbus  { top:19%; left:68%; background: #2700ff57 !important;}
+		a#lk-ninosconmochila		 { top:46%; left:0%; background: #2700ff57 !important;}
+		a#lk-panaderia				 { top:13%; left:36%; background: #2700ff57 !important;}
+		a#lk-caja					 { top:12%; left:10%; background: #2700ff57 !important;}
+	}
+	@media (max-width: 991px) {
+		a#lk-personasesperandoelbus  { top:19%; left:66%; width: 24%; height: 63%; }
+		a#lk-ninosconmochila		 { top:49%; width: 35%; height: 38%; }
+		a#lk-panaderia				 { width: 21%; height: 22%; }
+		a#lk-caja					 { width: 22%; height: 27%; }
+	}
+
+	@media (max-width: 767px) {
+		a#lk-personasesperandoelbus  { height: 50%; }
+		a#lk-ninosconmochila		 { top:43%; height: 32%; }
+		a#lk-panaderia				 { top: 9%; }
+		a#lk-caja					 { top: 9%; }
+	}
+	@media (max-width: 650px) {
+		a#lk-personasesperandoelbus  { top: 16%; height: 56%; }
+		a#lk-ninosconmochila		 { top: 49%; height: 30%; }
+		a#lk-panaderia				 { top: 6%; height: 27%; }
+		a#lk-caja					 { top: 6%; height: 26%; }
+	}
+	@media (max-width: 550px) {
+			a#lk-personasesperandoelbus  { top: 17%; height: 48%; }
+			a#lk-ninosconmochila		 { top: 41%; height: 22%; }
+			a#lk-panaderia				 { top: 3%; height: 28%; }
+			a#lk-caja					 { top: 7%; height: 25%; }
+	}
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="51">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a07_01.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a07_02.jpg' audio='p07_01'></div>
+		<div class="escena" numero='2' imagen='a07_02.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='3' imagen='a07_03.jpg' audio='p07_02'></div>
+		<div class="escena" numero='4' imagen='a07_04.jpg' audio='p07_03'></div>
+		<div class="escena" numero='5' imagen='a07_05.jpg' audio='p07_04'></div>
+		<div class="escena" numero='6' imagen='a07_06.jpg' audio='p07_05'></div>
+		<div class="escena" numero='7' imagen='a07_08.jpg' audio='silencio01s'></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="app fade" style="position:absolute; top:0px; left:0px;right: 0;bottom: 0;">
+	<div style="width:100%; height:100%;">
+		<a id="lk-personasesperandoelbus" href="javascript:;" class="bpopupbutton" title="Personas esperando el bus" style="display:none;"><span>Personas esperando el bus</span></a>
+		<div class="contenedorpopup">
+			<div class="bpopupwindow">
+				<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+				<p class="titulo"><strong>PERSONAS ESPERANDO EL BUS</strong></p>
+				<img src="contenidos/modulo01/media/a07_09.jpg" alt="Personas esperando el bus" style="float:left; margin: 0 30px 0 0;" />
+				<p>Las personas trabajan, por ese servicio que hacen consiguen un dinero.</p>
+				<p>Este dinero es la base para organizar la economía familiar (vivienda, comida, ropa, ...)</p>
+			</div>
+		</div>
+
+		<a id="lk-ninosconmochila" href="javascript:;" class="bpopupbutton" title="Ni&ntilde;os con mochila" style="display:none;"><span>Ni&ntilde;os con mochila</span></a>
+		<div class="contenedorpopup">
+			<div class="bpopupwindow">
+				<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+				<p class="titulo"><strong>NI&Ntilde;OS CON MOCHILA</strong></p>
+				<img src="contenidos/modulo01/media/a07_10.jpg" alt="Ni&ntilde;os con mochila" style="float:left; margin: 0 30px 0 0;" />
+				<p>El dinero de los trabajos de los papás sirven para pagar las cosas que necesitamos para la escuela (libros, mochilas, lápices, ...)</p>
+			</div>
+		</div>
+
+		<a id="lk-panaderia" href="javascript:;" class="bpopupbutton" title="Panader&iacute;a" style="display:none;"><span>Panader&iacute;a</span></a>
+		<div class="contenedorpopup">
+			<div class="bpopupwindow">
+				<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+				<p class="titulo"><strong>PANADER&Iacute;A</strong></p>
+				<img src="contenidos/modulo01/media/a07_11.jpg" alt="Panader&iacute;a" style="float:left; margin: 0 30px 0 0;" />
+				<p>La panadera consigue su dinero al vender el pan que hace.</p>
+				<p>Tus papás hoy le han comprado a ella el pan de tu sándwich.</p>
+			</div>
+		</div>
+
+		<a id="lk-caja" href="javascript:;" class="bpopupbutton" title="Caja" style="display:none;"><span>Caja</span></a>
+		<div class="contenedorpopup">
+			<div class="bpopupwindow">
+				<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+				<p class="titulo"><strong>CAJA MUNICIPAL</strong></p>
+				<img src="contenidos/modulo01/media/a07_12.jpg" alt="Caja" style="float:left; margin: 0 30px 0 0;" />
+				<p>El dinero no hay que gastarlo de momento, se puede guardar para gastarlo más adelante cuando sea necesario.</p>
+				<p>Las <strong>Cajas Municipales</strong> y <strong>Bancos</strong> se encargan de guardarnos el dinero de un modo seguro.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en las <strong>imágenes</strong> <span class="bullet bulletmano"></span> para ver su información.
+	</div>
+</div>

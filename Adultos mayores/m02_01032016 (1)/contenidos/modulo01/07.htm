@@ -1,0 +1,61 @@
+﻿
+
+<style type="text/css">
+	.contenedorpopup {}
+	#botoninvisible{
+		background:transparent;
+		position:absolute;
+		border:none;
+		width:370px;
+		height:70px;
+		display:block;
+		display:none;
+		/**/		
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-o-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	#botoninvisible { top:135px; left:30px; }
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;	
+	setTimeout(function(){$('.enlacealaweb').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="34">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a07_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='1' imagen='' audio='Presentadoraud212' habla="narrador" bocadillo="" flecha="tr" bleft="440" btop="210" bwidth="440" oculta="" muestra="">
+        	<span>Miguel y María deben informarse sobre los seguros que quieren, pero ahora necesitan asesorarse para concretar más. Para ello está bien que consulten la Web de la Superintendencia, que pertenece al Gobierno del Perú o contacten con un experto, un corredor de seguros. Vamos a ver qué es esta figura.</span>
+        </div>
+		<div class="escena" numero='2' imagen='a07_02.jpg' audio='silencio05s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='3' imagen='a07_03.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='4' imagen='a07_04.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='5' imagen='a07_05.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="782" ptop="32" alto="438"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<a id="botoninvisible" class="enlacealaweb" href="http://www.sbs.gob.pe/0/modulos/JER/JER_Interna.aspx?ARE=0&PFL=0&JER=2161" target="_blank" title="Buscador de la Web de la Superintendencia."><span></span></a>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en el <strong>enlace</strong> <span class="bullet bulletmano"></span> para acceder a la Web.
+	</div>
+</div>

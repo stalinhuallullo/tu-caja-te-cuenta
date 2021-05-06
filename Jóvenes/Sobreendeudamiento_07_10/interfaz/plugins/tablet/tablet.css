@@ -1,0 +1,143 @@
+/**************************
+ * TABLET CSS
+ * Francisco Javier López
+ * v 1.0.0
+ * 20/03/2014
+ **************************/
+ 
+.tablet{
+	width:629px;
+	height:485px;
+	background:url('tablet.png') scroll no-repeat 50% 50% transparent;
+	background-size:cover;
+	position:relative;
+	margin:auto;
+}
+
+.tablet .tablet-botonera{
+	bottom: 104px;
+    height: 18px;
+    left: 50px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 455px;
+}
+
+.tablet .tablet-botonera li{
+	color: #999999;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 5px 0 0;
+    position: relative;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.tablet .tablet-botonera li:hover{
+	color:#FFFFFF;
+}
+
+.tablet-contenido {
+    height: 312px;
+    left: 91px;
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    width: 447px;
+}
+
+.tablet-contenido .pantalla-tablet{
+	display:none;
+	position:absolute;
+    margin: 0;
+    padding: 0 10px 10px;
+    top: 0;
+    width: 440px;
+}
+
+.tablet .scroll{
+	display:none;
+	margin: 0;
+    padding: 0;
+}
+
+.tablet .scroll li{
+	width:25px;
+	height:25px;
+	background:#f00;
+	position:absolute;
+	right:85px;
+	padding:0;
+	margin:0;
+}
+
+.tablet .scroll li.subir{
+	top:75px;
+}
+
+.tablet .scroll li.bajar{
+	bottom:175px;
+}
+
+
+.tablet .reloj{
+	bottom: 104px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 67px;
+    width: 45px;
+}
+
+.tablet .reloj li{
+	color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.tablet .reloj li.minuto{
+	background:url('puntitos.png') scroll no-repeat -2px 2px transparent;
+	padding-left:4px;
+}
+
+.tablet .anterior, .tablet .siguiente{	
+	width:44px;
+	height:313px;
+	position:absolute;
+	top:49px;
+	cursor:pointer;
+	
+	opacity:0.4;
+	filter:alpha(opacity=40); 
+}
+
+.tablet .anterior{
+	background:url('tablet-arrowl.png') scroll no-repeat 50% 50% #000;
+	left:48px;	
+}
+.tablet .siguiente{
+	background:url('tablet-arrowr.png') scroll no-repeat 50% 50% #000;
+	right:47px;
+}
+
+/*
+.tablet .tablet-botonera li > span.marca{
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:-30px;
+	left:0px;
+	background:url('../../media/pulsar.gif') scroll no-repeat 50% 0 transparent;
+	z-index:1;
+}*/

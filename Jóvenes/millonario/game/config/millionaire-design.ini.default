@@ -1,0 +1,312 @@
+#Copyright eLearning Brothers LLC 2012 All Rights Reserved
+[-----------General Game Style/Design Information--------------]
+#Use this design.ini file to change visual elements of the game.
+#(I.e. logos, backgrounds, button styles, game elements, etc.)
+
+#Using colors
+#You can use HTML colors names or HEX codes.
+#Here is a link that has a lot of html colors that you can use: http://en.wikipedia.org/wiki/HTML_color_names#HTML_color_names
+#If you want to use a HEX code for colors then make sure you put a "#" in front of it. You don't need the "#" when using html color names.
+
+#Images and sounds that are specific to the game are found in the config/images and config/sounds folders in the game files.
+
+#IMPORTANT - Don't change any line that has something=@something.
+
+[-----------------------Page Background-----------------------]
+#You can change the page design that is outside of the game.
+#Uncomment the next line to use an image as the page background. (Place the file in the config/images folder.
+#body_texture=YourFile
+#Uncomment the next line to use a color in the page background. (Don't forget to comment out the line above also.)
+body_color=#ffffff
+
+[---------------------------Game Fonts-------------------------]
+font=@Game font
+#Usage:  "font_fontFamily= font url". Example: font_testName=test.woff,test.ttf. Then add font with fontFamily to the game element. Example: game_fontFamily=test Name
+
+[-----------------------Game Background-----------------------]
+game=@Game container
+#The default background file in the game is a partially transparent .png. This allows you to overlay a color.
+#You can use a custom image(s) for the game background.
+#Copy the file into the config/images folder and then change the file name on the game_background_image line of code. To stack images just list them in order, comma-separated.
+game_background_image=sun_rays.png
+#You can change the game background color on the next line. You can also use left/right and top/bottom gradients.
+game_background_gradient_center=#760153
+game_background_gradient_edge=#1A0012
+
+
+[-----------------------Splash Page Logo-----------------------]
+logo1=@Splash Page Logo
+#You can upload any image that you'd like to use as a logo. Copy the file into the config/images folder and enter the information on the next 3 lines.
+logo1_image=millionaire.png
+logo1_width=680
+logo1_height=220
+#Use the next 2 lines to adjust the positioning of the logo.
+logo1_X=20
+logo1_Y=80
+
+
+[----------------------Introduction Page Logo------------------]
+logo2=@Instruction Page Logo
+logo2_image=millionaire.png
+logo2_backgroundSize=contain
+logo2_width=680
+logo2_height=220
+logo2_X=20
+logo2_Y=30
+
+#Game specific fix to make logo over text
+logo2_style=z-index:10;
+
+[-----------------------Result Page Screen Logo-----------------------]
+logo3=@Results Logo
+logo3_image=logo.png
+logo3_backgroundSize=contain
+logo3_width=419
+logo3_height=191
+logo3_X=35
+logo3_Y=50
+
+
+[---------Game Description Panel on Introduction Page----------------]
+description_panel=@Game Description Panel
+description_panel_background_color=transparent
+description_panel_background_image=board_big.png
+description_panel_border=none
+description_panel_width=449
+description_panel_shadow=false
+description_panel_height=195
+description_panel_padding=4
+description_panel_Y=255
+description_panel_X=134
+
+[-----------------------Scoreboard Box-------------------------]
+scoreboard_box=@Box for timer and hint
+scoreboard_box_background_color=#000
+scoreboard_box_width=90
+scoreboard_box_height=180
+scoreboard_box_X=375
+scoreboard_box_Y=220
+scoreboard_box_padding=5
+
+[--------------------------Score Box----------------------------]
+score_box=@Box for showing scores
+score_box_text_color=#FFF
+score_box_background_image=blue_bar.png
+score_box_padding=7
+score_box_width=165
+score_box_height=49
+score_box_X=45
+score_box_Y=30
+score_box_centerText=true
+
+[--------------------------Timer Box----------------------------]
+timer_box=@Box for showing timer
+timer_box_text_color=red
+timer_box_width=90
+timer_box_height=49
+timer_box_X=0
+timer_box_Y=140
+timer_box_centerText=true
+
+[--------------------------Hint Box----------------------------]
+hint_box=@Box with text hint
+hint_box_background_color=#fff
+hint_box_border_color=#000
+hint_box_width=230
+hint_box_height=400
+hint_box_Y=0
+hint_box_padding=0
+
+[-----------------------Hint Button Styles-----------------------]
+hint_button=@Hint button
+hint_button_gradient_top=#89e700
+hint_button_gradient_bottom=#3d7500
+hint_button_text_color=#fff
+hint_button_centerText=true
+hint_button_padding=0
+hint_button_margin=5
+hint_button_gloss=true
+hint_button_shadow=true
+hint_button_radius=6
+hint_button_width=70
+hint_button_height=30
+hint_button_lineHeight=30
+
+hint_hover=@Hint button hover
+hint_hover_gradient_top=#9cfb16
+hint_hover_gradient_bottom=#86d714
+
+hint_inactive=@Hint button inactive
+hint_inactive_gradient_top=#b2b2b2
+hint_inactive_gradient_bottom=#898989
+
+[-----------------Game Results Description panel on last page-----------------]
+result_panel=@Game Results Description panel
+result_panel_width=449
+result_panel_height=195
+result_panel_background_image=board_big.png
+result_panel_background_color=transparent
+result_panel_shadow=false
+result_panel_padding=4
+result_panel_border=none
+result_panel_X=20
+result_panel_Y=225
+
+[------------Progress Bar that shows number of answered questions-----------]
+progressbar_container=@Progress bar
+progressbar_container_centerText=true
+progressbar_container_X=0
+progressbar_container_Y=4
+progressbar_container_width=540
+progressbar_container_height=22
+
+
+#Mandratory custom field: spacing between items
+progressbar_container_spacing=1
+
+#Do not set width to make it dynamically fit progress bar width
+progressbar_item=@Item in progress bar.
+progressbar_item_height=20
+progressbar_item_width=22
+progressbar_item_margin=2
+progressbar_item_background_color=#00ccff
+
+progressbar_answered_item=@Answered style
+progressbar_answered_item_background_color=#4bd3ff
+progressbar_answered_item_glow=true
+progressbar_answered_incorrect_item=@Answered style
+progressbar_answered_incorrect_item_background_color=#ff0000
+
+
+[----------------Main Game Buttons {i.e. Continue, Start, Replay}----------------]
+button_up=@Declaring default button
+button_up_gradient_top=#3787e0
+button_up_gradient_bottom=#04389e
+button_up_gloss=true
+button_up_shadow=true
+
+button_over=@
+button_over_gradient_top=#3787e0
+button_over_gradient_bottom=#3787e0
+
+button_down=@
+button_down_gradient_top=#04389e
+button_down_gradient_bottom=#3787e0
+
+#Per button additional rule overrides. Usefull for customizing separate button position
+splash_continuebutton=@Button on splash screen
+splash_continuebutton_Y=440
+splash_continuebutton_X=270
+
+intro_continuebutton=@Button on introduction screen
+intro_continuebutton_Y=460
+intro_continuebutton_X=285
+
+questions_continuebutton=@Button Continue bewteen questions
+questions_continuebutton_X=150
+questions_continuebutton_Y=470
+
+question_continuebutton=@Button Continue after question answering
+question_continuebutton_X=80
+question_continuebutton_Y=475
+question_confirmbutton=@Button Confirm selection
+question_confirmbutton_X=380
+question_confirmbutton_Y=465
+results_replaybutton=@Button Replay on last screen
+results_replaybutton_X=155
+results_replaybutton_Y=450
+
+
+[--------------------Question Options Board Style--------------------------]
+
+#Move question board down by pixels:
+margin_top_for_questions_screen=50
+
+#Move question feedback down by pixels(only for vertical options board):
+margin_top_for_questions_feedback=10
+
+#Non-mandatory. Question screen elements common styles(question board, answers box & question feedback box) width & margins only
+question_screen=@
+question_screen_width=699
+question_screen_marginLeft=10
+
+question_choose_wrapper=@
+question_choose_wrapper_X=10
+question_choose_wrapper_Y=235
+question_choose_wrapper_width=350
+
+#Wrapper for the amount of dollars. 
+dollars_block=@
+dollars_block_width=180
+dollars_block_background_image=bg_dollars.png
+
+#Animation winnings 
+lot_of_money=@
+lot_of_money_X=470
+lot_of_money_background_image=money.png
+lot_of_money_width=326
+lot_of_money_height=183
+
+#Shadow money 
+shadow_money=@
+shadow_money_background_image=shadow_money.png
+shadow_money_width=235
+shadow_money_height=43
+shadow_money_X=440
+shadow_money_Y=475
+
+
+#Box for question text. Dimensions from here are also applied to container for image
+question_box=@Question text box
+question_box_width=449
+question_box_height=195
+question_box_background_image=board_big.png
+question_box_padding=4
+question_box_text_color=black
+question_box_Y=30
+question_box_X=20
+
+
+#Box for question feedback text.
+question_feedback_box=@Question text box
+question_feedback_box_width=335
+question_feedback_box_height=300
+question_feedback_box_background_image=answer.png
+question_feedback_box_background_color=transparent
+question_feedback_box_padding=4
+question_feedback_box_text_color=#606060
+question_feedback_box_border=none
+question_feedback_box_shadow=true
+question_feedback_box_Y=235
+question_feedback_box_X=10
+
+
+[-----------------------Question Button Styles-----------------------]
+question_button_up=@Default question answer state
+question_button_up_gradient_top=#ffcc00
+question_button_up_gradient_bottom=#996600
+question_button_up_text_color=#000
+question_button_up_gloss=true
+question_button_up_shadow=true
+question_button_up_radius=15
+question_button_up_width=330
+question_button_up_height=60
+
+
+question_button_over=@Mouse overed question answer state
+question_button_over_gradient_top=#ffd65b
+question_button_over_gradient_bottom=#ffcc33
+
+question_button_down=@Pressed question answer state
+question_button_down_gradient_bottom=#dba403
+question_button_down_gradient_top=#996600
+
+question_button_selected=@State for selected option for multi-option questions
+question_button_selected_gradient_top=#ffd65b
+question_button_selected_gradient_bottom=#ffcc33
+question_button_selected_text_color=#000
+
+
+#Question feedback header colors
+question_answer_correct_color=#248a2b
+question_answer_incorrect_color=#8a2424

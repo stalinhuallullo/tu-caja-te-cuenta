@@ -1,0 +1,149 @@
+﻿
+
+<script>
+	$('.navsiguiente').addClass('inactivo');
+</script>
+
+<style type="text/css">
+.noordenada.marcas > li {
+	background:none !important;
+	border:0px;
+	text-align:justify;
+	border-left: 1px solid #CC0000;
+	margin-bottom:30px;
+	padding-left: 15px;
+}
+.noordenada.marcas > li span.num {
+	position: absolute;
+	left: -35px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #CC0000;
+	padding-right: 6px;
+}
+/**/
+.box17 {
+	position:absolute;
+	/**/
+	-ms-box-shadow:		inset 0px 0px 25px 0px rgba(0,0,0,0.25);
+	-o-box-shadow:		inset 0px 0px 25px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow:	inset 0px 0px 25px 0px rgba(0,0,0,0.25);
+	-webkit-box-shadow:	inset 0px 0px 25px 0px rgba(0,0,0,0.25);
+	box-shadow:			inset 0px 0px 25px 0px rgba(0,0,0,0.25);
+	/**/
+}
+.box17 a {
+	font-weight:bold;
+	font-size:19.3px;
+	color:#FC0;
+	text-decoration:none;
+}
+.box17 a:hover {
+	color:#A9C05C;
+	text-decoration:underline;
+}
+.box17 h3 {
+	color:#FFF;
+	padding:12px 0px 0px 20px;
+	margin:0px;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:21px;
+}
+.box17 p {
+	padding:0px 0px 0px 20px;
+	margin:0px;
+	color:#FFF;
+	font-size:15.4px;
+}
+/**/
+.bpopupwindow a {
+	font-size:18px;
+	font-weight:bold;
+	color:#CC0000;
+}
+.bpopupwindow a:hover {
+	color:#990000;
+	text-decoration:underline;
+}
+</style>
+
+<h2 class="encabezado_titulo" idtextual="m01p0017t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_read.png"/>
+	<h2 class="titulito" idtextual="m01p0017t01">loading text...</h2>
+</div>
+
+<!-- Titular -->
+<h1 seqid="titulito" style="color:#337AB7; position:absolute; width:910px; top:75px; left:30px; text-align:center; font-weight:bold; text-transform:uppercase;" idtextual="m01p0017t02"></h1>
+
+<ul class="noordenada marcas" style="position:absolute; top:110px; left:158px; width:580px;">
+	<li seqid="list_1"><span class="num" style="top:10px;">1</span> <span idtextual="m01p0017t03">loading text...</span></li>
+	<li seqid="list_2"><span class="num" style="top:10px;">2</span> <span idtextual="m01p0017t04">loading text...</span></li>
+	<li seqid="list_3"><span class="num" style="top:10px;">3</span> <span idtextual="m01p0017t05">loading text...</span></li>
+</ul>
+
+<!--<div seqid="cajatexto" class="box17" style="top:330px; left:92px; background-color:#28854B; padding-bottom:10px;">
+	<h3 style="width:650px;" idtextual="m01p0017t06">loading text...</h3>
+	<p style="width:650px;" idtextual="m01p0017t07">loading text...</p>
+	<p><a href="http://www.sbs.gob.pe/app/retasas/paginas/retasasInicio.aspx?p=C#" target="_blank">http://www.sbs.gob.pe/app/retasas/paginas/retasasInicio.aspx?p=C#</a></p>
+</div>-->
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<!-- POPUP -->
+<div seqid="masinfo" style="position:absolute; top:380px; left:530px;">
+	<a class="bpopupbutton" onclick="activaBotonSiguiente();" style="z-index:1 !important;"><span idtextual="m01p0017t06">loading text...</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow" style="width:670px; border: 5px solid #E20513;">
+			<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p idtextual="m01p0017t06" class="titulo">loading text...</p>
+			<p idtextual="m01p0017t07" style="margin-bottom:2px;">loading text...</p>
+			<p>
+				<img src="./contenidos/modulo01/media/arrow.png" style="vertical-align:middle; margin-right:5px;"/>
+				<a href="http://www.sbs.gob.pe/app/retasas/paginas/retasasInicio.aspx?p=C#" target="_blank">http://www.sbs.gob.pe/app/retasas/paginas/retasasInicio.aspx?p=C#</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda04" style="bottom:70px; left:320px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="titulito" start="10" action="righttoleft" />
+
+		<div elem="personaje_calla" start="1" action="fade" />
+
+		<div elem="personaje_calla" start="12" action="fadeout" />
+		<div elem="personaje_habla" start="10" action="fade" />
+
+	<div elem="list_1" start="60" action="lefttoright" />
+	<div elem="list_2" start="110" action="lefttoright" />
+	<div elem="list_3" start="180" action="lefttoright" />
+
+		<div elem="personaje_habla" start="262" action="fadeout" />
+		<div elem="personaje_calla" start="260" action="fade" />
+
+	<div elem="masinfo" start="260" action="fade" />
+
+	<div elem="help" start="270" action="fade" />
+
+</div>
+
+<script>
+	function activaBotonSiguiente() {
+		$('.navsiguiente').removeClass('inactivo');
+		$('.navsiguiente').addClass('activo');
+	}
+</script>

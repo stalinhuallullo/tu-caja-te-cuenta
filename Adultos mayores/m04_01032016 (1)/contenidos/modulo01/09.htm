@@ -1,0 +1,219 @@
+﻿
+
+<style type="text/css">
+	.contenedorpopup {}
+	a.bpopupbutton {
+		background:transparent;
+		position:absolute;
+		border:none;
+		display:block;
+		display:none;
+		/**/
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-o-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	
+	#corporativos{
+		top: 100px;
+		left: 80px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#grandes{
+		top: 100px;
+		left: 285px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#medianas{
+		top: 100px;
+		left: 500px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#pequenas{
+		top: 220px;
+		left: 70px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#micro{
+		top: 220px;
+		left: 285px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#revolvente{
+		top: 220px;
+		left: 500px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#norevolvente{
+		top: 340px;
+		left: 150px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#hipotecario{
+		top:340px;
+		left:445px;
+		width: 100px;
+		height: 100px;
+	}
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="40">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a09_01.jpg' audio='silencio03s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+		<div class="escena" numero='1' imagen='' audio='Presentadoraud410' habla="narrador" bocadillo="" flecha="rt" bleft="365" btop="135" bwidth="410" oculta="" muestra="">
+        	<span>Para saber un poco más de los créditos, les cuento los tipos definidos por la Superintendencia.</span>
+        </div>
+
+   		<div class="escena" numero='2' imagen='a09_02.jpg' audio='silencio05s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='3' imagen='a09_03.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>     
+        <div class="escena" numero='4' imagen='a09_04.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>     
+        <div class="escena" numero='5' imagen='a09_05.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>     
+        <div class="escena" numero='6' imagen='a09_06.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>     
+        <div class="escena" numero='7' imagen='a09_07.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='8' imagen='a09_08.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='9' imagen='a09_09.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='10' imagen='a09_10.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+        <div class="escena" numero='11' imagen='' audio='Presentadoraud411' habla="narrador" bocadillo="" flecha="rt" bleft="365" btop="135" bwidth="410" oculta="" muestra="">
+        	<span>Antes de solicitar un crédito, debes analizar diversos aspectos de tu situación financiera; por ejemplo: cuántas deudas tienes, cuáles son tus gastos fijos y con qué activos cuentas.</span>
+        </div>
+
+        <div class="escena" numero='12' imagen='a09_11.jpg' audio='silencio01s' habla="" bocadillo="" flecha="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="796" ptop="33" alto="438"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en los <strong>enlaces</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>
+
+<a id="corporativos" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos corporativos</strong></p>
+		<p>Financiamiento crediticio de manera directa e indirecta, otorgado solamente a personas jurídicas que cumplan con la siguiente característica:</p>
+        <ul class="noordenada">
+        	<li style="font-size:120% !important;">Registrar un nivel de ventas anuales mayor a S/. 200 millones en los dos (2) últimos años.</li>
+            <li style="font-size:120% !important;">Los niveles de ventas se obtendrá de los estados financieros anuales auditados más reciente del deudor.</li>
+            <li style="font-size:120% !important;">Si las ventas del deudor, posteriormente disminuyesen a un nivel por debajo de los S/ 200 millones durante dos años consecutivos, el crédito que inicialmente se clasificó como corporativo deberá ser reclasificado como crédito a grandes empresas.</li>
+        </ul>
+	</div>
+</div>
+
+<a id="grandes" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos a Grandes Empresas</strong></p>
+		<p>Financiamiento crediticio de manera directa e indirecta, otorgado solamente a personas jurídicas que poseen al menos una de las  siguientes características:</p>
+        <ul class="noordenada">
+        	<li style="font-size:120% !important;">Registrar ventas anuales mayores a S/. 20 millones pero no mayores a S/. 200 millones en los dos (2) últimos años, ó</li>
+            <li style="font-size:120% !important;">El deudor ha mantenido en el último año emisiones vigentes de instrumentos representativos de deuda en el mercado de capitales.</li>
+            <li style="font-size:120% !important;">Los niveles de ventas se obtendrá de los estados financieros anuales auditados más reciente del deudor.</li>
+        </ul>
+	</div>
+</div>
+
+<a id="medianas" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos a Medianas Empresas</strong></p>
+		<p>Financiamiento crediticio de manera directa e indirecta, otorgado solamente a personas jurídicas que poseen al menos una de las  siguientes características:</p>
+        <ul class="noordenada">
+        	<li style="font-size:120% !important;">Para el caso de <strong>personas jurídicas</strong>: Registrar un nivel de endeudamiento total en el Sistema Financiero superior a S/. 300 millones en los últimos seis (6) meses.</li>
+            <li style="font-size:120% !important;">Para el caso de <strong>personas naturales</strong>: Si el endeudamiento total del deudor en el sistema financiero (sin incluir los créditos hipotecarios para vivienda) es superior a  S/. 300,000 en los últimos seis (6) meses, siempre que una parte de dicho endeudamiento corresponda a créditos a pequeñas empresas o a microempresas, caso contrario permanecerán clasificados como créditos de consumo.</li>
+        </ul>
+	</div>
+</div>
+
+<a id="pequenas" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos a Pequeñas Empresas</strong></p>
+		<p>Financiamiento crediticio de manera directa e indirecta, destinados a financiar actividades de producción, comercialización o prestación de servicios, otorgados a personas jurídicas o personas naturales que poseen las siguientes características:</p>
+        <ul class="noordenada">
+        	<li style="font-size:120% !important;">Registrar un nivel de endeudamiento total en el Sistema Financiero (sin incluir los créditos hipotecarios para vivienda) superior a  S/. 20,000 pero no mayor a  S/. 300,000 en los últimos seis (6) meses. </li>
+        </ul>
+	</div>
+</div>
+
+<a id="micro" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos a Micro Empresas</strong></p>
+		<p>Financiamiento crediticio de manera directa e indirecta, destinados a financiar actividades de producción, comercialización o prestación de servicios, otorgados a personas jurídicas o personas naturales que poseen las siguientes características:</p>
+        <ul class="noordenada">
+        	<li style="font-size:120% !important;">Registrar un nivel de endeudamiento total en el Sistema Financiero (sin incluir los créditos hipotecarios para vivienda) no mayor a  S/. 20,000 en los últimos seis (6) meses. </li>
+        </ul>
+	</div>
+</div>
+
+<a id="revolvente" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos de Consumo Revolvente</strong></p>
+		<p>Financiamiento crediticio de manera directa, otorgado a personas naturales, con la finalidad de atender el pago de bienes, servicios o gastos no relacionados con la actividad empresarial.</p>
+	</div>
+</div>
+
+
+<a id="norevolvente" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos de Consumo No Revolvente</strong></p>
+		<p>Financiamiento crediticio de manera directa, otorgado a personas naturales, con la finalidad de atender el pago de bienes, servicios o gastos no relacionados con la actividad empresarial.</p>
+	</div>
+</div>
+
+
+<a id="hipotecario" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Créditos Hipotecarios para Vivienda</strong></p>
+		<p>Financiamiento crediticio de manera directa, otorgados a personas naturales, para la adquisición, construcción, refacción, remodelación, ampliación, mejoramiento y subdivisión de vivienda propia, siempre que tales créditos se otorguen amparados con hipotecas debidamente inscritas; sea que estos créditos se otorguen por el sistema convencional de préstamo hipotecario, de letras hipotecarias o por cualquier otro sistema de similares características. </p>
+	</div>
+</div>

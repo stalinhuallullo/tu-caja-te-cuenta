@@ -1,0 +1,25 @@
+/* Menu desplegable */
+
+ul#navegacion #contenidoMenu ul li ul {z-index:999;}
+
+.tips .left{float:left; clear:left;}
+
+
+
+.lt.bpopupbutton, .lb.bpopupbutton, .rt.bpopupbutton, .rb.bpopupbutton{
+	width:180px;
+	padding:0 5px 0 35px;
+}
+
+.tabcontenedor  div.stop{
+	width:95%;
+}
+
+.tabcontenedor  div.info{
+	width:95%;
+}
+
+.tabcontenedor  div.tenencuenta{
+	width:95%;
+}
+

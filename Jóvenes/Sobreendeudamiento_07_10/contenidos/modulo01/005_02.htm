@@ -1,0 +1,191 @@
+﻿
+
+<style type="text/css">
+
+#titulopagina .subtitulo {
+    display: none !important;
+}
+
+.navsiguiente {
+	display:none;
+}
+/**/
+div.ej_visorEjercicio {
+	margin:0px;
+	padding:1%;
+}
+
+.ej_mensaje_text h3.testend {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ej_numeroPregunta {
+	position: absolute;
+	top: -45px;
+	left: 40px;
+	font-size: 19px;
+	letter-spacing: -0.5px;
+	color: #757575;
+}
+
+.intentos {
+    margin: 27px 18px 0 0px !important;
+}
+
+.ej_respuestas.corregido
+.ej_respuestas_text {
+	margin-left: 10px;
+	margin-right: 75px;
+}
+
+.ej_enunciado {
+	color: #000000;
+	margin: 0px !important;
+    font-size: 21px !important;
+	font-weight: bold;
+    text-align: left !important;
+    letter-spacing: -1px !important;
+	line-height:27px;
+}
+.ej_respuestas_text {
+	font-size: 16px !important;
+	color: #FFF;
+	font-weight:bold;
+}
+.ej_respuesta {
+	border-radius: 20px !important;
+	padding: 4px !important;
+	margin: 0px 0px 5px 0px !important;
+	/**/
+	background-color: transparent !important;
+	background-image: url('contenidos/modulo01/media/bg_pregunta_50.png');
+	background-repeat:repeat;
+	/**/
+	-ms-box-shadow:		inset 0px 0px 7px 0px rgba(0,0,0,0.35);
+	-o-box-shadow:		inset 0px 0px 7px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow:	inset 0px 0px 7px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow:	inset 0px 0px 7px 0px rgba(0,0,0,0.35);
+	box-shadow:			inset 0px 0px 7px 0px rgba(0,0,0,0.35);
+	/**/
+}
+
+/********/
+.ej_respuestas.corregido
+.ej_respuesta[resultado="true"] {
+	background-image:url('contenidos/modulo01/media/bg_pregunta_ok.png');
+	background-repeat:repeat;
+	background-color: #72b00c !important;
+	border:0px !important;
+}
+.ej_mensaje .ej_respuestas_text {
+	margin: 10px 0 5px 0 !important;
+}
+/********/
+
+div.ej_mensaje {
+	border: 5px solid #E20513;
+	/**/
+	top: 60px !important;
+	left: 40px !important;
+	/**/
+	-webkit-box-shadow:	0px 0px 35px 5px rgba(0,0,0,0.5) !important;
+	-moz-box-shadow:	0px 0px 35px 5px rgba(0,0,0,0.5) !important;
+	-o-box-shadow:		0px 0px 35px 5px rgba(0,0,0,0.5) !important;
+	-ms-box-shadow:		0px 0px 35px 5px rgba(0,0,0,0.5) !important;
+	box-shadow:			0px 0px 35px 5px rgba(0,0,0,0.5) !important;
+}
+
+.ej_mensaje_text,
+.ej_mensaje_text p {
+	font-size: 19px !important;
+	line-height: 21px !important;
+	color: #000;
+	text-align: justify;
+}
+.ej_mensaje_text h3.dowhat,
+.ej_mensaje_text h3.ko {
+    color: #c60000;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0px 0px 5px 0px;
+}
+.ej_mensaje_text h3.ok {
+    color: #5EA010;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+/**/
+
+.btn_enviar,
+.btn_siguiente,
+.btn_anterior,
+.btn_finalizar,
+.btn_mensajeRepetir {
+    margin: 15px 12px 0px 0px !important;
+	font-size: 19px;
+	padding: 12px 35px;
+	background-color:#E20513;
+}
+.btn_enviar:hover,
+.btn_siguiente:hover,
+.btn_anterior:hover,
+.btn_finalizar:hover,
+.btn_mensajeRepetir:hover {
+	background-color:#990000;
+}
+</style>
+
+<h2 class="encabezado_titulo" idtextual="m01p0036t00" style="top:-42px !important;">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_exam.png"/>
+	<h2 class="titulito" idtextual="m01p0036t01">loading text...</h2>
+</div>
+
+
+<!-- ********* -->
+<!-- ********* -->
+<!-- EJERCICIO -->
+<div seqid="ejercicio" class="ej_visorEjercicio" style="position:absolute; top:100px; left:5%; width:90%;"
+	reto="1"
+	porcentaje="100"
+	evaluable="false"
+	xmlsrc="test.xml"
+	cfgpregunta=""
+	seleccion_multiple="true"
+	tipo_feedback="pregunta"
+	mostrarRespuesta="false">
+
+<!--<div class="tituloApartado"></div>-->
+	<div class="clear">&nbsp;</div>           
+	<div class="ej_enunciado"></div>         
+	<div class="ej_respuestas"> </div>
+
+	<div class="acciones">
+		<div class="ej_numeroPregunta">1/10</div>
+		<div class="ej_bulletsPreguntas"></div>		
+		<div class="btn_anterior btnPrincipal"><span idtextual="txt_test_anterior">loading text...</span></div>
+		<div class="btn_siguiente btnPrincipal"><span idtextual="txt_test_siguiente">loading text...</span></div>
+		<div class="btn_enviar btnPrincipal"><span idtextual="txt_test_enviar">loading text...</span></div>
+		<div class="btn_finalizar btnPrincipal"><span idtextual="txt_test_verresultados">loading text...</span></div>
+		<div class="ej_mensaje" style="box-shadow: 0px 0px 35px 5px rgba(0,0,0,0.5) !important;"> </div>
+	</div>
+</div>
+<!-- ********* -->
+<!-- ********* -->
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda11" style="bottom:70px; left:230px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="cab" start="10" action="fade" />	
+	<div elem="ejercicio" start="20" action="bottomtotop" />
+	<div elem="help" start="30" action="fade" />
+
+</div>

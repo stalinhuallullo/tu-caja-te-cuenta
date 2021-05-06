@@ -1,0 +1,48 @@
+﻿
+<script type="text/javascript" src="sopa/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="sopa/jquery-ui-1.8.16.custom.min.js"></script>
+
+<script type="text/javascript" src="sopa/jquery.wordsearchgame.js"></script>
+
+<script src="sopa/jquery.ui.touch-punch.min.js"></script>
+<link  rel="stylesheet" type="text/css" href="sopa/jquery.wordsearchgame.css">
+<style type="text/css">
+	@media (max-width: 1199px) {
+		#cuerpo, .contentArea, #fab20_body, #ventana-dialogo {
+			height: 635px !important;
+		}
+	}
+	@media (max-width: 991px) {
+		.pregunta {
+			width: 80%;
+			margin: 0 auto !important;
+		}
+		ol{
+			margin: 0;
+    		padding: 0;
+		}
+		#rf-searchgamecontainer{
+			width: 100%;
+		}
+		.rf-tablestyle{
+			width: 100%;
+		}
+		#rf-wordcontainer{
+			margin-top: 2rem;
+		}
+	}
+</style>
+<script>
+$(document).ready( function () {
+	var words = "CONCHAS,PLUMAS,SAL,CEREAL,ESPECIAS,CACAO,PIELES,PLATA";
+	$("#theGrid").wordsearchwidget({"wordlist" : words,"gridsize" : 10});
+});
+</script>
+
+<div id="a-1-t" class="app fade">
+	<ol>
+		<li class="pregunta" style="margin: 0px 0 0 175px; list-style: none;">
+			<div id="theGrid" style="margin: 15px 0 0 0"></div>
+		</li>
+	</ol>
+</div>

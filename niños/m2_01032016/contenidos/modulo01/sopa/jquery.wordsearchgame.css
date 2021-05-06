@@ -1,0 +1,130 @@
+
+/* Style for grid cells */
+.rf-tgrid {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 1px;
+    padding: 10px;
+	border: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: center;
+	width:17px;
+	height:12px;
+
+}
+
+/* Style for the grid */
+.rf-tablestyle {
+    border: 2px solid;
+    border-color: #ccc;
+    background-color: #fafafa;
+    cursor: pointer;
+
+}
+
+ul {
+	margin: 0;
+	list-style: disc;
+}
+
+li {
+	margin: 0 0 5px 0;
+}
+
+/* Style for the div containing the grid */
+#rf-searchgamecontainer {
+    float: left;
+    padding-right: 20px; 
+}
+
+/* Style for the div containing the word list */
+#rf-wordcontainer {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    float :left;
+    padding-right: 40px;
+    cursor: default;
+	margin : 0;
+    border: none;
+	cursor: pointer;	
+}
+
+/* Style for the words that have been found */
+.rf-foundword {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+	text-decoration : line-through;
+	color : lightgray;
+	font-style : italic;
+}
+
+#rf-tablegrid .rf-armed {
+/*	background: lightcyan;*/
+}
+
+#rf-tablegrid .rf-highlight {
+    background: red;
+}
+
+
+#rf-tablegrid .rf-glowing {
+	background-color: #e7ffc1;
+}
+
+#rf-tablegrid .rf-selected {
+	background-color: #e1e1e1;
+}
+
+/* style for words that didn't make it on the grid */
+.rf-pfalse {
+    color: gray;
+    visibility: hidden; 
+}
+
+
+ /********************************************************/
+/* GENERALES */
+.icos {
+	background-image: url(../sopa/sprites.png);
+	width: 16px;
+	height: 16px;
+}
+.ico-trash {
+	position: relative;
+	left: 0px;
+	top: 1px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: -16px -0px;
+	border: none;
+}
+.icos img{
+	border:none;
+}
+.ico-incorrect{
+	/*
+	position: relative;
+	left: -2px;
+	top: 2px;
+	*/
+    position: absolute !important;
+    left: 195px !important;
+    top: 20px !important;
+	/**/
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: -0px -16px;
+}
+.ico-correct{
+	/*
+	position: relative;
+	left: -2px;
+	top: 2px;
+	*/
+    position: absolute !important;
+    left: 195px !important;
+    top: 20px !important;
+	/**/
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: -16px -16px;
+}

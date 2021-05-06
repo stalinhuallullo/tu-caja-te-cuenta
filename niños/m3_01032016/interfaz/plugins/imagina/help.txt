@@ -1,0 +1,34 @@
+COMPONENTE PROYECTOR (VERSION MODIFICADA 15-07-2014)
+-----------------------------------------------------
+
+objeto imagina
+
+variable ----------- opciones ------------ explicacion
+-----------------------------------------------------------------------------------------------------------------------
+fondo                  ruta                imagen de fondo del objeto, por norma ocupara todo el espacio del contenido.
+muestraprimera         si/no               los elementos del contenido aparecen ocultos por defecto, si asignamos "si", mostrara el contenido del primer elemento.
+efecto                 proyector/-         posibles efectos sobre los elementos del contenido, el original era el efecto proyector, unico existente hasta el momento, dejar en blanco para desactivar.
+
+
+objetos diapositivas li [elementos boton]
+
+variable ----------- opciones ------------ explicacion
+-----------------------------------------------------------------------------------------------------------------------
+imagen                 ruta                imagen de fondo del objeto, se muestra por completo, debe ajustarse el tamaño del boton a la imagen o viceversa.
+titulo                 texto               texto que contendra el boton.
+ancho/alto             pixeles             Ancho y alto que tendra el boton.
+izquierda/arriba       pixeles             posicion absoluta del boton desde la esquina superior-izquierda.
+rotacion               grados              rotacion del boton.
+textoleft/textotop     pixeles             posicion (relativa al boton) del texto dentro del boton desde la esquina superior-izquierda.
+
+
+objetos presentaciones
+
+variable ----------- opciones ------------ explicacion
+-----------------------------------------------------------------------------------------------------------------------
+imagen                 ruta/-              imagen de fondo del objeto, se muestra por completo, debe ajustarse el tamaño del contenedor a la imagen o viceversa. Se puede dejar vacio para no incluir imagen de fondo del elemento si no se desea.
+ancho/alto             pixeles             Ancho y alto que tendra el boton.
+izquierda/arriba       pixeles             posicion absoluta del boton desde la esquina superior-izquierda.
+rotacion               grados              rotacion del boton.
+
+

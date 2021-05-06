@@ -1,0 +1,93 @@
+﻿<glosario>
+
+	<letra id='a'>
+		<palabra nombre='Palabra_1'>
+			Definición de la palabra número uno.
+		</palabra>
+		<palabra nombre='Palabra_2'>
+			Definición de la palabra número dos.
+		</palabra>
+		<palabra nombre='Palabra_3'>
+			Definición de la palabra número tres.
+		</palabra>
+	</letra>
+
+	<letra id='b'>
+	</letra>
+
+	<letra id='c'>
+	</letra>
+
+	<letra id='d'>
+	</letra>
+
+	<letra id='e'>
+	</letra>
+
+	<letra id='f'>
+	</letra>
+
+	<letra id='g'>
+	</letra>
+
+	<letra id='h'>
+	</letra>
+
+	<letra id='i'>
+	</letra>
+
+	<letra id='j'>
+	</letra>
+
+	<letra id='k'>
+	</letra>
+
+	<letra id='l'>
+	</letra>
+
+	<letra id='m'>
+	</letra>
+
+	<letra id='n'>
+	</letra>
+
+	<letra id='ñ'>
+	</letra>
+
+	<letra id='o'>
+	</letra>
+
+	<letra id='p'>
+	</letra>
+
+	<letra id='q'>
+	</letra>
+
+	<letra id='s'>
+	</letra>
+
+	<letra id='r'>
+	</letra>
+
+	<letra id='t'>
+	</letra>
+
+	<letra id='u'>
+	</letra>
+
+	<letra id='v'>
+	</letra>
+
+	<letra id='w'>
+	</letra>
+
+	<letra id='x'>
+	</letra>
+
+	<letra id='y'>
+	</letra>
+
+	<letra id='z'>
+	</letra>
+
+</glosario>

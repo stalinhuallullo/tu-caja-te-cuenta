@@ -1,0 +1,99 @@
+﻿
+
+<script>
+	$('.navsiguiente').addClass('inactivo');
+</script>
+
+<style type="text/css">
+.noordenada.marcas > li {
+	background-color: transparent;
+	border: 0px;
+	text-align: justify;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 22px;
+	color: #000000;
+}
+</style>
+
+<h2 class="encabezado_titulo" idtextual="m01p0034t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_read.png"/>
+	<h2 class="titulito" idtextual="m01p0034t01">loading text...</h2>
+</div>
+
+<!-- Titular -->
+<h1 seqid="title" style="color:#337AB7; position:absolute; width:820px; top:75px; left:0px; text-align:center; font-weight:bold; text-transform:uppercase;" idtextual="m01p0034t03"></h1>
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:70px; left:790px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:70px; left:790px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<!-- Bocadillos -->
+<div seqid="bocadillo_01" style="left:450px; top:160px; width:280px;" class="bocadillo dialogo rt" idtextual="m01p0034t02" >loading text...</div>
+
+<!-- LISTADO -->
+<ul class="noordenada marcas" style="position:absolute; top:120px; left:140px; width:540px;">
+	<li seqid="list_1" idtextual="m01p0034t04">loading text...</li>
+	<li seqid="list_2" idtextual="m01p0034t05">loading text...</li>
+	<li seqid="list_3" idtextual="m01p0034t06">loading text...</li>
+	<li seqid="list_4" idtextual="m01p0034t07">loading text...</li>
+</ul>
+
+<!-- POPUP -->
+<div seqid="masinfo" style="position:absolute; top:410px; left:40px;">
+	<a class="bpopupbutton" onclick="activaBotonSiguiente();" style="z-index:1 !important;"><span idtextual="m01p0034t08">loading text...</span></a>
+	<div class="contenedorpopup">
+		<div class="bpopupwindow" style="width:780px; border: 5px solid #E20513;">
+			<p class="bClose btnContinuar"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+			<p idtextual="m01p0034t08" class="titulo">loading text...</p>
+			<p idtextual="m01p0034t09">loading text...</p>
+			<p idtextual="m01p0034t10">loading text...</p>
+			<p idtextual="m01p0034t11">loading text...</p>
+			<p idtextual="m01p0034t12">loading text...</p>
+		</div>
+	</div>
+</div>
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda04" style="bottom:70px; left:290px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="personaje_calla" start="1" action="fade" />
+
+	<div elem="personaje_calla" start="7" action="fadeout" />
+	<div elem="personaje_habla" start="5" action="fade" />
+
+	<div elem="bocadillo_01" start="7" action="fade" />
+	<div elem="bocadillo_01" start="65" action="fadeout" />
+
+	<div elem="title" start="68" action="righttoleft" />
+
+		<div elem="list_1" start="70" action="bottomtotop" />
+		<div elem="list_2" start="150" action="bottomtotop" />
+		<div elem="list_3" start="203" action="bottomtotop" />
+		<div elem="list_4" start="255" action="bottomtotop" />
+
+	<div elem="personaje_habla" start="288" action="fadeout" />
+	<div elem="personaje_calla" start="285" action="fade" />
+
+	<div elem="masinfo" start="290" action="fade" />
+
+	<div elem="help" start="300" action="fade" />
+
+</div>
+
+<script>
+	function activaBotonSiguiente() {
+		$('.navsiguiente').removeClass('inactivo');
+		$('.navsiguiente').addClass('activo');
+	}
+</script>

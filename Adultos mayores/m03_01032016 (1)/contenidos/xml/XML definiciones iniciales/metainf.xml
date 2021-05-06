@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--  Define el indice, contenido y comportamientos de la unidad  -->
+<!-- 															  -->
+<!--  	- titulo: Titulo de la unidad							  -->
+<!-- 															  -->
+
+<unidad  titulo=" Titulo de unidad ">
+
+
+
+	<!--  ============================================================================ -->
+	<!--  APARTADO CONFIGURACIÓN DEL MÓDULO : Define comportamientos y configuraciones -->
+	<!--   									  generales del módulo.					   -->
+	<configuracion>
+	
+			<!--  Indica la navecación que se permite al navegar por el contenido	   -->
+			<!-- 	 				 												   -->
+			<!-- 	- tipo: "secuencial" no permite acceder a un apartado hasta        -->
+			<!-- 			             acceder al anterior						   -->
+			<!--			"libre"		 puede acceder a cualquier punto del indice	   -->	 
+			<navegacion tipo="secuencial" />
+			
+			
+			<!--  Indica si existe una opción de descargas a mostrar en los recursos   -->
+			<!-- 	 				 												   -->
+			<!-- 	- src: nombre del archivo de descargas						       -->
+			<!-- 	 				 												   -->
+			<descargas src="m01_descargas" />			
+			
+			<!--  Indica si existe una opción de glosario  a mostrar en los recursos   -->
+			<!-- 	 				 												   -->
+			<!-- 	- src: nombre del archivo de glosario						       -->
+			<!-- 	 				 												   -->
+			<glosario src="m01_glosario" />			
+
+
+			<!--  Define el tipo de valor y la semantica de la evaluación final 		-->
+			<!--  que se almacena en la plataforma de teleformación (scorm)             -->
+			<!-- 																		-->
+			<!-- 	-tipo: Es el tipo de evaluación, donde los valores pueden ser.. 	-->			
+			<!-- 																		-->
+			<!-- 	   "ejercicios" Se basa en la punt. final de ejercicios				-->
+			<!-- 	   "contenidos_ejercicios" Se basa en contenidos y ejercicios       -->
+			<!-- 	   "contenidos" Se basa en el % de avance de contenidos		   		-->
+			<!--       "objetivos"  Se basa eb el % de logro de ejercicios		 		-->
+			<evaluacionfinal   tipo="contenidos"  puntuacion="80"  valor="completed" />
+
+
+			
+
+
+	</configuracion>
+
+
+	<!--  ============================================================================ -->
+	<!--  APARTADO CONTENIDOS : Define el indice del módulo, a varios subniveles.      -->
+	<!--   						Indica cuales son los archivos fisicos a mostrar.	   -->
+	<!--																			   -->	
+	<!-- 						Contiene un conjunto de páginas individuales y		   -->
+	<!--					    apartados (conjunto de páginas o apartados)			   -->
+	<!--																			   -->
+	<!--		-  ruta : Define la ruta donde se ubican todos los archivos 		   -->
+	<!--																			   -->				
+	<contenido  ruta="contenidos\modulo01"  >
+	
+
+		<!-- Una pagina representa una unidad mínima de contenido, representado por    -->
+		<!-- un archivo html o por una plantilla.									   -->
+		<!-- Para indicar el uso de una plantilla, se indica su nombre entre [] en la  -->
+		<!-- ruta, ejemplo: src="[nombreplantilla]"									   -->
+		<!-- 																		   -->		
+		<!-- 	tipo:	Indica la naturaleza de la página con un prefijo donde		   -->		
+		<!--			 "pre" => es presentación									   -->
+		<!--			 "obj" => es resumen										   -->
+		<!--			 "pag" => es contenido normal								   -->
+		<!--			 "ej"  => es un contenido evaluativo						   -->
+		<!--			 "ej_test"  => es un ejercicio tipo test					   -->		
+		<!--			 "ej_parejas"  => es un ejercicio de tipo relacionar		   -->		
+		<!--			 "ej_arrastrar"  => es un ejercicio de tipo arrastrar		   -->		
+		<!--			 "ej_bateria"  => es una bateria de preguntas				   -->		
+		<!--			 "ej_pasoapaso"  => es un ejercicio basado en un paso a paso   -->		
+		<!--			 "ej_conversacion"  => es un ejercicio basado en conversaciones-->												
+		<!--			 "res" => es un resumen de lo aprendido						   -->
+		<!-- 	titulo:	 Titulo de la página de contenidos							   -->		
+		<!-- 	src:    Indica nombre de archivo, y entre [] indica la plantilla	   -->								
+		<pagina tipo="pre" titulo="Título de página"  src="m01_0001_presentacion"   />
+		<pagina tipo="obj" titulo="Título de página"  src="m01_0002_objetivos"    />		
+
+	
+		<!--  Un apartado puede contener a su vez páginas y apartados (permitimos multinivel)  -->
+		<!-- 	id:		Idenfifica internamente este elemento 								   -->		
+		<!-- 	tipo:	Indica la naturaleza del apartado  con un prefijo donde				   -->		
+		<!--			 "contenido"     => apartado de contenido normal					   -->
+		<!--			 "evaluativo"    => apartado que contiene evaluaciones		  		   -->
+		<!--			 "introductorio" => apartado con contenido introductorio			   -->
+		<!--			 "destacado"     => apartado a destacar en el índice 				   -->
+		<!--  	- titulo : Define el título del apartado a mostrar en el índice 			   -->
+		<!--    - src:     [opcional] indica el archivo a mostrar al pulsar la opción 		   -->
+		<!--     					  del índice que representa al apartado.				   -->        
+		<apartado id="ap01"  tipo="contenido" titulo="Titulo del apartado"  src="m01_0003_portada_ap01" >
+		 
+			<pagina tipo="pag" titulo="Título de página"  src="m01_0004"   />
+			<pagina tipo="pag" titulo="Título de página"  src="m01_0005"   />			
+			<pagina tipo="pag" titulo="Título de página"  src="m01_0006"   />		
+			
+			
+		</apartado>
+	
+
+		<apartado id="ap02"   tipo="evaluativo" titulo="Titulo del apartado"  src="m01_0007_portada_ap02" >
+		 
+			<pagina tipo="ej" titulo="Título de página"  src="m01_0008"   />
+			<pagina tipo="ej" titulo="Título de página"  src="m01_0009"   />			
+			<pagina tipo="ej" titulo="Título de página"  src="m01_0010"   />		
+			
+		</apartado>
+
+		<pagina tipo="res" titulo="Título de página"  src="m01_0011_resumen"    />		
+	
+	</contenido>
+
+
+
+
+	<!--  ============================================================================ -->
+	<!--  APARTADO EVALUACIONES : Define un conjunto de evaluaciones. Desde esta 	   -->
+	<!--						  definición se creará un modelo de datos para 		   -->
+	<!-- 						  almacenar las puntuaciones de cada ejercicio. 	   -->
+	<!--						  													   -->
+	<!--						  Los parámetros de componentes de ejercicios 		   -->
+	<!--						  utilizarán los identificadores definidos			   -->
+	<!--						  en estas definiciones de ejercicios al enviar 	   -->
+	<!--						  los resultados.									   -->
+	<evaluaciones>
+	
+
+		<!-- 	Una evaluación es un conjunto de ejercicios, o un único ejercicio		   -->
+		<!--																			   -->
+		<!--	    -  id:    Identificación interna de la evaluación					   -->
+		<!--		-  tipo : Define el tipo de evaluación 						 		   -->
+		<!--																			   -->	
+		<!--			"obligatoria" : Obligatoria para superar la unidad				   -->	
+		<!--			"opcional" 	  : No obligatoria para superar la unidad			   -->	
+		<!--			"repaso" 	  : Repaso de conceptos								   -->		
+		<!--																			   -->		
+		<!--		-  titulo : Define el titulo de la evaluación 						   -->		
+		<!--																			   -->
+		<evaluacion id="ev01" tipo="obligatoria"  titulo="Titulo evaluación"  >
+		
+		
+				<!--  Un ejercicio define una entrada en el modelo de datos en el cual podremos -->
+				<!--  almacenar una puntuación. 												-->
+				<!--																			-->
+				<!--	- id: Es el identificador con el cual se referencia esta entrada desde	-->
+				<!-- 		  una página de contenidos											-->
+				<!-- 	- tipo: Identifica el tipo del ejercicio 								-->
+				<!--			 "test"  => es un ejercicio tipo test					   		-->		
+				<!--			 "parejas"  => es un ejercicio de tipo relacionar		   		-->		
+				<!--			 "arrastrar"  => es un ejercicio de tipo arrastrar		   		-->		
+				<!--			 "bateria"  => es una bateria de preguntas				   		-->		
+				<!--			 "pasoapaso"  => es un ejercicio basado en un paso a paso   	-->				
+				<!--	- titulo  => Es el título del ejercicio 							   	-->		
+				<!--																			-->		
+				<ejercicio id="identificador_ej01" tipo="test" 			titulo="Titulo ejercicio 1" />
+				<ejercicio id="identificador_ej02" tipo="parejas"  		titulo="Titulo ejercicio 2" />				
+				<ejercicio id="identificador_ej03" tipo="arrastrar" 	titulo="Titulo ejercicio 3" />								
+				<ejercicio id="identificador_ej04" tipo="bateria"  		titulo="Titulo ejercicio 4" />												
+				<ejercicio id="identificador_ej05" tipo="pasoapaso"		titulo="Titulo ejercicio 5" />																
+				<ejercicio id="identificador_ej06" tipo="conversacion"	titulo="Titulo ejercicio 6" />																		
+
+		</evaluacion>
+
+	</evaluaciones>
+	
+	<!--  ============================================================================ -->
+	<!--  APARTADO OBJETIVOS : Define cuales son los objetivos del curso con respecto  -->
+	<!--					   a los elementos que componen la unidad. 				   -->
+	<!-- 																			   -->
+	<!-- 					   Un objetivo se cumple cuando se ha superado un conjunto -->
+	<!-- 					   de requisitos del tipo: 								   -->
+	<!-- 																			   -->
+	<!-- 							- Se ha completado un apartado					   -->
+	<!-- 							- Se ha superado una evaluación 				   -->			
+	<!-- 							- Se ha superado un ejercicio 				   	   -->			
+	<objetivos>
+		
+
+			<!-- Un objetivo es un conjunto de requisitos que se han de cumplir       -->
+			<!--   																	  -->
+			<!--    id: 	Es el identificador del objetivo						  -->
+			<!-- 	titulo: Es el título del objetivo 								  -->
+			<!-- 																	  -->
+			<objetivo id="obj01"  titulo="Titulo Objetivo" >
+			
+					<!-- Un requisito es un elemento de la unidad que ha de estar superado -->
+					<!-- 																   -->
+					<!--  tipo: Puede ser 												   -->  
+					<!--															       -->
+					<!--    	"apartado" Basado en el acceso al 100% de un apartado      -->
+					<!--    	"evaluacion" Basado en la superación de una evaluacion     -->
+					<!--    	"ejercicio" Basado en la superación de un ejercicio        -->
+					<!--    	"pagina"  Basado en el acceso a una página				   -->					
+					<requisito tipo="apartado"   id="ap01" />
+					<requisito tipo="evaluacion" id="ev01" />
+					<requisito tipo="ejercicio"  id="identificador_ej04" />										
+					<requisito tipo="pagina"     id="m01_0006" />										
+					
+			</objetivo>
+	
+	</objetivos>
+	
+	
+</unidad>
+
+
+

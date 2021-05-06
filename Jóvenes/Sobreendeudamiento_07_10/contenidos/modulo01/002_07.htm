@@ -1,0 +1,46 @@
+﻿
+
+<!--<div seqid="fondo" style="overflow: hidden; position:absolute; top:5px; left:0px; width:990px; height:476px;">
+	<img src="./contenidos/modulo01/media/fondo00.jpg" style="margin-top:-9px;"/>
+</div>-->
+
+<!--<div seqid="panel_1" style="position:absolute; top:5px; left:0px;">
+	<div style="width:990px; height:476px; background-color:#FFF; opacity:0.8;"></div>
+</div>-->
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:10px; left:740px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:172px; height:460px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:10px; left:740px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:172px; height:460px;"/>
+</div>
+
+<!-- Bocadillos -->
+<div seqid="bocadillo_01" style="left:380px; top:120px; width:300px;" class="bocadillo dialogo rt" idtextual="m01p0018t00" >loading text...</div>
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda00" style="bottom:70px; left:290px;">loading text...</div>
+
+
+
+<!-- SECUENCIADOR -->
+<div class="FAB20_SEQUENCER" style="display:none">
+	<div elem="fondo" start="1" action="fade" />
+
+<!--<div elem="panel_1" start="10" action="fade" />-->
+<!--<div elem="personaje_calla" start="10" action="fade" />-->
+
+	<div elem="personaje_calla" start="12" action="fadeout" />
+	<div elem="personaje_habla" start="9" action="fade" />
+
+	<div elem="bocadillo_01" start="10" action="fade" />
+	<div elem="bocadillo_01" start="131" action="fadeout" />
+
+	<div elem="personaje_habla" start="134" action="fadeout" />
+	<div elem="personaje_calla" start="131" action="fade" />
+
+	<div elem="help" start="140" action="fade" />
+
+</div>

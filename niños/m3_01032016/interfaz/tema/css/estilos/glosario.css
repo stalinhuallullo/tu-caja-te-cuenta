@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+
+  /** GLOSARIO **/
+
+#contenedor_glosario{width:100%;	margin:0 auto;}
+#contenedor_glosario .contenedor_glosario_letras{clear:both;}
+#contenedor_glosario .contenedor_glosario_contenido{
+	background:#F8F8F8;
+	border: 1px solid #E6E6E6;
+	border-radius: 5px;
+	clear: both;
+	font-size: 10pt;
+	height: 350px;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+	width: 100%;
+	position:relative;
+	overflow:hidden;
+	
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+				
+				#contenedor_glosario .contenedor_glosario_contenido .bloque_letras{
+					display:none;
+					margin:30px 30px 0;
+				}
+				
+				#contenedor_glosario .contenedor_glosario_contenido .bloque_letras span.letra{
+					color: #ececec;
+					font-size: 360px;
+					font-weight: bold;
+					position: absolute;
+					right: 10px;
+					text-transform: uppercase;
+					top: -10px;
+					z-index: 0;
+				}
+				
+				#contenedor_glosario .contenedor_glosario_contenido p.palabra{
+					color:#087021;
+					font-weight:bold;
+					display:block;
+					font-size:16px;
+					margin:0;
+					text-transform:uppercase;
+					line-height:18px;
+				}
+				
+				#contenedor_glosario .contenedor_glosario_contenido p.descripcion{
+					color:#606060;
+					display:block;
+					font-size:12px;
+					border-bottom:1px dotted #CCCCCC;
+					margin-bottom:15px;
+					padding-bottom:5px;
+					position:relative;
+					z-index:2;
+					line-height:16px;
+				}
+				
+				#contenedor_glosario #glosarioIndice_letras span.letra, #contenedor_glosario #glosarioIndice_letras span.letraOff{
+					background:url('../../media/glosario/glo_bullet.png') no-repeat 50% 32px #FFFFFF;
+					border: 1px solid #E6E6E6;
+					display: block;
+					float: left;
+					font-size: 26px;
+					font-weight: bold;
+					height: 28px;
+					margin: 0 2px 0 0;
+					padding: 0;
+					text-transform: uppercase;
+					width: 28px;					
+					
+					-moz-border-radius: 3px; 
+					-webkit-border-radius: 3px; 
+					border-radius: 3px;
+					}
+					
+				#contenedor_glosario #glosarioIndice_letras span.letraOff{
+					color:#c0c0c0;
+				}
+				
+				#contenedor_glosario #glosarioIndice_letras span.letra{
+					cursor:pointer;
+					color:#087021 ;
+				}
+				
+				#contenedor_glosario #glosarioIndice_letras span.letra.activa, #contenedor_glosario #glosarioIndice_letras span.letra:hover{
+					cursor:pointer;					
+					color:#FFFFFF;
+					background-color:#087021 ;
+				}
+
+				#contenedor_glosario #glosarioIndice_letras span.letra:hover{
+				}
+			
+			
+				#formularioBusqueda, #contenedor_glosario #glosarioIndice_letras
+				{
+			  		height: 25px;
+					margin: 0;
+					padding: 10px 0 20px;
+					text-align: center;
+					position:relative;
+					
+			}
+			
+			
+				.lupa
+				{	
+					background:url('../../media/glosario/lupa.png') no-repeat 0 0;
+					cursor: pointer;
+					display: block;
+					float: right;
+					height: 32px;
+					position: absolute;
+					right: 5px;
+					top: 8px;
+					width: 32px;
+				}
+			
+			
+				#formularioBusqueda{ 
+					display:none;
+					color:#FFFFFF;
+					font-size:18px;
+					font-weight:bold;
+				}
+				
+				#formularioBusqueda input[type=text]{
+					color:#087021 ;
+					font-weight:bold;
+					border:0px;
+					height:18px;
+					background:#CAC9C9;
+					padding:10px;
+					margin:0 5px;
+					
+					-moz-border-radius: 4px; 
+					-webkit-border-radius: 4px; 
+					border-radius: 4px;
+					
+					-moz-box-shadow:0px 0px 2px 1px #909090 inset;
+					-webkit-box-shadow:0px 0px 2px 1px #909090 inset;
+					box-shadow:0px 0px 2px 1px #909090 inset;
+					
+				}
+					
+			
+				.btnGlos
+				{
+					color:#087021 ;
+					background:url('../../media/glosario/botonbuscador_bg.png') repeat-x 50% 50% transparent;
+					height:35px;
+					border:0px;
+					margin:0 5px 0 0;
+					font-weight:bold;
+					
+					-moz-box-shadow: 0 0 2px 0 #808080;
+					-webkit-box-shadow: 0 0 2px 0 #808080;
+					box-shadow: 0 0 2px 0 #808080;
+					
+					-moz-border-radius: 5px; 
+					-webkit-border-radius: 5px; 
+					border-radius: 5px; 
+				}
+				
+				
+.glosario {
+	font-size:1.1em;
+	font-style:italic;
+	cursor:pointer;
+}
+
+/* Suprimido a peticion del cliente
+a.glosario:after, a.glosario:before{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+
+a.glosario:after{
+	content:' >> ';
+}
+
+a.glosario:before{
+	content:' << ';
+}
+
+*/
+
+@media only screen and (orientation:landscape) and (min-device-width: 768px) and (max-device-width: 1024px){
+ #contenedor_glosario #lupa{
+	 display:none;
+ }
+	
+}

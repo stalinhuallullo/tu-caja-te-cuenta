@@ -1,0 +1,102 @@
+﻿
+
+<style type="text/css">
+	.contenedorpopup {}
+	a.bpopupbutton {
+		background:transparent;
+		position:absolute;
+		border:none;
+		display:block;
+		display:none;
+		/**/
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-o-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	
+	#interes {
+		left: 55px;
+		top: 185px;
+		width: 230px;
+		height: 100px;	
+	}
+	
+	#asociados {		
+		left: 350px;
+		top: 185px;
+		width: 270px;
+		height: 100px;
+	}
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="28">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a08_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+        <div class="escena" numero='1' imagen='' audio='Presentadoraud409' habla="narrador" bocadillo="" flecha="rt" bleft="375" btop="135" bwidth="390" oculta="" muestra="">
+        	<span>Y de los costos asociados a un crédito, ¿Miguel y María habrán preguntado sobre esto antes de decidirse?</span>
+        </div>
+
+        <div class="escena" numero='2' imagen='a08_02.jpg' audio='silencio10s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='3' imagen='a08_03.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='4' imagen='a08_04.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='5' imagen='a08_05.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='6' imagen='a08_06.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>        
+
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="789" ptop="25" alto="433"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en los <strong>enlaces</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>
+
+<a id="interes" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Tasa de interés</strong></p>
+		<p style="font-size:140% !important;">Es el interés que cobran las entidades por hacer un  préstamo, es decir,  el precio que el deudor  paga por los recursos que pidió prestados en un plazo determinado. Entre las variables que determinan la tasa de interés está:</p>
+        <ul class="noordenada">
+        	<li style="font-size:120% !important;">El riesgo asociado al crédito.</li>
+            <li style="font-size:120% !important;">El tiempo determinado para la devolución de los recursos.</li>
+            <li style="font-size:120% !important;">El sistema de amortización.</li>
+        </ul>
+	</div>
+</div>
+
+<a id="asociados" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Costos asociados</strong></p>		
+        <ul class="noordenada">
+        	<li style="font-size:120% !important;">Seguramente al solicitar el crédito la entidad financiera tiene que realizar algunas tareas operativas para decidir otorgarle los recursos. Es por esa razón que en algunas instituciones se solicita el pago de una comisión por evaluación de la solicitud.</li>
+            <li style="font-size:120% !important;">En algunos casos se asocia un seguro de desgravamen o de desempleo para garantizar el pago de la deuda en momento de muerte o de interrupción laboral.</li>
+            <li style="font-size:120% !important;">En los casos de mora, la entidad financiera puede incluir entre los cargos asociados, costos de cobro jurídico e intereses de mora.</li>
+            <li style="font-size:120% !important;">Para el caso de las tarjetas de crédito, la entidad realiza  un cobro por concepto de cuota de manejo o de utilización, la cual se cobra mensual o trimestralmente como contraprestación a todas las ventajas y  la tecnología que le ofrecen las entidades para que pueda disponer de su dinero en cualquier momento.</li>
+            <li style="font-size:120% !important;">Existen otros costos asociados a créditos específicos, como por ejemplo en el crédito hipotecario: se debe sumar los costos notariales y de inscripción de la garantía hipotecaria ya que la entidad financiera establece una hipoteca como garantía del dinero que te va a prestar.</li>
+        </ul>
+	</div>
+</div>

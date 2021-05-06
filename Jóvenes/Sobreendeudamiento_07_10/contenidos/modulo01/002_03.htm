@@ -1,0 +1,278 @@
+﻿
+
+<!-- EJERCICIOS -->
+<script type="text/javascript" src="interfaz/ejercicios/dragdrop/dragdrop.js"></script>
+<link rel="stylesheet" type="text/css" href="interfaz/ejercicios/dragdrop/dragdrop.css" media="screen" />
+<!-- ########## -->
+
+<style type="text/css">
+
+.enunciado_pregunta {
+	position:absolute;
+    color: #000000;
+    margin: 0px !important;
+    font-size: 20px !important;
+    font-weight: bold;
+    text-align: left !important;
+    line-height: 27px;
+}
+
+.mask {
+	position:absolute;
+	display:none;
+	left:0;
+	top:0;
+}
+div.drag {
+	position:absolute;
+	overflow:inherit;
+	width:310px;
+	height:50px;
+	margin: 0px;
+	padding: 0px;
+	background-image:url('./contenidos/modulo01/media/drag_bg.png');
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+div.drag p {
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	font-size: 12px;
+	line-height: 13px;
+	font-weight: bold;
+	text-align: justify;
+	color: #000000;
+	padding: 12px 31px 0px 25px;
+}
+div.dropp {
+	position:absolute;
+	overflow:inherit;
+	width:310px;
+	height:50px;
+	margin: 0px;
+	padding: 0px;  
+	background:none !important;
+}
+
+.btnComprobar,
+.btnReiniciar {
+    margin: 15px 0px 0px 0px !important;
+	font-size: 17px;
+	padding: 10px 25px;
+	background-color:#E20513;
+}
+.btnComprobar:hover,
+.btnReiniciar:hover {
+	background-color:#990000;
+}
+
+/**/
+
+.caja_feedback {
+	padding-bottom: 20px !important;
+	/**/
+	-moz-box-shadow:	0px 0px 35px 5px rgba(0, 0, 0, 0.5) !important;
+	-ms-box-shadow:		0px 0px 35px 5px rgba(0, 0, 0, 0.5) !important;
+	-o-box-shadow:		0px 0px 35px 5px rgba(0, 0, 0, 0.5) !important;
+	-webkit-box-shadow:	0px 0px 35px 5px rgba(0, 0, 0, 0.5) !important;
+	box-shadow:			0px 0px 35px 5px rgba(0, 0, 0, 0.5) !important;
+	/**/
+	background: #ffffff;
+	color: #000000;
+	font-size: 16px;
+	vertical-align: middle;
+    border: 5px solid #E20513;
+	/**/
+	-moz-border-radius:		15px;
+	-ms-border-radius:		15px;
+	-o-border-radius:		15px;
+	-webkit-border-radius:	15px;
+	border-radius:			15px;
+}
+.caja_feedback p {
+	margin: -190px 70px 0px 250px;
+	text-align: justify;
+	font-size: 19px !important;
+	line-height: 23px !important;
+	color: #000;
+	font-weight: normal;
+	float: left;
+}
+.caja_feedback img.icon_info {
+    float: left;
+	width: 240px;
+	margin-bottom: 20px;
+}
+.caja_feedback span {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0px 0px 5px 0px;
+	display:block;
+}
+
+.caja_feedback .ej_mensaje_close {
+	margin-top: 10px;
+	margin-right: 15px;
+	float: right;
+	cursor: pointer;
+}
+
+.caja_feedback span.show_respuesta {
+	font-size: 16px !important;
+	background: none repeat scroll 0 0 #3EA300;
+	/**/
+	-moz-border-radius:		6px;
+	-ms-border-radius:		6px;
+	-o-border-radius:		6px;
+	-webkit-border-radius:	6px;
+	border-radius:			6px;
+	/**/
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 10px 0 5px 0 !important;
+	padding: 5px 10px;
+	/**/
+	-moz-box-shadow:	0 0 2px #000000;
+	-ms-box-shadow:		0 0 2px #000000;
+	-o-box-shadow:		0 0 2px #000000;
+	-webkit-box-shadow:	0 0 2px #000000;
+	box-shadow:			0 0 2px #000000;
+	/**/
+}
+</style>
+
+<h2 seqid="encabezado" class="encabezado_titulo" idtextual="m01p0014t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_task.png"/>
+	<h2 class="titulito" idtextual="m01p0014t01">loading text...</h2>
+</div>
+
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:30px; left:780px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:165px; height:430px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:30px; left:780px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:165px; height:430px;"/>
+</div>
+
+<!-- Bocadillos -->
+<div seqid="bocadillo_01" style="left:380px; top:130px; width:340px;" class="bocadillo dialogo rt" idtextual="m01p0014t02" >loading text...</div>
+
+<img seqid="imagenfondo" src="./contenidos/modulo01/media/caja.png" style="position:absolute; left:475px; top:60px; width:480px !important; height:375px !important;" />
+<div seqid="imagenfondo_txt" style="position:absolute; top:120px; left:635px; font-size:37px; font-weight:bold;" idtextual="m01p0014t09">loading text...</div>
+
+<div seqid="enunciado" class="enunciado_pregunta" style="top:62px; left:98px;" idtextual="m01p0014t03">loading text...</div>
+
+<!-- ********* -->
+<!-- ********* -->
+<!-- EJERCICIO -->
+<div class="dragdrop" intentos="3" reto="reto01" tipo="agrupar" style="position:absolute; top:50px; left:0px; width:980px; height:430px;">
+
+	<div seqid="caja_1" class="dropp" numero="1,2,3" style="top:114px; left:567px;">
+		<img src="contenidos/modulo01/media/fondo_drop.png">            
+	</div>
+
+	<div seqid="caja_2" class="dropp" numero="3,2,1" style="top:172px; left:567px;">
+		<img src="contenidos/modulo01/media/fondo_drop.png">            
+	</div>
+
+	<div seqid="caja_3" class="dropp" numero="2,1,3" style="top:230px; left:567px;">
+		<img src="contenidos/modulo01/media/fondo_drop.png">            
+	</div>
+
+
+	<div class="contenedorDrags">
+		<div seqid="cuadro_1" class="drag" numero="5" style="top:50px; left:96px;">
+			<p idtextual="m01p0014t04">loading text...</p>
+		</div>
+
+		<div seqid="cuadro_2" class="drag" numero="1" style="top:105px; left:96px;">
+			<p idtextual="m01p0014t05">loading text...</p>
+		</div>
+
+		<div seqid="cuadro_3" class="drag" numero="2" style="top:160px; left:96px;">
+			<p idtextual="m01p0014t06">loading text...</p>
+		</div>
+
+		<div seqid="cuadro_4" class="drag" numero="4" style="top:215px; left:96px;">
+			<p idtextual="m01p0014t07">loading text...</p>
+		</div>
+
+		<div seqid="cuadro_5" class="drag" numero="3" style="top:270px; left:96px;">
+			<p idtextual="m01p0014t08" style="font-size:10px !important; line-height:10px !important; padding:9px 19px 0px 16px !important;">loading text...</p>
+		</div>
+
+	</div>
+
+	<div seqid="boton_1" class="btnPrincipal btnReiniciar" style="position:absolute; top:316px; left:99px;" idtextual="m01p0014t11">loading text...</div>
+	<div seqid="boton_2" class="btnPrincipal btnComprobar CLICKME" style="position:absolute; top:316px; left:245px;" idtextual="m01p0014t10">loading text...</div>
+
+	<div seqid="caja_intentos"id="labelIntentos" style="position:absolute; top:340px; left:430px;">cargaIntentos...</div>
+
+	<div class="error caja_feedback" style="position:absolute; top:70px; left:80px; width:800px; z-index: 2; display:none;">		
+		<img class="ej_mensaje_close" src="./interfaz/tema/media/htmltest/cerrar.png"/>
+		<img class="icon_info" src="./interfaz/tema/media/htmltest/inf_incorrecto2.png"/>
+		<p idtextual="m01p0014t12">loading text...</p>
+	</div>
+
+	<div class="ko caja_feedback" style="position:absolute; top:70px; left:80px; width:800px; z-index: 2; display:none;">		
+		<img class="ej_mensaje_close" src="./interfaz/tema/media/htmltest/cerrar.png"/>
+		<img class="icon_info" src="./interfaz/tema/media/htmltest/inf_incorrecto2.png"/>
+		<p idtextual="m01p0014t14">loading text...</p>
+	</div>
+
+	<div class="finished caja_feedback" style="position:absolute; top:70px; left:80px; width:800px; z-index: 2; display:none;">
+		<img class="ej_mensaje_close" src="./interfaz/tema/media/htmltest/cerrar.png"/>
+		<img class="icon_info" src="./interfaz/tema/media/htmltest/inf_exito2.png"/>
+		<p idtextual="m01p0014t13">loading text...</p>
+	</div>
+
+</div>
+<!-- ********* -->
+<!-- ********* -->
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda16" style="bottom:70px; left:160px;">loading text...</div>
+
+
+
+<!-- SECUENCIADOR-->
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="personaje_calla" start="1" action="fade" />
+
+	<div elem="personaje_calla" start="7" action="fadeout" />
+	<div elem="personaje_habla" start="5" action="fade" />
+
+	<div elem="bocadillo_01" start="5" action="fade" />
+	<div elem="bocadillo_01" start="140" action="fadeout" />
+
+	<div elem="personaje_calla" start="137" action="fade" />
+	<div elem="personaje_habla" start="140" action="fadeout" />
+	<div elem="personaje_calla" start="150" action="fadeout" />
+
+	<div elem="encabezado" start="150" action="righttoleft" />
+	<div elem="cab" start="150" action="fade" />
+
+	<div elem="enunciado" start="160" action="righttoleft" />
+	<div elem="imagenfondo" start="161" action="bottomtotop" />
+	<div elem="imagenfondo_txt" start="162" action="bottomtotop" />
+	<div elem="caja_1" start="165" action="righttoleft" />
+	<div elem="caja_2" start="167" action="righttoleft" />
+	<div elem="caja_3" start="169" action="righttoleft" />
+
+	<div elem="cuadro_1" start="170" action="lefttoright" />
+	<div elem="cuadro_2" start="173" action="lefttoright" />
+	<div elem="cuadro_3" start="176" action="lefttoright" />
+	<div elem="cuadro_4" start="179" action="lefttoright" />
+	<div elem="cuadro_5" start="182" action="lefttoright" />
+
+	<div elem="boton_1" start="185" action="bottomtotop" />
+	<div elem="boton_2" start="188" action="bottomtotop" />
+	<div elem="caja_intentos" start="191" action="bottomtotop" />
+
+	<div elem="help" start="200" action="fade" />
+
+</div>

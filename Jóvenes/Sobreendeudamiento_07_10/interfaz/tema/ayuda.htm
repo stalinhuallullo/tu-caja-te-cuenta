@@ -1,0 +1,53 @@
+﻿
+
+<style type="text/css">
+	.elemento-ayuda { clear:both; /*margin-bottom:6px;*/ padding: 15px 0 15px 0; margin: 0 0 0 0; min-height: 90px; /**/ border-bottom: 1px solid #999; }
+	.elemento-ayuda span { color:#812529; font-weight:bold; }
+	.elemento-ayuda img { float:left; margin:0 10px 0 0; border:1px solid #999; padding:3px; background-color:#FFF; }
+	.elemento-ayuda p { display: table-cell; height: 67px; padding: 0; vertical-align: middle; font-size: 14px !important; line-height: 18px !important; }
+</style>
+
+<script>
+	$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'>"+indiceUnidad.tituloapartado()+"</div><div class='subtitulo'>Ayuda</div>")
+</script>
+
+<h1 style="margin-top:40px;"><strong idtextual="interfaz_ayuda_titulo">loading text...</strong></h1>
+
+<!-- LEFT COL -->
+<div class="columna izquierda grid45">
+	<div class="elemento-ayuda" style="border-top: 1px solid #CCC;">
+		<img src="interfaz/tema/media/help/navegacion.png" />
+		<p idtextual="interfaz_ayuda_navegacion"  ></p>
+	</div>
+
+	<div class="elemento-ayuda">
+		<img src="interfaz/tema/media/help/indice.png" />
+		<p idtextual="interfaz_ayuda_indice"  ></p>
+	</div>
+
+	<div class="elemento-ayuda" style="border-top: 1px solid #CCC;">
+		<img src="interfaz/tema/media/help/progreso-b.png" />
+		<p idtextual="interfaz_ayuda_progreso" ></p>
+	</div>
+</div>
+
+<!-- RIGHT COL -->
+<div class="columna derecha grid50">
+
+	<div class="elemento-ayuda">
+		<img src="interfaz/tema/media/help/progreso.png" />
+		<p idtextual="interfaz_ayuda_barraprogreso"  ></p>
+	</div>
+
+	<div class="elemento-ayuda">
+		<img src="interfaz/tema/media/help/salir.png" />
+		<p idtextual="interfaz_ayuda_salir" ></p>
+	</div>
+</div>
+
+<button class="btn_volver" onclick="volverToContent()" style="position:absolute; right:10px; bottom:85px;" idtextual="interfaz_boton_volver_contenido" >loading text...</button>
+
+<div class="clear"></div>
+<script>
+actualizaTextuales();
+</script>

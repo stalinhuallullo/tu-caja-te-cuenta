@@ -1,0 +1,101 @@
+﻿
+
+<style type="text/css">
+#fab20_body #panelProgreso h2 {
+	font-size: 19px;
+}
+.progresstitle h1 {
+	font-weight:bold;
+	text-transform:uppercase;
+}
+</style>
+
+<div id="panelProgreso" style="height:335px; overflow:auto;"></div>
+<script>
+
+var auxStrProgress=""	
+var unitProgress 
+var totalUnitProgress=indiceUnidad.indice.getNumElement()
+ 
+var indice
+var auxObjUnidad
+var indAux
+//totalUnitProgress=
+var totalAccedidas=0
+var totalPag=0
+var progresoglobal=0
+var txtcompleto=""
+var clase=""
+	progresoglobal=Math.round(calculo_Puntuacion_Final())
+	if (SCORM_cierreSesion(false)) txtcompleto="<span class='elemCompletado' style='font-weight:bold;'>SUPERADO</span>"
+	else  txtcompleto="<span style='color:#d80600; font-weight:bold;' >NO SUPERADO</span>"
+	
+	auxStrProgress=auxStrProgress+ "<div class='progresstitle' style='position:absolute; top:365px; background-color:#dedede; border-radius: 10px; -webkit-border-radius: 10px; padding:10px; border: 1px solid #dedede;'> <h1><span style='color:#777;' >PUNTUACI&Oacute;N OBTENIDA:</span> "+progresoglobal+ "% <span style='color:#777;' >[</span>"+txtcompleto+"<span style='color:#777;' >]</span> </h1>";
+	auxStrProgress=auxStrProgress+ "<div id='infoadicionalpractica'><p>Es necesario visualizar todos los contenidos, as&iacute; como finalizar todas las pr&aacute;cticas, para completar el 100% del presente m&oacute;dulo.</p></div></div>"
+	
+
+	
+	auxStrProgress=auxStrProgress+ "<div class='progresstitle'> <h1>Visualizaci&oacute;n de Apartados</h1>";
+	auxStrProgress=auxStrProgress+ "<div class='clear'>&nbsp;</div>"		
+for(unitProgress=1;unitProgress<=totalUnitProgress;unitProgress++)
+{
+
+	indAux="1." + unitProgress
+	auxObjUnidad=indiceUnidad.indice.elements[unitProgress-1];
+
+	auxPagAccedidas=indiceUnidad.countPagesCompleted(auxObjUnidad);
+	totalAccedidas+=auxPagAccedidas;
+	auxPagTotales=indiceUnidad.countPages(auxObjUnidad);
+	totalPag+=auxPagTotales
+	porcentaje=Math.round(auxPagAccedidas/auxPagTotales*100);	
+	if(porcentaje==100) clase=" elemCompletado"
+	else clase=""
+	auxStrProgress=auxStrProgress+ "<div class='progresstitle'> <h2> " + auxObjUnidad.titulo+  "</h2>";
+	auxStrProgress=auxStrProgress+ "<div class='progresstext"+clase+"'>"+ porcentaje + "% ("+auxPagAccedidas+"/" +auxPagTotales+ ")</div>";
+	//auxStrProgress=auxStrProgress+ auxPagTotales + "  " + auxPagAccedidas;
+	auxStrProgress=auxStrProgress+ "<div class='clear'>&nbsp;</div>"
+	
+}
+ 
+	porcentaje=Math.round(totalAccedidas/totalPag*100);
+	estiloporcentaje = (Math.round(porcentaje/5) * 5) % 101;
+	auxStrProgress="<div id='fullprogress'><div class='fulprogressimg porcentaje"+estiloporcentaje+"'></div><h2> Avance total : " + porcentaje + "% </h2> </div>"+ auxStrProgress
+	
+	
+	
+// Volcamos información de las prácticas	
+if (indiceUnidad.hasPracticas==true)
+{
+	var cont=0
+
+	auxStrProgress=auxStrProgress+ "<div class='progresstitle'><br /><h1>Realizaci&oacute;n de Prácticas</h1>";
+		
+	auxStrProgress=auxStrProgress+ "<div class='clear'>&nbsp;</div>"
+	
+	for (cont=0;cont<indiceUnidad.numPracticas;cont++)
+	{
+
+	auxStrProgress=auxStrProgress+ "<div class='progresstitle'> <h2> " + indiceUnidad.practicas[cont].titulo+  "</h2></div>";
+	if (indiceUnidad.practicas[cont].completado)	auxStrProgress=auxStrProgress+ "<div class='progresstext elemCompletado'>Finalizada</div>";
+	else	auxStrProgress=auxStrProgress+ "<div class='progresstext'>Incompleta</div>";
+	
+	//auxStrProgress=auxStrProgress+ auxPagTotales + "  " + auxPagAccedidas;
+	auxStrProgress=auxStrProgress+ "<div class='clear'>&nbsp;</div>"	
+	
+	}
+}	
+
+AJAX_cargarHTMLContent("#panelProgreso", auxStrProgress);
+
+
+
+</script>
+
+<script>
+	$(F20_CAPA_TITULOPAGINA).html("<div class='titulo'>"+indiceUnidad.tituloapartado()+"</div><div class='subtitulo'>Progreso</div>")
+</script>
+
+<br />
+<br />
+
+<button class="btn_volver" onclick="volverToContent()">volver al contenido</button>

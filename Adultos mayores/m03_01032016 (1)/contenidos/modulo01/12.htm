@@ -1,0 +1,73 @@
+﻿
+
+<style type="text/css">
+	.contenedorpopup {}
+	a.bpopupbutton {
+		background:rgba(0,0,0,0);
+		position:absolute;
+		border:none;
+		width:30px;
+		height:45px;
+		display:block;
+		display:none;
+		
+		/**/
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-o-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	
+	#error {
+		width: 300px;
+		height: 60px;
+		left:78px;
+		top:400px;
+	}
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="20">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+        
+
+		<div class="escena" numero='0' imagen='a12_01.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='1' imagen='a12_02.jpg' audio='silencio10s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='2' imagen='a12_03.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>        
+        <div class="escena" numero='3' imagen='a12_04.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>        
+        <div class="escena" numero='4' imagen='a12_05.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='5' imagen='a12_06.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='6' imagen='a12_07.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='7' imagen='a12_08.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en el <strong>enlace</strong> <span class="bullet bulletmano"></span> para ver su contenido.
+	</div>
+</div>
+
+<a id="error" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>EL ERROR DE LOS 110 AÑOS</strong></p>
+		<p style="font-size:135% !important;">Muchos afiliados al Sistema Privado de Pensiones (SPP) preguntan si la pensión se calcula considerando que vivirá 110 años. Esto no es así.</p>
+	</div>
+</div>

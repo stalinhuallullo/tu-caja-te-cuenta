@@ -1,0 +1,90 @@
+﻿<textuales>
+
+		<txt id="interfaz_tooltipIndice"><![CDATA[Índice contenidos]]></txt>
+		<txt id="interfaz_tooltipCreditos"><![CDATA[Creditos]]></txt>
+		<txt id="interfaz_tooltipBibliografia"><![CDATA[Bibliografia]]></txt>
+		<txt id="interfaz_tooltipGlosario"><![CDATA[Glosario]]></txt>
+		<txt id="interfaz_tooltipConsejos"><![CDATA[Consejos]]></txt>
+		<txt id="interfaz_tooltipMindmap"><![CDATA[Mindmap]]></txt>
+		<txt id="interfaz_tooltipImprmir"><![CDATA[Imprimir]]></txt>
+		<txt id="interfaz_tooltipProgreso"><![CDATA[Progreso]]></txt>		
+		<txt id="interfaz_tooltipAyuda"><![CDATA[Ayuda]]></txt>
+		<txt id="interfaz_tooltipConsultaExp"><![CDATA[Consulta Expertos]]></txt>
+		<txt id="interfaz_tooltipMasInfo"><![CDATA[Mas Información]]></txt>
+		<txt id="interfaz_tooltipManual"><![CDATA[Manual y Ayuda]]></txt>
+		<txt id="interfaz_tooltipInicio"><![CDATA[Inicio]]></txt>
+		<txt id="interfaz_tooltipLocucion"><![CDATA[Texto de la locución]]></txt>
+
+		<txt id="interfaz_salir"><![CDATA[Salir]]></txt>
+		<txt id="interfaz_volver"><![CDATA[Volver]]></txt>
+		<txt id="interfaz_indicecontenidos"><![CDATA[Indice de Contenidos]]></txt>
+
+		<txt id="interfaz_botonsiguiente"><![CDATA[página siguiente]]></txt>
+		<txt id="interfaz_botonanterior"><![CDATA[página anterior]]></txt>
+
+
+	<!--<txt id="txt_bienvenida">Bienvenido al test del curso </txt>
+		<txt id="txt_instrucciones">Pulsa en el botón 'Inicio' para iniciar el test. </txt>
+		<txt id="txt_instruccionesintentos">Número de intentos disponibles:</txt>
+		<txt id="txt_intentoNum">Intento nº </txt>		
+		<txt id="txt_inicio">inicio</txt>
+		
+		<txt id="txt_finalizado">Has finalizado el cuestionario:</txt>
+		<txt id="txt_aciertos">Aciertos</txt>
+		<txt id="txt_fallos">Fallos</txt>
+		<txt id="txt_puntuacion">Puntuación</txt>
+		<txt id="txt_variasrespuestas">La opcion correcta puede ser una o varias de las respuestas. </txt>
+		<txt id="txt_solounarespuesta">Sólo una respuesta es correcta. </txt>
+		<txt id="txt_no_superado">Lo sentimos, no ha superado el test.</txt>
+		<txt id="txt_superado">Enhorabuena, has superado el TEST.</txt>
+		<txt id="txt_test_repetircuestionario">Repetir el cuestionario</txt>
+		<txt id="txt_test_enhorabuena">Enhorabuena, has superado este intento.</txt>
+		<txt id="txt_test_noenhorabuena">Lo sentimos, no has superado este intento.</txt>
+		<txt id="txt_test_nointentos">Lo sentimos, ya no dispones de más intentos</txt>
+
+		<txt id="txt_test_nointentosv2">Lo sentimos, ya ha agotado sus intentos.</txt>
+		<txt id="txt_test_salircuestionario">Salir</txt>
+		<txt id="txt_test_testcompletado">No obstante, el test ha sido superado en un intento anterior.</txt>-->
+
+
+		<!-- TEXTOS TEST -->
+		<txt id="txt_test_sinmarcar1">Debes marcar alguna de las respuestas</txt>
+		<txt id="txt_test_sinmarcar2">Prueba de nuevo.</txt>		
+		<txt id="txt_test_MSG_feedOK">Respuesta correcta</txt>
+		<txt id="txt_test_MSG_feedMULTIOK">Respuesta correcta</txt>
+		<txt id="txt_test_MSG_feedKO">Respuesta incorrecta</txt>
+ 		<txt id="txt_test_strRespuestaCorrecta">La respuesta correcta es:</txt>
+		<txt id="txt_test_aciertos">Aciertos</txt>
+		<txt id="txt_test_fallos">Fallos</txt>
+		<txt id="txt_test_pregunta">Pregunta</txt>
+		<txt id="txt_test_fincuestionario">Has finalizado el cuestionario:</txt>
+		<txt id="txt_test_puntuacion">Puntuación</txt>
+		<txt id="txt_test_enviar">Enviar</txt>
+		
+		<txt id="txt_test_anterior">Anterior</txt>
+        <txt id="txt_test_siguiente">Siguiente</txt>
+   		<txt id="txt_test_verresultados">Ver Resultados</txt>
+    	<txt id="txt_test_numpregunta">Pregunta 1/10</txt>
+		<txt id="txt_test_repetircuestionario">Repetir el cuestionario</txt>
+		
+		<txt id="interfaz_ayuda_titulo"><![CDATA[AYUDA DEL INTERFAZ]]></txt>
+		<txt id="interfaz_ayuda_navegacion"><![CDATA[La navegación es muy sencilla. Para avanzar en el curso puedes utilizar los botónes <span>ANTERIOR</span> y <span>SIGUIENTE</span> situados en la parte inferior derecha de la interfaz.]]></txt>
+		<txt id="interfaz_ayuda_indice"><![CDATA[El <span>&Iacute;NDICE</span> de contenidos permanece oculto. Se desplegará cuando pulses sobre el botón correspondiente, y podrás navegar por las distintas unidades que contiene este módulo.]]></txt>
+		<txt id="interfaz_ayuda_progreso"><![CDATA[El botón de <span>PROGRESO</span> permite consultar tu grado de avance en el curso.]]></txt>
+		<txt id="interfaz_ayuda_barraprogreso"><![CDATA[La <span>BARRA DE PROGRESO</span> te da una visual rápida de lo que ya has visto del contenido respecto del total; y la <span>PAGINACIÓN</span> te informa de la página en la que te encuentras y cuántas páginas tiene el curso.]]></txt>
+		<txt id="interfaz_ayuda_salir"><![CDATA[Cuando finalices el curso, o si deseas continuar en otro momento, pulsa el botón <span>SALIR</span> del interfaz. Esto guardará tu seguimiento del curso, cerrará la ventana actual del navegador y te devolverá a la plataforma.]]></txt>
+ 
+		<txt id="interfaz_boton_volver_contenido"><![CDATA[Volver al contenido]]></txt>
+		<txt id="progress_superado"><![CDATA[SUPERADO]]></txt>
+		<txt id="progress_nosuperado"><![CDATA[NO SUPERADO]]></txt>
+		<txt id="progress_puntuacionobtenida"><![CDATA[PUNTUACI&Oacute;N OBTENIDA]]></txt>
+		<txt id="progress_mensaje"><![CDATA[Es necesario visualizar todos los contenidos, as&iacute; como finalizar todas las pr&aacute;cticas, para completar el 100% del presente m&oacute;dulo.]]></txt>
+		<txt id="progress_visualizacionapartados"><![CDATA[Visualizaci&oacute;n de Apartados]]></txt>
+		<txt id="progress_avancetotal"><![CDATA[Avance total]]></txt>
+		<txt id="progress_realizacionpracticas"><![CDATA[Realizaci&oacute;n de Prácticas]]></txt>
+		<txt id="progress_finalizada">Finalizada</txt>
+		<txt id="progress_incompleta">Incompleta</txt>
+
+		<txt id="interfaz_elementosPendientes">Aun tienes contenidos pendientes por visualizar.</txt>
+
+</textuales>

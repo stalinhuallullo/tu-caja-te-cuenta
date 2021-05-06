@@ -1,0 +1,125 @@
+﻿
+
+<style type="text/css">
+	.contenedorpopup {}
+	a.bpopupbutton {
+		background:transparent;
+		position:absolute;
+		border:none;
+		display:block;
+		display:none;
+		/**/
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-o-border-radius: 100px;
+		-ms-border-radius: 100px;
+		border-radius: 100px;
+		/**/
+		-webkit-box-shadow: 0px !important;
+		-moz-box-shadow: 0px !important;
+		-o-box-shadow: 0px !important;
+		-ms-box-shadow: 0px !important;
+		box-shadow: 0px !important;
+	}
+	
+	#gestion {
+		width:125px;
+		height:140px;
+		left:28px;
+		top:158px;		
+	}
+	
+	#comisiones {
+		width:125px;
+		height:140px;
+		left:195px;
+		top:158px;
+	}
+	
+	#uso {
+		width:125px;
+		height:140px;
+		left:360px;
+		top:158px;
+	}
+	
+	#tramites {
+		width:125px;
+		height:140px;
+		left:525px;
+		top:158px;
+	}
+
+</style>
+
+<script>
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	setTimeout(function(){$('.bpopupbutton').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="32">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+        
+
+		<div class="escena" numero='0' imagen='a07_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='1' imagen='' audio='Presentadoraud408_2' habla="narrador" bocadillo="" flecha="tr" bleft="440" btop="210" bwidth="440" oculta="" muestra="">
+        	<span>¿Sabrán Miguel y María si hay algún costo de su cuenta de ahorros?</span>
+        </div>
+		<div class="escena" numero='2' imagen='a07_02.jpg' audio='silencio10s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='3' imagen='a07_03.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='4' imagen='a07_04.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='5' imagen='a07_05.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='6' imagen='a07_06.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+        <div class="escena" numero='7' imagen='a07_08.jpg' audio='silencio01s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="782" ptop="32" alto="438"></div>
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+
+<div class="clear">&nbsp;</div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en las <strong>IMÁGENES</strong> <span class="bullet bulletmano"></span> para ver más información.
+	</div>
+</div>
+
+<a id="gestion" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Gestión de cuenta</strong></p>
+		<p style="font-size:150%;">Mantenimiento y envío de estados de cuenta.</p>
+	</div>
+</div>
+
+<a id="comisiones" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Comisiones</strong></p>
+		<p style="font-size:150%;">Transferencias, pago de cheques y emisión de tarjetas.</p>
+	</div>
+</div>
+
+<a id="uso" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Uso de efectivo</strong></p>
+		<p style="font-size:150%;">Retiros en cajeros automáticos y ventanillas.</p>
+	</div>
+</div>
+
+<a id="tramites" class="bpopupbutton"><span></span></a>
+<div class="contenedorpopup">
+	<div class="bpopupwindow">
+		<p class="bClose"><img src="../../interfaz/tema/media/ico_cerrar.png" alt="icono cerrar"></p>
+		<p class="titulo"><strong>Trámites especiales</strong></p>
+		<p style="font-size:150%;">Pre-cancelaciones de créditos, modificaciones de cronogramas de pago, devolución de cheques, etc.</p>
+	</div>
+</div>

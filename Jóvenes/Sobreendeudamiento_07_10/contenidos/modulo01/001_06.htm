@@ -1,0 +1,104 @@
+﻿
+
+<style type="text/css">
+.box9 {
+	position: absolute;
+	text-align: center;
+}
+.box9 h3 {
+	position: absolute;
+	color: #E20513;
+	font-size: 60px;
+	font-weight: bold;
+}
+.box9 img {
+	margin-bottom:5px;
+}
+.box9 p {
+	font-size:13px;
+	text-align: center;
+	line-height:14px;
+}
+</style>
+
+<h2 class="encabezado_titulo" idtextual="m01p0009t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_read.png"/>
+	<h2 class="titulito" idtextual="m01p0009t01">loading text...</h2>
+</div>
+
+<h1 seqid="titulito" style="color:#337AB7; position:absolute; width:910px; top:75px; left:30px; text-align:center; font-weight:bold; text-transform:uppercase;" idtextual="m01p0009t03"></h1>
+
+<div seqid="bloque1" class="box9" style="top:90px; left:45px; width:230px;">
+	<h3 style="top:45px; left:30px;">1</h3>
+	<img src="./contenidos/modulo01/media/p09_img_01.png" style="width:35%; height:35%;"/>
+	<p style="width:230px;" idtextual="m01p0009t04">loading text...</p>
+</div>
+
+<div seqid="bloque2" class="box9" style="top:115px; left:300px; width:230px;">
+	<h3 style="top:20px; left:10px;">2</h3>
+	<img src="./contenidos/modulo01/media/p09_img_02.png" style="margin-left:20px; width:35%; height:35%;"/>
+	<p style="width:230px;" idtextual="m01p0009t05">loading text...</p>
+</div>
+
+<div seqid="bloque3" class="box9" style="top:125px; left:570px; width:230px;">
+	<h3 style="top:10px; left:30px;">3</h3>
+	<img src="./contenidos/modulo01/media/p09_img_03.png" style="margin-left:20px; width:35%; height:35%;"/>
+	<p style="width:230px;" idtextual="m01p0009t06">loading text...</p>
+</div>
+
+<div seqid="bloque4" class="box9" style="top:277px; left:100px; width:290px;">
+	<h3 style="top:20px; left:60px;">4</h3>
+	<img src="./contenidos/modulo01/media/p09_img_04.png" style="margin-left:20px; width:35%; height:35%;"/>
+	<p style="width:290px;" idtextual="m01p0009t07">loading text...</p>
+</div>
+
+<div seqid="bloque5" class="box9" style="top:290px; left:470px; width:300px;">
+	<h3 style="top:10px; left:35px;">5</h3>
+	<img src="./contenidos/modulo01/media/p09_img_05.png" style="margin-left:40px; width:60%; height:60%;"/>
+	<p style="width:300px;" idtextual="m01p0009t08">loading text...</p>
+</div>
+
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:50px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:165px; height:430px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:50px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:165px; height:430px;"/>
+</div>
+
+<!-- Bocadillos -->
+<div seqid="bocadillo_01" style="left:550px; top:140px; width:190px;" class="bocadillo dialogo rt" idtextual="m01p0009t02" >loading text...</div>
+
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda00" style="bottom:70px; left:290px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="personaje_calla" start="1" action="fade" />
+
+	<div elem="personaje_calla" start="10" action="fadeout" />
+	<div elem="personaje_habla" start="7" action="fade" />
+
+	<div elem="bocadillo_01" start="7" action="fade" />
+	<div elem="bocadillo_01" start="46" action="fadeout" />
+
+		<div elem="titulito" start="46" action="righttoleft" />
+
+		<div elem="bloque1" start="50" action="poping" />
+		<div elem="bloque2" start="100" action="poping" />
+		<div elem="bloque3" start="155" action="poping" />
+		<div elem="bloque4" start="235" action="fade" />
+		<div elem="bloque5" start="320" action="poping" />
+
+	<div elem="personaje_habla" start="478" action="fadeout" />
+	<div elem="personaje_calla" start="475" action="fade" />
+
+	<div elem="help" start="480" action="fade" />
+
+</div>

@@ -1,0 +1,813 @@
+/******************************
+ * DEFINICION DE LA INTERFAZ
+ * AUTOR : FJLG
+ * ACTUALIZACION : 15/10/2013
+ ******************************/
+
+
+@font-face {
+    font-family: 'newsgoth';
+    src: url('fuentes/newsgoth.eot');
+    src: url('fuentes/newsgoth.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/newsgoth.woff') format('woff'),
+         url('fuentes/newsgoth.ttf') format('truetype'),
+         url('fuentes/newsgoth.svg#newsgoth') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	/*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	font-family: 'newsgoth', Arial, Helvetica, sans-serif;
+}
+
+@media screen, projection
+{
+
+html, body{
+	height:100%;
+	margin:0;
+	padding:0;
+	
+	background-attachment: scroll;
+    background-image: url("../../media/interfaz/bodybg.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+	background-size:cover;
+}
+
+
+#leftblock{
+	position:fixed;
+	display:none;
+}
+
+#titulocurso{
+	display:none;
+	margin:20px 0 0 0;
+	font-size:20px;
+	font-weight:bold;		
+	text-transform:uppercase;
+	float: right;
+	position: relative;
+	width: 90%;
+	line-height:22px;
+	right:5%;
+	display:none;
+}
+		
+#titulomodulo{
+	margin:0 0 20px 0;
+	font-size:14px;
+	font-weight:bold;	
+	text-transform:none;
+	float: right;
+	position: relative;
+	width: 90%;
+	line-height:16px;
+	right:5%;
+	display:none;
+}
+
+/* normal */
+#rightblock{
+    height: 0;
+    left: 4px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 3px;
+    width: 970px;
+	z-index:1;
+}
+
+
+	#CapaIndicePaginas{
+		/*
+		background-attachment: scroll;
+		background-image: url("../../media/sprite.png");
+		background-position: -1px -1616px;
+		background-repeat: no-repeat;
+		float: left;
+		height: 45px;
+		width: 96px;
+		*/
+		position:absolute;
+		right:10px;
+		top:85px;
+	}
+	
+	#CapaIndicePaginas p {
+		/*
+		font-size: 18px;
+		font-weight: bold;
+		margin: 11px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+		*/
+		font-family: 'Calibri Bold', Arial, Helvetica, sans-serif;
+		font-size:40px;
+		font-weight: bold;
+		color: #333333;
+		letter-spacing:-2px;
+		text-align:right;
+	}
+	
+#contenedor-progreso{		
+    bottom: 0;
+    height: 23px;
+    left: 0;
+    margin: 0 20px 0 120px;
+    position: relative;
+}
+
+#barra-progreso{
+	/*
+	background-attachment: scroll;
+    background-image: url("../../media/sprite.png");
+    background-position: -35px -1739px;
+    background-repeat: no-repeat;
+    height: 23px;
+    left: 0;
+    position: relative;
+    top: 0;
+	width:25px;
+	min-width:25px;
+	*/
+	background-attachment: scroll;
+    background-image: url("../../media/sprite.png");
+    background-position: -35px -1739px;
+    background-repeat: no-repeat;
+	background-color:#44a444;
+    height: 23px;
+    left: 0;
+    position: relative;
+    top: 0;
+	width:18px;
+	min-width:18px;
+}
+
+#nombre-curso{
+	display:none;
+	bottom: 0;
+    font-size: 11px;
+    line-height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 20px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 91%;
+}
+	
+#porcentaje-progreso{
+	background-attachment: scroll;
+    background-image: url("../../media/sprite.png");
+    background-position: -890px -1700px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    height: 23px;
+    line-height: 23px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 60px;
+	font-size:12px;
+}
+	
+	#progressbar{
+		width:0%;
+	}
+	
+	
+
+/****************************
+ * Taskbar
+ * (Barra de herramientas)
+ *****************************/
+ 
+#taskbar{	
+	display:none;
+}
+
+
+/************************
+ * MENU DE CONTENIDOS 
+ ************************/
+
+
+#navegacion-title{
+	position:absolute;
+	width:100%;
+	height:45px;
+	top:16px;
+	background-image: url("../../media/sprite.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: right -1029px;
+	left:0;
+}
+
+#navegacion-close{
+	background: url("../../media/sprite.png") no-repeat scroll -168px -1620px transparent;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    width: 40px;;
+}
+
+#navegacion-close:hover{
+	background-position:-168px -1679px;
+}
+
+ul#navegacion{
+	clear: both;
+	display:none;
+    float: none;
+    height: 415px;
+    margin: 0 12px 0 0;
+    padding: 60px 10px 10px;
+    position: relative;	
+}
+ul#navegacion li{margin:0 0 10px 0; padding:0;}
+ul#navegacion #contenidoMenu {
+	height: 425px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+ul#navegacion #contenidoMenu ul{margin:10px 0 0; padding:0; position:relative; top:0}
+ul#navegacion #contenidoMenu ul ul{margin:0; padding:0; display:none; }
+ul#navegacion #contenidoMenu ul ul ul{margin:5px 0; padding:0; display:block; }
+
+ul#navegacion #contenidoMenu ul li {
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+#navegacion-up, #navegacion-down{
+    cursor: pointer;
+    display: none;
+    height: 36px;
+    position: absolute;
+    right: 10px;
+    width: 36px;
+	
+	background-image: url("../../media/sprite.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+
+
+#navegacion-up{
+	top: 70px;
+	background-position: -8px -1798px;
+}
+
+#navegacion-down{
+	bottom:10px;
+	background-position: -8px -1838px;
+}
+
+ul#navegacion #contenidoMenu ul li p.apartadotext{
+	margin:0;
+	padding:0;
+	line-height:16px;
+}
+
+ul#navegacion #contenidoMenu ul li.apartado{
+	cursor: pointer;
+    margin: 0 50px 0 10px;
+    padding: 0 5px 8px;
+}
+	
+/** Apartados de primer nivel **/
+
+ul#navegacion #contenidoMenu ul li p.apartadosup, ul#navegacion #contenidoMenu ul li p.apartadotext, ul#navegacion #contenidoMenu ul li p.apartadoinf{
+
+}
+
+.apartadosombra{display:none;}
+
+ul#navegacion #contenidoMenu ul li p.apartadosup, ul#navegacion #contenidoMenu ul li.mnuElementActivo ul li p.apartadosup{
+	display:none;
+}
+ul#navegacion #contenidoMenu ul li p.apartadotext, ul#navegacion #contenidoMenu ul li.mnuElementActivo ul li p.apartadotext{
+	text-transform:uppercase;
+	
+}
+ul#navegacion #contenidoMenu ul li p.apartadoinf, ul#navegacion #contenidoMenu ul li.mnuElementActivo ul li p.apartadoinf {
+	display:none;
+}
+
+ul#navegacion #contenidoMenu ul li.mnuElementActivo p.apartadosup, ul#navegacion #contenidoMenu ul li ul li.mnuElementActivo p.apartadosup{
+	background-position:0 -667px;
+}
+
+ul#navegacion #contenidoMenu ul li.accedido p.apartadotext, ul#navegacion #contenidoMenu ul li ul li.accedido p.apartadotext{
+	background:transparent url("../../media/bullet_valid.png") no-repeat 0px 50%;
+	padding:0 0 0 25px;
+}
+
+ul#navegacion #contenidoMenu ul li.mnuElementActivo p.apartadotext, ul#navegacion #contenidoMenu ul li ul li.mnuElementActivo p.apartadotext{
+	background:transparent url("../../media/apartadoactivo_pike.png") no-repeat 0px 50%;
+	padding:0 0 0 25px;
+}
+
+ul#navegacion #contenidoMenu ul li.mnuElementActivo p.apartadoinf, ul#navegacion #contenidoMenu ul li ul li.mnuElementActivo p.apartadoinf{
+	background-position:0 -700px;
+}
+
+ul#navegacion #contenidoMenu ul li .apartadosombra{display:none;}
+
+ul#navegacion #contenidoMenu ul li.pagina{
+	font-size:13px;
+	line-height:inherit;
+}
+
+ul#navegacion #contenidoMenu ul li.pagina a{	
+	text-shadow:0px;
+	font-weight:normal;
+	margin: 0 30px 0 10px;
+    padding: 3px 5px;
+}
+
+ul#navegacion #contenidoMenu ul li li.pagina a{
+	padding:0 0 0 25px;
+}
+
+ul#navegacion #contenidoMenu ul li.pagina.accedido a{
+	background:url("../../media/bullet_valid.png") no-repeat left 50% transparent;
+	margin:0 0 5px 15px;
+	padding:0 10px 0 30px;
+	}
+ul#navegacion #contenidoMenu ul li.pagina.mnuElementActivo a {
+	background:url("../../media/apartadoactivo_pike.png") no-repeat left 50% transparent;
+	margin:0 0 5px 15px;
+	padding:0 10px 0 30px;
+	}
+	
+ul#navegacion #contenidoMenu ul li.pagina.accedido  {}
+
+
+
+
+
+
+/*--------- logo (imagen de la cabecera) -----------*/
+
+#Header, #Footer {width: 100%; height:100%; margin:0; padding:0; float:left; position:relative; left:0}	/* must be specified for PNG Fix to work (IE 6 issue) */
+#cuerpo{
+	height: 475px;
+    left: 4px;	
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 143px;
+    width: 970px;
+	overflow:hidden;
+}
+
+#cargador{	
+	background-color: #FFFFFF;
+    display: none;
+    height: 471px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    top: 12px;
+    width: 100%;
+    z-index: -1;
+}
+
+#cargador.loading{
+	display:block;
+	z-index: 99;
+}
+
+
+#fab20_body {
+	width: 100%;
+	height: 475px;
+}
+
+#Logo	{
+	float: left;
+	margin: 0 0 0 6px;
+	display:none;
+	width: 887px;
+	height: 95px;
+	background: transparent url("../../media/logo.png") no-repeat 0 0;
+}
+
+	 
+#Wrapper, #PageWrapper	{ position: relative; }	/* IE needs this to position content when using top panel (#ContentPanel) */
+
+#Wrapper {
+	width: 978px;
+	height:618px;
+	margin:0 auto;
+	padding:0;
+	background: transparent url("../../media/interfaz/wrapperbg.png") no-repeat 0 0;
+}
+
+#course-image{
+	background: url("../../media/course-image.png") no-repeat left bottom transparent;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#PageWrapper {
+	width: 100%;
+	height:100%;
+	margin: 0;
+	padding:0;
+	/*box-shadow:0px 0px 3px #606060;*/
+	}
+	
+.pageTop {
+	height: 96px;
+	overflow: hidden;
+	background: transparent url("../../media/pagetop.png") no-repeat 50% 0;
+	width:1000px;
+	margin:auto;}
+		
+.pageBottom {
+	height: 10px;
+	overflow: hidden;
+	background: transparent url("../../media/pageBg-bottom.png") no-repeat 0 0;
+	margin: 0 0 0.4em;}
+
+#Header {
+	background-image:url("../../media/interfaz/headbg.png");
+	background-repeat:no-repeat;
+	background-position:4px 3px;
+	background-color:transparent;
+	width:974px;
+	height:150px;
+	z-index:1;
+	margin:0 auto;
+	}
+
+
+#logo-cliente{
+	height:56px;
+	overflow:hidden;
+	width:100px;
+	position:absolute;
+	top:0;
+	left:0;
+	background: url("../../media/logo-cliente.png") no-repeat 0 0 transparent;
+}
+
+/*************************
+ * TITULO DEL CONTENIDO
+ ************************/
+
+#titulopagina{
+	background-image:url("../../media/sprite.png");
+	background-color:transparent;
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	background-position:0 -806px;
+	height:56px;
+    margin:0 110px 0 100px;
+	padding-left:55px;
+}
+
+#titulopagina .titulo{
+	background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../../media/sprite.png");
+    background-position: -938px -1621px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    height: 22px;
+    padding-left: 30px;
+    position: relative;
+    text-transform: uppercase;
+    top: 8px;
+}
+
+#titulopagina .subtitulo{
+	background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../../media/sprite.png");
+    background-position: -940px -1648px;
+    background-repeat: no-repeat;
+    display: table-cell;
+    font-size: 12px;
+    height: 28px;
+    margin: 0;
+    padding: 8px 0 0 30px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+	overflow:hidden;
+	text-transform:uppercase;
+}
+
+
+#salir{
+	width:110px;
+	height:56px;
+	position:absolute;
+	right:-20px;
+	top:0px;
+	background-image:url("../../media/sprite.png");
+	background-color:transparent;
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	background-position:right -806px;
+}
+	
+	
+
+}
+
+
+
+@media screen, projection
+{
+
+.ruta span a 	{ font-weight: bold; }
+.ruta .scrollTop		{ float:right; margin: 19px 28px; font-weight: normal; font-size:0.8em; }	/* scroll to top ^ */
+
+/* ---------------------------Definicion de contenedores-------------------------------------- */
+
+	
+/* content containers */
+
+.contentArea {
+	position: absolute;
+	width: 970px;
+	height:475px;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+
+/* ----------------------------------------elementos de navegacion-------------------------------------- */
+
+
+#menuPrincipal .claseMenu li li		{ min-width:270px } /* sub-menu background */
+#menuPrincipal .claseMenu li li li		{ } /* sub-sub-menu background */
+
+
+
+
+.ruta .navanterior, .ruta .navsiguiente {
+	background-image: url("../../media/sprite.png");
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+    cursor: pointer;
+    float: left;
+    height: 46px;
+    width: 64px;
+    z-index: 99;
+	}
+
+.ruta .navanterior{background-position:-575px -893px;}
+.ruta .navsiguiente {background-position:-639px -893px;}
+.ruta .navanterior:hover{background-position:-575px -952px;}
+.ruta .navsiguiente:hover{background-position:-639px -952px;}
+.ruta .navanterior.inactivo{background-position:-575px -893px;}
+.ruta .navsiguiente.inactivo{background-position:-639px -893px;}
+
+
+.navanterior .pag, .navsiguiente .pag {
+	width:98px; height:218px;
+}
+
+
+.navanterior.inactivo .pag, .navsiguiente.inactivo .pag {
+	display:none;
+}
+
+
+.inactivo, .inactivo:hover{
+	cursor:auto;
+}
+
+ /*********************************************************/
+/*********************************************************/
+div#nav {}
+div#nav .navanterior,
+div#nav .navsiguiente { position:absolute; width:98px; height:218px; z-index: 1 !important; }
+div#nav .navanterior, div#nav .inactivo.navanterior:hover {
+	top:200px;
+	left:-99px;
+	background-image:url('../../media/interfaz/btnanterior.png');
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+div#nav .navsiguiente, div#nav .inactivo.navsiguiente:hover {
+	top:200px;
+	right:-99px;
+	background-image:url('../../media/interfaz/btnsiguiente.png');
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+
+div#nav .navanterior:hover{
+	cursor: pointer;
+	background-image:url('../../media/interfaz/btnanteriorhv.png');
+}
+div#nav .navsiguiente:hover{
+	cursor: pointer;
+	background-image:url('../../media/interfaz/btnsiguientehv.png');
+}
+
+div#nav .navanterior.inactivo, div#nav .navanterior.inactivo:hover{
+	cursor: default;
+	background-image:url('../../media/interfaz/btnanteriorinactivo.png');
+}
+div#nav .navsiguiente.inactivo, div#nav .navsiguiente.inactivo:hover{
+	cursor: default;
+	background-image:url('../../media/interfaz/btnsiguienteinactivo.png');
+}
+
+
+ /*********************************************************/
+/*********************************************************/
+
+div.pretitulo, div.pretitulo_progreso{height:96px; width:20px; float:left}
+.tab h1{
+	padding-top:22px;
+	min-height:56px;
+	display:block;
+	margin-left:20px;
+	line-height:24px;
+	color:#0099cc;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:20px;
+}
+
+.tab h1 p{margin:0; padding:0; line-height:24px;}
+
+.tab h1 span{
+	line-height:20px;
+	clear:none;
+	font-size:14px;
+	padding:0px 0px 0px 20px;
+	display:block;
+	color:#646567;
+	margin-top:20px;
+	font-weight:bold;
+	float:left;
+	margin-right:10px;
+}
+
+.tab h1 span.miga{display:inline-block;}
+
+
+
+.piecuerpo{background:url(../../media/pageBg-bottom.png) no-repeat scroll 0 0; width:900px; height:30px; margin:0px auto;}
+
+.ruta .kooltip span.tooltip.interfaz{
+	padding:6px;
+	opacity:0.9;
+	line-height:normal;
+}
+
+.kooltip span.tooltip.interfaz.right, .kooltip:hover span.tooltip.interfaz.right{
+	right:-2px;
+}
+
+.kooltip span.tooltip.interfaz.right:before, .kooltip span.tooltip.interfaz.right:after{
+	right:15px;
+}
+
+/** sobrescribiendo el ui de jquery **/
+
+.ui-dialog .ui-dialog-title{
+	font-size:1.2em;	
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+	font-weight:bold;
+	font-size:1.1em !important;
+	text-transform:uppercase;
+}
+
+}
+
+
+@media only screen and (orientation:portrait) {
+
+	
+}
+
+#mcs_container{
+	/*background: url("../../media/sprite.png") no-repeat scroll right -1100px transparent;*/
+    border: 0 none;
+    display: inline-block;
+    height: 485px;
+    left: 0;
+    margin: 0;
+    padding: 0 35px 0 0;
+    position: relative;
+    right: 0;
+    top: 3px;
+	z-index:11;
+}
+#mcs_container .customScrollBox{
+	float:right;
+	height: 700px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    right: 0;
+    width: 100%;}
+#mcs_container .customScrollBox .container{position:relative; width:100%; top:0; float:right;}
+#mcs_container .customScrollBox .content{}
+#mcs_container .customScrollBox img{border:5px solid #fff;}
+#mcs_container .dragger_container{position:absolute; width:2px; height:620px; float:left; margin:40px 10px 0; background:#000; cursor:pointer; -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+#mcs_container .dragger{position:absolute; width:2px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+#mcs_container .dragger_pressed{position:absolute; width:4px; margin-left:-1px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; cursor:s-resize;}
+#mcs_container .scrollUpBtn,#mcs_container .scrollDownBtn{position:absolute; display:inline-block; width:14px; height:15px; margin-right:12px; text-decoration:none; left:4px; filter:alpha(opacity=20); -moz-opacity:0.20; -khtml-opacity:0.20; opacity:0.20;}
+#mcs_container .scrollUpBtn{top:3%; background: transparent url('../../media/mcs_btnUp.png') center center no-repeat;}
+#mcs_container .scrollDownBtn{bottom:3%; background: transparent url('../../media/mcs_btnDown.png') center center no-repeat;}
+#mcs_container .scrollUpBtn:hover,#mcs_container .scrollDownBtn:hover{filter:alpha(opacity=60); -moz-opacity:0.60; -khtml-opacity:0.60; opacity:0.60;}
+
+
+/*************
+ * COLORES
+ ************/
+ 
+html{ 
+	background-color:#fff !important;
+}
+
+#navegacion-up, #navegacion-down{
+	/*background-color:#818181;*/
+}
+
+#navegacion-up:hover, #navegacion-down:hover{
+	/*background-color:#087021;*/
+}
+
+/*
+#navegacion-title, .navanterior, .navsiguiente{
+	background-color:#087021;
+}
+*/
+
+/*
+#CapaIndicePaginas p{
+	color: #212121;
+}
+*/
+ 
+ul#navegacion #contenidoMenu ul li p.apartadotext,
+ul#navegacion #contenidoMenu ul li.mnuElementActivo ul li p.apartadotext,
+ul#navegacion #contenidoMenu ul li.pagina a{
+	color:#333333;
+}
+ 
+ul#navegacion #contenidoMenu ul li.accedido p.apartadotext,
+ul#navegacion #contenidoMenu ul li ul li.accedido p.apartadotext,
+ul#navegacion #contenidoMenu ul li.mnuElementActivo p.apartadotext,
+ul#navegacion #contenidoMenu ul li ul li.mnuElementActivo p.apartadotext,
+ul#navegacion #contenidoMenu ul li.pagina.accedido a,
+ul#navegacion #contenidoMenu ul li.pagina.mnuElementActivo a{
+	/*color:#087021;*/
+}
+ 
+#titulopagina .titulo{
+	/*color:#212121;*/
+}
+
+#titulopagina .subtitulo{
+	/*color:#555555;*/
+}
+
+/*
+#btn_salir, #btn_ayuda, #btn_volver, #indice_btn, #btn_creditos, #btn_bibliografia, #btn_glosario, #btn_anexos, #btn_tips, #btn_print, #btn_progreso, #btn_mindmap{
+	background-color:#087021;
+}
+*/
+
+
+.inactivo, .inactivo:hover{
+	/*background-color:#dedede !important;*/
+	cursor:auto;
+}
+
+ul.recursos { position:absolute !important; top:-100000px !important; display:none !important; visibility:hidden !important; width:0px !important; height:0px !important; }

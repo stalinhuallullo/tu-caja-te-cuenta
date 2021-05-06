@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+.ejercicio{
+}
+
+.ej_visorEjercicio{
+	width: 800px;
+	margin: auto;
+	padding: 20px;
+	background: #f0f0f0;
+}
+
+.ej_visorEjercicio .clear{
+	height:0px;
+}
+
+.ej_infoBar{
+	width:330px;
+	float:right;
+	display:block;
+	padding:10px;
+	margin:5px 10px;
+	font-size:10pt;
+	background:#E0E0E0;
+	color:#606060;
+	font-style:italic;
+	
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+}
+
+.test_cartel{
+	float:left;
+	margin:5px 10px;
+}
+
+.test_cartel span{
+	font-size:14pt;
+	color:#003163;
+	display:block;
+	float:right;
+	padding:7px;
+}
+
+p.ej_autoevaluativo{
+	font-size:14pt;
+	color:#FFFFFF;
+	margin-left:30px;
+}
+
+p.ej_autoevaluativo img{position:relative; top:10px;}
+
+.ej_respuestas.corregido .ej_respuesta{
+	cursor:auto;
+}
+ 
+.ej_respuesta img{
+	vertical-align:middle;
+	cursor:pointer
+}
+
+
+
+ 
+.ej_mensaje_text table{
+	border-collapse: separate;
+	border-spacing: 0 5px;
+	margin: 50px 5% 30px;
+	width: 90%;
+}
+
+.ej_mensaje_text table tr{		
+	background:#FFFFFF;
+}
+
+.ej_mensaje_text table td{
+	padding:10px;	
+}
+
+.ej_mensaje_text table tr:last-child{
+	background:#009c37;
+	color:#FFFFFF;
+}
+
+
+
+.ej_enunciado{
+	margin:0 0 20px 0;
+    text-align: left;    
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ej_respuesta{	
+	background:#FFFFFF;	
+	margin: 0px 0px 10px;
+	cursor: pointer;
+	border-radius: 6px;
+	padding: 10px;
+	cursor: pointer;
+	
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	border-radius: 6px;	
+}
+
+.ej_respuestas{	
+	padding: 0px;
+	margin: 0px;
+	color: #212121;
+}
+ 
+.ej_check {
+    display: table-cell;
+    vertical-align: middle;
+	text-align:center;
+}
+
+.ej_respuestas_text{
+	background: #ffffff;
+    color: #4B4F54333;
+	font-size: 14px;
+	line-height: 20px;	
+	display: table-cell;	
+	margin: 0 0 5px 0;
+	padding: 0px 0px 0px 10px;
+	vertical-align:middle;
+	
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	border-radius: 6px;
+}
+
+.contenedorFeedback .ej_respuestas_text{
+	font-size: 14px;
+	padding: 10px;
+	background: #DFFFCF;
+}
+
+
+
+div.acciones{
+}
+
+
+
+.btn_siguiente, .btn_anterior, .btn_finalizar{
+	display:none;
+}
+
+.ej_numeroPregunta{
+    color: #4B4F54333;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.ej_bulletsPreguntas {
+    text-align: center;
+    margin: 10px;
+}
+
+.ej_bulletsPreguntas span{
+	background-image:url('../../media/htmltest/marcador_inactivo.png');
+	width:30px;
+	height:30px;
+	background-attachment:scroll;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+.ej_bulletsPreguntas .acierto{
+	background-image:url('../../media/htmltest/marcador_acierto.png');
+}
+
+.ej_bulletsPreguntas .error{
+	background-image:url('../../media/htmltest/marcador_error.png');
+}
+
+.ej_mensaje_ico{	
+	position:absolute;
+	bottom:0;
+	right:10px;
+	display:none;
+}
+
+.ej_mensaje_close{
+	margin-top:10px;
+	margin-right:15px;
+	cursor:pointer;	
+} 
+
+.ej_mensaje_text{
+	color: #545454;
+	margin: 10px 0 0 0;
+	padding: 20px;
+}
+
+.ej_mensaje_text h3{
+	padding: 0px;
+	margin: 0px 0 20px 0;
+	font-size: 36px;
+	color: #4B4F54333;
+	text-align: center;
+}
+
+.ej_mensaje_text p{
+	font-size: 16px;
+    line-height: 24px;
+    margin:0 0 10px 0;
+	width:100%;
+}
+
+
+.ej_porcentaje{
+	font-size:20px;	
+	letter-spacing:-1px;	
+	text-align:center;
+	margin-bottom:5px;
+}
+
+.ej_porcentaje span{
+	font-size:26px;
+	font-weight:bold;
+	color:#EA2E49;
+}
+
+.ej_porcentaje.superado span{
+	color:#49A942;
+}
+
+
+.ej_visorEjercicio .btn_volver,
+.ej_visorEjercicio .btn_anterior,
+.ej_visorEjercicio .btn_siguiente,
+.ej_visorEjercicio .btn_finalizar,
+.ej_visorEjercicio .btn_mensajeRepetir{
+	display:none;
+}
+.ej_visorEjercicio .btn_enviar, .ej_visorEjercicio .btn_volver{
+	background-color:#DA291C;
+	border-color:#DA291C;
+}
+
+.ej_visorEjercicio .btn_enviar:hover, .ej_visorEjercicio .btn_volver:hover{
+	background:#DA291C;
+}
+
+.btn_anterior > img, .btn_siguiente > img, .btn_enviar > img, .btn_finalizar:hover > img, .btn_mensajeRepetir > img{
+}
+
+/*
+@media (max-width: 768px) {
+	.ej_mensaje{
+		bottom: 50px;
+		position: fixed;
+		width: 100%;
+		
+	}
+	
+	.btn_anterior, .btn_siguiente, .btn_enviar, .btn_finalizar{
+		font-size: 14px;
+		font-weight: normal;
+		margin: 0 0 0 10px;
+		width: auto;		
+		height: 50px;
+		padding: 0 40px 0 20px;
+		line-height: 48px;
+		float:right;
+	}	
+	
+	
+	.ej_mensaje_close{		
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+	
+	.ej_visorEjercicio{
+		margin-bottom:120px;
+	}
+	
+	.ej_enunciado{
+		width:100%;
+	}
+	.ej_respuestas{
+		width:100%;
+		float:none;
+	}
+	
+	div.acciones {
+		margin-left: 0px;
+		float: none;
+		position: fixed;
+		bottom: 50px;
+		height: 50px;
+		width: 100%;
+		padding: 0px;
+		background:#069;
+		left: 0px;
+	}
+	
+	div.acciones .btnFlecha{
+		top:41%;
+	}
+	
+	.ej_numeroPregunta {
+   		color: #FFF;
+		font-weight:normal;
+		text-align: center;
+		float: left;
+		font-size: 16px;
+		margin: 0px 0px 0px 10px;
+		line-height: 46px;
+	}
+	
+	.ej_bulletsPreguntas {
+		text-align: center;
+		float: left;
+		position: static;
+		height: 30px;
+		margin: 10px 0px 10px 10px;
+	}
+	
+	
+	
+	
+	.ej_mensaje_text {
+		margin: 0px;
+		padding: 30px 5%;
+		width: 90%;
+		background:#D6D6D6;
+	}
+	
+	.ej_mensaje_text h3 {
+		margin: 0px 20px 10px;
+	}
+	
+
+}
+*/
+
+.ej_numeroPregunta{
+	font-size:22px;
+}
+
+
+.btn_enviar, .btn_siguiente, .btn_finalizar, .btn_mensajeRepetir{
+}
+
+.ej_mensaje{
+	display:none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: #D6D6D6;
+}
+
+.ej_mensaje_text{
+	margin-top: 60px;
+	
+}
+
+.ej_mensaje_close{
+	position: absolute;
+	right: 15px;
+	margin: 0;
+	top: 15px;
+}
+
+.ej_mensaje_text table{
+	margin: 0;
+	width: 100%;
+}
+

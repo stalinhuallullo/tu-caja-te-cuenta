@@ -1,0 +1,23 @@
+.elementoSeleccionable{
+	width:140px;
+	height:120px;
+	position:absolute;
+	background:#d8d8d8;
+	cursor:pointer;
+}
+
+.elementoSeleccionable.seleccionado{
+	background:#feee00;
+}
+
+.elementoSeleccionable > img{
+	top:-20px;
+}
+
+.elementoSeleccionable .texto{
+	position:absolute;
+	bottom:5px;
+	font-size:12px;
+	text-align:center;
+	width:100%;
+}

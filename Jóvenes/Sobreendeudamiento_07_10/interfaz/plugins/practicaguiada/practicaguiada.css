@@ -1,0 +1,392 @@
+#practica_content {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		display:none;
+	 
+}
+
+#practica {
+		 position:relative;
+		width:1024px;
+		height:724px;
+		background-color:#ffffff;
+		z-index:1;
+		
+		
+}
+.clicable{cursor:pointer;}
+
+#ejerciciosimulado
+{
+	position:absolute;
+	background-image:url(../../../interfaz/tema/media/ejerciciosimulado.png);
+	width:1024px;
+	height:724px;
+	
+	top:0;
+	left:0;
+	
+	
+	
+	z-index:1;
+	
+	
+}
+#pg_close
+{
+	position:absolute;
+	background-image:url(../../../interfaz/tema/media/cerrar_practica.png);
+	width:131px;
+	height:22px;
+	cursor:pointer;
+	
+	top:3px;
+	left:893px;
+	
+	
+	
+	z-index:3;
+	
+}
+#pg_enunciado
+{
+	position:absolute;
+	background-image:url(../../../interfaz/tema/media/enunciado_practica.png);
+	width:152px;
+	height:22px;
+	cursor:pointer;
+	
+	top:3px;
+	left:741px;
+	
+	
+	
+	z-index:3;
+	
+}
+#pg_repetir
+{
+	position:absolute;
+	background-image:url(../../../interfaz/tema/media/repetir_practica.png);
+	width:152px;
+	height:22px;
+	cursor:pointer;
+	
+	top:3px;
+	left:591px;
+	
+	
+	
+	z-index:3;
+	
+}
+
+
+
+#pg_tooltip
+{
+	
+	
+	
+	
+	position:absolute;
+	padding:5px;
+	top:2px;
+	left:100px;
+	
+	z-index:10000;
+	font-size:9pt;
+	
+	display:none;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border-style:solid;
+	border-width:1px;
+	border-bottom-width:2px;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 0 1px rgba(255, 255, 255, 1) inset;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 0 1px rgba(255, 255, 255, 1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 0 1px rgba(255, 255, 255, 1) inset;
+	padding:18px;
+	text-shadow:1px 1px 0 rgba(255, 255, 255, 0.4);
+	white-space:nowrap;
+	width:auto !important;
+	
+	background:-moz-linear-gradient(top, #DE888E 0%, #E8A8AD 15%, #DE888E 100%);
+	background:-ms-linear-gradient(top, #DE888E 0%, #E8A8AD 15%, #DE888E 100%);
+	background:-o-linear-gradient(top, #DE888E 0%, #E8A8AD 15%, #DE888E 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #DE888E), color-stop(15%, #E8A8AD), color-stop(100%, #DE888E));
+	background:-webkit-linear-gradient(top, #DE888E 0%, #E8A8AD 15%, #DE888E 100%);
+	background: linear-gradient(top, #DE888E 0%, #E8A8AD 15%, #DE888E 100%);
+	background-color:#DE888E;
+	border-color:#C85B62;
+	color:#333;
+	text-transform:uppercase;
+	
+	
+}
+
+#practica #editbuttons
+{
+	position:absolute;
+	padding:5px;
+	top:2px;
+	left:100px;
+	background-color:#FFFFFF;
+	border:2px solid #cccccc;
+	z-index:10000;
+	display:none;
+	 
+}
+
+.practica_guiada
+{
+	display:none;
+	width:800px;
+	height:800px;
+	border:1px solid black;
+	background-color:#00ff00;
+	overflow:scroll;
+
+}
+
+
+ .paso
+{
+	display:none;
+	position:relative;
+	top:0px;
+	left:0px;
+	width:1024px;
+	height:724px;
+	
+	background-color:#cccccc;
+	
+}
+
+ .paso .zonainteractiva
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:150px;
+	height:150px;
+	border:none;
+	opacity: 0.0;
+	z-index:2;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
+	cursor:pointer;
+
+}
+
+ .paso .zonainteractiva #info
+{
+	 font-size:8pt;
+	 font-family:tahoma;
+	 font-weight:bold;
+	 background-color:white;
+	 opacity:0.9;
+	 display:none;
+}
+
+ ::-ms-clear {
+      display: none;
+  }
+
+ .paso .zonainteractiva input
+{
+	 width:80%;
+	 height:80%;
+	 background-color:transparent;
+	 border: 0px solid white;
+	 color:black;
+	 font-family: tahoma;
+    font-size: 11px;
+	cursor:default;
+	cursor:pointer;
+	 
+}
+
+
+.infcodigo{
+font-size:8pt;
+overflow:scroll;
+height:400px;
+
+}
+
+
+#editbuttons .infoAciertosFallos
+{
+	 
+	display:inline;
+	font-size:9pt;
+	
+	
+}
+
+#editbuttons #puntos
+{
+	 
+	display:inline;
+	font-size:9pt;
+	
+	
+}
+
+.btnInteractiveElement,.delInteractiveElement
+{
+	padding:5px;
+	width:200px;
+	color:#ff4444;
+	background-color:#cccccc;
+	border: 1px solid #444444;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	
+}
+
+.btnUsuario
+{
+	background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    display: inline;
+    font-size: 13px;
+    margin: 10px;
+    padding: 12px;
+    text-transform: uppercase;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	
+	
+	
+	
+	
+	
+}
+
+
+.btnInteractiveElement 
+{
+	color:#000000;
+	background-color:#ffccff;
+
+}
+.miclaseespecial button 
+{
+	background-color:red;
+ 
+}
+.miotraclaseespecial 
+{
+ 
+	border:8px solid black;
+	color:red;
+	background-repeat: no-repeat;
+}
+
+.rojo{color:#F00;
+font-weight:bold;}
+
+.blanco input{color: #fff !important;
+    font-family: Arial,Geneva,sans-serif !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+}
+
+#pg_progreso
+{
+	background-color:#ffffff;
+	width:283px;
+	
+	height:13px;
+	border: 1px solid #999999;
+	font-size:8pt;
+	color:#999999;
+	font-family:tahoma;
+	position:absolute;
+	padding-left:3px;
+	 
+	top:4px;
+	left:300px;
+	
+	z-index:3;	
+	
+	
+}
+#pg_progreso #barrasombra
+{
+
+	width:193px;
+	height:8px;
+	border: 1px solid #cccccc;
+	
+	position:absolute;
+
+	text-align:center;
+	background-color:#ffffff;
+	
+	top:2px;
+	left:90px;
+	
+	
+}
+#pg_progreso #barra
+{
+
+	width:145px;
+	height:8px;
+	border: 1px solid #cccccc;
+	
+	position:absolute;
+
+	text-align:center;
+	background-color:#4f8e14;
+	
+	top:2px;
+	left:90px;
+	
+	
+}
+
+.practicaCompletada{
+
+ background-image: url("../../../interfaz/tema/media/ok.png");
+    background-repeat: no-repeat;
+    height: 69px;
+    left: 869px;
+    position: absolute;
+    top: 122px;
+    width: 69px;
+	
+}
+
+
+
+.btnimprimir{
+	background-image: url("../../../interfaz/tema/media/imprimir.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    font-size: 16px;
+    left: 600px;
+    margin-bottom: 5px;
+    padding: 3px 23px 3px 3px;
+    position: absolute;
+    text-transform: uppercase;
+    width: 160px;
+	cursor:pointer;top:30px;
+}
+
+.btnimprimir:hover{
+ text-decoration:underline;
+}
+
+

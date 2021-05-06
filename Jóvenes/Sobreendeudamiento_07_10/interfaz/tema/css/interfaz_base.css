@@ -1,0 +1,144 @@
+#fab20_header {
+
+  padding: 10px;
+  background-color:#CC6600;
+  height: 100%;
+}
+
+#fab20_body {
+  padding: 10px;
+  background-color:orange;
+  height:800px;
+  position:relative;
+}
+
+
+#fab20_menu {
+  float: right;
+  padding: 10px;
+  background-color:yellow;
+  color:#000099;
+}
+
+#fab20_footer {
+  padding: 10px;
+  background-color:#CC6600;
+  height: 100%;
+}
+
+
+
+
+li.selected a
+{
+  color: red;
+}
+
+li.nivel1
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+padding:3px;
+margin:3px;
+color:#FFFFFF;
+background:#0066FF;
+cursor:pointer;
+}
+
+li.nivel2
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+padding:3px;
+margin:2px;
+color:#FFFFFF;
+background:#0099FF;
+cursor:pointer;
+}
+li.nivel3
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:10px;
+padding:3px;
+margin:2px;
+color:#000066;
+background:#009999;
+cursor:pointer;
+}
+
+
+li.selected a
+{
+  color: red;
+}
+
+lu.nivel1
+{
+color:#FFFFFF;
+background:#0066FF;
+}
+
+lu.nivel2
+{
+color:#FFFFFF;
+background:#009999;
+}
+lu.nivel3
+{
+color:#FFFFFF;
+background:#00FFFF;
+}
+
+a:link {
+color:#FFFFFF;
+text-decoration:none;
+}
+a:hover {
+color:#FFFFFF;
+text-decoration:underline;
+
+}
+
+li.completo
+{
+	background:#000066;
+	 
+}
+
+
+/*
+//list-style:url(micarpeta/miImagen.gif);
+clases menu
+
+pagina
+completo
+sin_acceder
+
+
+apartado
+sin_portada
+
+nivel1
+nivel2
+nivel3
+nivel4
+nivel5
+...
+
+
+ 		"pre" => es presentación									   -->
+		<!--			 "obj" => es resumen										   -->
+		<!--			 "pag" => es contenido normal								   -->
+		<!--			 "ej"  => es un contenido evaluativo						   -->
+		<!--			 "ej_test"  => es un ejercicio tipo test					   -->		
+		<!--			 "ej_parejas"  => es un ejercicio de tipo relacionar		   -->		
+		<!--			 "ej_arrastrar"  => es un ejercicio de tipo arrastrar		   -->		
+		<!--			 "ej_bateria"  => es una bateria de preguntas				   -->		
+		<!--			 "ej_pasoapaso"  => es un ejercicio basado en un paso a paso   -->		
+		<!--			 "ej_conversacion"  => es un ejercicio basado en conversaciones-->												
+		<!--			 "res" => es un resumen de lo aprendido						
+
+
+
+*/
+

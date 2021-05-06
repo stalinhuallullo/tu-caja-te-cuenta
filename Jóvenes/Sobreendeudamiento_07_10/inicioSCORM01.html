@@ -1,0 +1,34 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FEPCMAC</title>
+</head>
+
+<body>
+<script>
+
+
+
+NOMBRE_ARCHIVO_INICIO="index.html"
+
+SERVIDOR="http://localhost:8080"
+RUTA_WRAPPER=SERVIDOR + "/content/main_content_opener.html"
+
+// ================================================================================================================
+ 
+//alert(location)
+ruta="" + location
+
+ini=ruta.indexOf("contenidos/") + 11
+last=ruta.lastIndexOf("/")
+subruta=ruta.substring(ini,last) + "/"  + NOMBRE_ARCHIVO_INICIO
+//alert(subruta)
+nuevaURL=RUTA_WRAPPER + "?CONTENT_URL=" + SERVIDOR + "/contenidos/" + subruta + "&PROXLET_URI=" + SERVIDOR+"/proxlet/&SERVER_URI=" + SERVIDOR
+//alert(nuevaURL)
+location=nuevaURL
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿
+
+<style type="text/css">
+.box16 {
+	position: absolute;
+}
+.box16 h3 {
+	position: absolute;
+	color: #E20513;
+	font-size: 60px;
+	font-weight: bold;
+}
+.box16 p {
+	font-size:16px;
+	line-height:100%;
+}
+.box16 p.star {
+	font-size:15px;
+	line-height:120%;
+	padding:5px 0px 4px 33px;
+	background-image:url('interfaz/tema/media/ulbullet.png');
+	background-repeat: no-repeat;
+	background-position:0px 0px;
+}
+</style>
+
+<h2 class="encabezado_titulo" idtextual="m01p0016t00">loading text...</h2>
+
+<div seqid="cab" style="position:absolute; top:-21px; left:0px;">
+	<img src="./contenidos/modulo01/media/header_read.png"/>
+	<h2 class="titulito" idtextual="m01p0016t01">loading text...</h2>
+</div>
+
+<!-- Titular -->
+<h1 seqid="titulito" style="color:#337AB7; position:absolute; width:910px; top:75px; left:30px; text-align:center; font-weight:bold; text-transform:uppercase;" idtextual="m01p0016t02"></h1>
+
+
+<div seqid="txt1" class="box16" style="top:120px; left:100px;">
+	<p style="width:860px;" idtextual="m01p0016t03">loading text...</p>
+</div>
+
+<div seqid="bloque1" class="box16" style="top:160px; left:100px; width:160px;">
+	<h3 style="top:0px; left:0px;">1</h3>
+	<img src="./contenidos/modulo01/media/p16_img_01.png" style="padding:0px 0px 5px 60px; width:45%; height:45%;"/>
+	<p style="width:160px; font-weight:bold; text-align:center;" idtextual="m01p0016t04">loading text...</p>
+</div>
+
+<div seqid="flecha1" class="box16" style="top:190px; left:260px;">
+	<img src="./contenidos/modulo01/media/arrow8_r.png" style="width:110px; height:40px;"/>
+</div>
+
+<div seqid="bloque1_1" class="box16" style="top:180px; left:390px; width:100px; text-align:center;">
+	<img src="./contenidos/modulo01/media/p16_img_01_1.png" style="padding:0px 0px 7px 0px; width:55%; height:55%;">
+	<p style="width:100px; font-weight:bold; text-align:center;" idtextual="m01p0016t05">loading text...</p>
+</div>
+
+<div seqid="bloque1_2" class="box16" style="top:180px; left:520px; width:100px; text-align:center;">
+	<img src="./contenidos/modulo01/media/p16_img_01_2.png" style="padding:0px 0px 7px 0px; width:45%; height:45%;">
+	<p style="width:100px; font-weight:bold; text-align:center;" idtextual="m01p0016t06">loading text...</p>
+</div>
+
+<div seqid="bloque1_3" class="box16" style="top:162px; left:670px; width:100px; text-align:center;">
+	<img src="./contenidos/modulo01/media/p16_img_01_3.png" style="padding:0px 0px 7px 0px; width:45%; height:45%;">
+	<p style="width:100px; font-weight:bold; text-align:center;" idtextual="m01p0016t07">loading text...</p>
+</div>
+
+<div seqid="bloque2" class="box16" style="top:320px; left:100px; width:160px;">
+	<h3 style="top:0px; left:0px;">2</h3>
+	<img src="./contenidos/modulo01/media/p16_img_02.png" style="padding:0px 0px 5px 52px; width:50%; height:50%;"/>
+</div>
+
+<div seqid="flecha2" class="box16" style="top:335px; left:260px;">
+	<img src="./contenidos/modulo01/media/arrow8_r.png" style="width:110px; height:40px;"/>
+</div>
+
+<div seqid="txt2_1" class="box16" style="top:315px; left:380px;">
+	<p class="star" style="width:365px;" idtextual="m01p0016t08">loading text...</p>
+</div>
+
+<div seqid="txt2_2" class="box16" style="top:375px; left:380px;">
+	<p class="star" style="width:365px;" idtextual="m01p0016t09">loading text...</p>
+</div>
+
+<!-- Personajes -->
+<div seqid="personaje_habla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-habla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<div seqid="personaje_calla" style="position:absolute; top:70px; left:800px;">
+	<img src="./contenidos/modulo01/personajes/veronica-calla.gif" style="width:153px; height:400px;"/>
+</div>
+
+<!-- AYUDA -->
+<div seqid="help" class="ayuda" idtextual="ayuda00" style="bottom:70px; left:290px;">loading text...</div>
+
+
+<div class="FAB20_SEQUENCER" style="display:none">
+
+	<div elem="titulito" start="2" action="righttoleft" />
+
+		<div elem="personaje_calla" start="1" action="fade" />
+
+		<div elem="personaje_calla" start="5" action="fadeout" />
+		<div elem="personaje_habla" start="2" action="fade" />
+
+	<div elem="txt1" start="30" action="lefttoright" />
+	<div elem="bloque1" start="60" action="lefttoright" />
+	<div elem="flecha1" start="130" action="poping" />
+	<div elem="bloque1_1" start="140" action="lefttoright" />
+	<div elem="bloque1_2" start="160" action="lefttoright" />
+	<div elem="bloque1_3" start="180" action="lefttoright" />
+
+	<div elem="bloque2" start="235" action="lefttoright" />
+	<div elem="flecha2" start="240" action="poping" />
+	<div elem="txt2_1" start="245" action="lefttoright" />
+	<div elem="txt2_2" start="380" action="lefttoright" />
+
+		<div elem="personaje_habla" start="452" action="fadeout" />
+		<div elem="personaje_calla" start="450" action="fade" />
+
+	<div elem="help" start="460" action="fade" />
+
+</div>

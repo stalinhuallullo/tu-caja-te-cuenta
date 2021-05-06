@@ -1,0 +1,210 @@
+﻿
+
+<style type="text/css">
+
+.contenido{
+	margin:50px;
+}
+
+.contenido *{
+	display: block;
+	margin: 0px;
+	padding: 0;
+	font-family: "newsgoth",Arial,Helvetica,sans-serif;
+	font-size: 26px;
+	color: #333;
+	line-height:34px;
+}
+
+.contenido h3{
+	font-size: 42px;
+	line-height:50px;
+	color: #e2001a;
+}
+
+.infoinvisible{
+	background-image:url('contenidos/modulo01/media/fondoneutro.jpg');
+	background-attachment:scroll;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	cursor:pointer;
+	z-index:1;
+}
+
+.botoninvisible{
+	position:absolute;
+	width:110px;
+	height:110px;
+	opacity:0.5;
+	cursor:pointer;
+	display:none;
+	
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	
+}
+.botoninvisible span {
+	width:110px;
+	height:110px;
+	display:block !important;
+}
+.botoninvisible span em {
+	display:none !important;
+}
+</style>
+
+
+<script>
+	$('.botoninvisible').each(function(){
+		$(this).css({'top': $(this).attr('btop')+'px', 'left': $(this).attr('bleft')+'px'})
+	})
+
+	$('.botoninvisible').click(function(){
+		$('div[elemento="'+ $(this).attr('muestra') +'"]').fadeIn(300);
+	});	
+
+	$('.infoinvisible').click(function(){
+		$(this).fadeOut(300);
+	});	
+
+	tiempo = parseInt($('#ventana-dialogo').attr('retraso')) * 1000;
+	console.log(tiempo)
+	setTimeout(function(){$('.botoninvisible').fadeIn(0)}, tiempo)
+</script>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="38">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+        
+
+		<div class="escena" numero='0' imagen='a08_01.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra="">
+        </div>
+		<div class="escena" numero='1' imagen='' audio='Presentadoraud213' habla="narrador" bocadillo="" flecha="tr" bleft="520" btop="210" bwidth="370" oculta="" muestra="">
+	        <span>Además, en el seguro intervienen otras personas: el asegurado, el contratante, el asegurador y el beneficiario.</span>
+        </div>
+
+		<div class="escena" numero='2' imagen='' audio='Presentadoraud214' habla="narrador" bocadillo="" flecha="tr" bleft="520" btop="210" bwidth="370" oculta="" muestra="">
+	        <span>Veamos además otros conceptos relacionados con los seguros.</span>
+        </div>
+		
+		<div class="escena" numero='3' imagen='a08_02.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='4' imagen='a08_03.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='5' imagen='a08_04.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='6' imagen='a08_05.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='7' imagen='a08_06.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='8' imagen='a08_07.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+		<div class="escena" numero='9' imagen='a08_08.jpg' audio='silencio03s' habla="" bocadillo="" bleft="" btop="" bwidth="" oculta="" muestra=""></div>
+
+        <div class="personaje" nombre="narrador" oculto="no" imgcalla="conductor-calla.gif" imghabla="conductor-habla.gif" pleft="791" ptop="33" alto="438"></div>        
+        <div class="bocadillo"></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div class="botoninvisible"  bleft="25" btop="44" muestra="uno"><span><em>Asegurado</em></span></div>
+<div class="botoninvisible"  bleft="114" btop="181" muestra="dos"><span><em>Contratante o tomador</em></span></div>
+<div class="botoninvisible"  bleft="530" btop="181" muestra="tres"><span><em>Beneficiario</em></span></div>
+<div class="botoninvisible"  bleft="323" btop="181" muestra="cuatro"><span><em>Asegurador</em></span></div>
+<div class="botoninvisible"  bleft="19" btop="333" muestra="cinco"><span><em>Coberturas</em></span></div>
+<div class="botoninvisible"  bleft="219" btop="62" muestra="seis"><span><em>Deducible</em></span></div>
+<div class="botoninvisible"  bleft="426" btop="62" muestra="siete"><span><em>Indemnización</em></span></div>
+
+<div class="contenedorayuda">
+	<div class="ayuda app fade">
+		Pulsa en las <span style="color:#0b6db5">IMÁGENES</span> para ver mas información.
+	</div>
+</div>
+
+<div elemento="uno" class="infoinvisible">
+	<div class="contenido">
+		<h3>El asegurado</h3>
+		<p>Es la persona o bien sobre la que recae la cobertura del seguro. Es decir, es la persona sus bienes o intereses económicos que están expuestos al riesgo que se quiere asegurar.</p>
+	</div>
+	<div class="contenedorayuda">
+		<div class="ayuda">
+			Pulsa en la pantalla para volver al diagrama.
+		</div>
+	</div>
+</div>
+
+<div elemento="dos" class="infoinvisible">
+	<div class="contenido">
+		<h3>El contratante o tomador</h3>
+		<p>Es la persona que contrata el seguro y debe pagar la prima. No siempre el contratante y el asegurado son la misma persona, por ejemplo, los seguros de salud son para toda la familia, pero los pagan los padres.</p>
+	</div>
+	<div class="contenedorayuda">
+		<div class="ayuda">
+			Pulsa en la pantalla para volver al diagrama.
+		</div>
+	</div>
+</div>
+
+<div elemento="tres" class="infoinvisible">
+	<div class="contenido">
+		<h3>El beneficiario</h3>
+		<p>Es la persona seleccionada por el contratante o tomador del seguro para recibir la indemnización pactada en caso de producirse un daño.</p>
+	</div>
+	<div class="contenedorayuda">
+		<div class="ayuda">
+			Pulsa en la pantalla para volver al diagrama.
+		</div>
+	</div>
+</div>
+
+<div elemento="cuatro" class="infoinvisible">
+	<div class="contenido">
+		<h3>El asegurador</h3>
+		<p>Es la compañía que asume las perdidas causadas por el evento cuyo riesgo se contrata.</p>
+	</div>
+	<div class="contenedorayuda">
+		<div class="ayuda">
+			Pulsa en la pantalla para volver al diagrama.
+		</div>
+	</div>
+</div>
+
+<div elemento="cinco" class="infoinvisible">
+	<div class="contenido">
+		<h3>Las coberturas</h3>
+		<p>Son los riesgos que asume el asegurador (pueden ser uno o más) y que se describen en la póliza.</p>
+	</div>
+	<div class="contenedorayuda">
+		<div class="ayuda">
+			Pulsa en la pantalla para volver al diagrama.
+		</div>
+	</div>
+</div>
+
+<div elemento="seis" class="infoinvisible">
+	<div class="contenido">
+		<h3>El deducible</h3>
+		<p>El asegurador puede asumir todo el riesgo o compartir el riesgo con el asegurado. La parte del riesgo que asume el asegurado se denomina deducible.</p>
+	</div>
+	<div class="contenedorayuda">
+		<div class="ayuda">
+			Pulsa en la pantalla para volver al diagrama.
+		</div>
+	</div>
+</div>
+
+<div elemento="siete" class="infoinvisible">
+	<div class="contenido">
+		<h3>La indemnización</h3>
+		<p>Es la suma de dinero que el asegurador se compromete a pagar al asegurado, en caso de la ocurrencia de un evento y según las condiciones señaladas en la póliza.</p>
+	</div>
+	<div class="contenedorayuda">
+		<div class="ayuda">
+			Pulsa en la pantalla para volver al diagrama.
+		</div>
+	</div>
+</div>

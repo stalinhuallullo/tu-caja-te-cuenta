@@ -1,0 +1,129 @@
+﻿
+
+<style type="text/css">
+	.botoneraejercicios {
+		position: absolute;
+		bottom: 120px !important;
+		right: 44% !important;
+	}
+	select.selectejercicio { border: 1px solid #E2001A; font-size:100% !important; }
+	
+	.input-content{
+		position: absolute;
+	}
+	.input-1{
+		top: 30%;
+    	left: 23%;
+	}
+	.input-2{
+		top: 37%;
+    	left: 23%;
+	}
+	.input-3{
+		top: 45%;
+    	left: 23%;
+	}
+	.input-4{
+		top: 25%;
+    	left: 43%;
+	}	
+	.input-5{
+		top: 32%;
+    	left: 43%;
+	}
+	@media (max-width: 991px){
+		.ayuda{
+			display: block;
+		}
+		#cuerpo, .contentArea, #fab20_body, #ventana-dialogo {
+			height: 493px !important;
+		}
+		.input-content{
+			width: 88px;
+		}
+		.input-content select {
+			width: 100%;
+		}
+		.input-1 {
+			top: 24%;
+			left: 21%;
+		}
+		.input-2 {
+			top: 31%;
+			left: 21%;
+		}
+		.input-3 {
+			top: 39%;
+			left: 21%;
+		}
+		.input-4 {
+			top: 21%;
+			left: 42%;
+		}
+		.input-5 {
+			top: 29%;
+			left: 42%;
+		}
+	}
+	@media (max-width: 767px){
+		.input-content {
+			width: 75px;
+		}
+		.input-1 {
+			top: 20%;
+			left: 21.5%;
+		}
+		.input-2 {
+			top: 27%;
+			left: 21.5%;
+		}
+		.input-3 {
+			top: 34%;
+			left: 21.5%;
+		}
+		.input-4 {
+			top: 18%;
+		}
+		.input-5 {
+			top: 25%;
+		}
+	}
+</style>
+
+<div class="columna izquierda">
+	<div id="ventana-dialogo" retraso="10">
+		<div id="cargador-imagen-dialogo"></div>
+		<div id="cargador-audio-dialogo" ></div>
+
+		<div class="escena" numero='0' imagen='a10_00.jpg' audio='silencio01s'></div>
+		<div class="escena" numero='1' imagen='a10_01.jpg' audio='26'></div>
+		<div class="escena" numero='2' imagen='a10_02.jpg' audio='silencio01s'></div>
+	</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+	<div class="ejerciciocompletar reto app fade" style="position:absolute; top:0px; left:0px; right: 0; bottom: 0; width:100%; height:100%;"
+		reto="0"
+		intentos="3"
+			msg_vacio="Has dejado campos en blanco, debes rellenar todos los huecos necesarios."
+			msg_error="Reflexiona sobre las cuestiones dadas en este tema"
+			msg_ko="A continuación te facilitamos las respuestas correctas."
+			msg_ok="Correcto, has acertado todas las respuestas."
+			msg_ayuda="Elige la opción más adecuada y despues pulsa en COMPROBAR.">
+			
+		<div class="input-content input-1"><input size="6" class="texto toselect" obligatoria="true" value='' correcta="CASA,COMIDA,ROPA" opciones="CASA,CARAMELOS,COMIDA,REFRESCOS,ROPA"></div>
+		<div class="input-content input-2"><input size="6" class="texto toselect" obligatoria="true" value='' correcta="COMIDA,CASA,ROPA" opciones="CASA,CARAMELOS,COMIDA,REFRESCOS,ROPA"></div>
+		<div class="input-content input-3"><input size="6" class="texto toselect" obligatoria="true" value='' correcta="ROPA,CASA,COMIDA" opciones="CASA,CARAMELOS,COMIDA,REFRESCOS,ROPA"></div>
+		<div class="input-content input-4"><input size="6" class="texto toselect" obligatoria="true" value='' correcta="CARAMELOS,REFRESCOS" opciones="CASA,CARAMELOS,COMIDA,REFRESCOS,ROPA"></div>
+		<div class="input-content input-5"><input size="6" class="texto toselect" obligatoria="true" value='' correcta="REFRESCOS,CARAMELOS" opciones="CASA,CARAMELOS,COMIDA,REFRESCOS,ROPA"></div>
+		
+	</div>	
+
+
+
+<div class="contenedorayuda app fade">
+	<div class="ayuda">
+		Selecciona la opción correcta para cada grupo y despues pulsa en 'Comprobar'.
+	</div>
+</div>
